@@ -23,32 +23,26 @@ import { EspComponent } from './Ball/esp/esp.component';
 import { StockComponent } from './Ball/stock/stock.component';
 import { LotteryComponent } from './Ball/lottery/lottery.component';
 import { Ice_ballComponent } from './Ball/ice_ball/ice_ball.component';
+import { TennisComponent } from './Ball/tennis/tennis.component';
+import { SnookerComponent } from './Ball/snooker/snooker.component';
+import { V_ballComponent } from './Ball/v_ball/v_ball.component';
+import { MortorComponent } from './Ball/mortor/mortor.component';
+import { BadmintonComponent } from './Ball/badminton/badminton.component';
+import { FootballComponent } from './Ball/football/football.component';
+import { BsoComponent } from './Ball/bso/bso.component';
+import { Table_ballComponent } from './Ball/table_ball/table_ball.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ErrorComponent,
-    IndexComponent,
-    IndexHeader,
-    IndexLeft,
-    IndexRight,
-    IndexLogin,
-    IndexSeachbox,
-    IndexBallBetting,
-    IndexRightLive,
-    IndexSideOptions,
-    IndexEnContainer,
-    DiscountComponent,
-    MemberComponent,
-    SoccerComponent,
-    BasballComponent,
-    BasketballComponent,
-    Horse_raceComponent,
-    EspComponent,
-    StockComponent,
-    LotteryComponent,
-    Ice_ballComponent
+    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft,
+    IndexRight, IndexLogin, IndexSeachbox, IndexBallBetting,
+    IndexRightLive, IndexSideOptions, IndexEnContainer, DiscountComponent,
+    MemberComponent, SoccerComponent, BasballComponent, BasketballComponent,
+    Horse_raceComponent, EspComponent, StockComponent, LotteryComponent,
+    Ice_ballComponent, TennisComponent, SnookerComponent, V_ballComponent,
+    MortorComponent, BadmintonComponent, FootballComponent, BsoComponent,
+    Table_ballComponent
   ],
   imports: [
     BrowserModule,
