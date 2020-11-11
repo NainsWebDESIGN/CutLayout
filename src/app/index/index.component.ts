@@ -98,3 +98,31 @@ export class IndexBallBetting implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'index-right_live',
+  templateUrl: './right_live.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexRightLive implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-sideoptions',
+  templateUrl: './sideoptions.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexSideOptions implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
