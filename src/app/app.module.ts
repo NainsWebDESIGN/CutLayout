@@ -8,8 +8,10 @@ import { AppComponent } from './app.component';
 import { RoutingModule } from './Routes.routing';
 import { ErrorComponent } from './Error/Error.component';
 import {
-  IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexLogin,
-  IndexSeachbox, IndexBallBetting, IndexRightLive, IndexSideOptions
+  IndexComponent, IndexHeader, IndexLeft,
+  IndexRight, IndexLogin, IndexSeachbox,
+  IndexBallBetting, IndexRightLive,
+  IndexSideOptions, IndexEnContainer
 } from './index/index.component';
 
 
@@ -25,7 +27,8 @@ import {
     IndexSeachbox,
     IndexBallBetting,
     IndexRightLive,
-    IndexSideOptions
+    IndexSideOptions,
+    IndexEnContainer
   ],
   imports: [
     BrowserModule,

@@ -126,3 +126,17 @@ export class IndexSideOptions implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'index-encontainer',
+  templateUrl: './encontainer.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexEnContainer implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
