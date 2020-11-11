@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "my_font";
-  src: local("微軟正黑體")/*url(../font/Bahnschrift.TTF)*/;
+  src: local("微軟正黑體") /*url(../font/Bahnschrift.TTF)*/;
   unicode-range: U+0020-007F;
 }
 p,
@@ -422,6 +422,7 @@ button {
   text-align: center;
   margin-top: 1.643em;
   margin-bottom: 1.714em;
+  white-space: nowrap;
 }
 .sign_box .content .btn_wrap {
   display: inline-block;
@@ -10431,6 +10432,7 @@ body {
   font-size: 1em;
   width: 2.5em;
   text-align: center;
+  white-space: nowrap;
 }
 .container main .left ul.index li:hover,
 .container main .left ul.index li:active,

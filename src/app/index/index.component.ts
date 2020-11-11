@@ -70,3 +70,31 @@ export class IndexLogin implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'index-searchbox',
+  templateUrl: './searchbox.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexSeachbox implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-ballbetting',
+  templateUrl: './ballbetting.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexBallBetting implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RoutingModule } from './Routes.routing';
 import { ErrorComponent } from './Error/Error.component';
-import { IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexLogin } from './index/index.component';
+import { IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexLogin, IndexSeachbox, IndexBallBetting } from './index/index.component';
 
 
 @NgModule({
@@ -18,7 +18,9 @@ import { IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexLogin } from '
     IndexHeader,
     IndexLeft,
     IndexRight,
-    IndexLogin
+    IndexLogin,
+    IndexSeachbox,
+    IndexBallBetting
   ],
   imports: [
     BrowserModule,
