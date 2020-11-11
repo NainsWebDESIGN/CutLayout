@@ -1,46 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=1920,user-scalable=yes">
+  <!--RWD-->
+  <!--main.css-->
+  <link rel="stylesheet" href="../../css/main.css" />
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- swiper -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+  <title>special</title>
+</head>
+
 <header class="cn">
+
   <div class="time_line">
-    <div class="time_box">
+    <div class="time_box in_status">
       <div class="right_box">
         <p>GMT+8　2020-05-07　10:13:44</p>
       </div>
     </div>
   </div>
   <div class="h_box">
-    <div class="h_wrap">
+    <div class="h_wrap live_mode">
       <div class="logo">
         <h1></h1>
       </div>
       <ul class="m_yet">
         <li class="active">
           <p>市場列表</p>
-          <a href="index.html"></a>
+          <a href="../../index.html"></a>
         </li>
         <!-- <li>
-          <p>熱門賽事</p>
-        </li> -->
+              <p>熱門賽事</p>
+            </li> -->
         <!-- <li>
-          <p>今日賽事</p>
-        </li> -->
+              <p>今日賽事</p>
+            </li> -->
         <li><i class="i1"></i>
           <p>優惠</p>
-          <a href="./html/event/event.html"></a>
+          <a href="../event/event.html"></a>
         </li>
         <!-- <li><i class="i2"></i>
-          <p>贊助</p>
-        </li> -->
+              <p>贊助</p>
+            </li> -->
         <li><i class="i3"></i>
-          <p>我的</p> <a href="./html/my/my_data.html"></a>
+          <p>我的</p> <a href="../my/my_bill_now.html"></a>
         </li>
       </ul>
       <div class="right">
-        <div class="sign_yet active">
+        <div class="sign_yet">
           <div class="wrap">
             <i></i>
             <p><span class="in">登入</span> / <span class="up">註冊</span></p>
           </div>
         </div>
-        <div class="sign_in">
+        <div class="sign_in active">
           <div class="wrap">
             <div class="row">
               <p class="gray">user545</p>
@@ -64,66 +83,71 @@
   </div>
 </header>
 <header class="en" style='display: none;'>
+
   <div class="time_line">
-    <div class="time_box">
+    <div class="time_box in_status">
       <div class="right_box">
         <p>GMT+8　2020-05-07　10:13:44</p>
       </div>
     </div>
   </div>
-  <div class="h_box">
-    <div class="h_wrap">
-      <div class="logo">
-        <h1></h1>
+  <div class="h_wrap live_mode">
+    <div class="logo">
+      <h1></h1>
+    </div>
+    <ul class="m_yet">
+      <li class="active">
+        <p>市場列表</p>
+        <a href="../../index.html"></a>
+      </li>
+      <!-- <li>
+        <p>熱門賽事</p>
+      </li> -->
+      <!-- <li>
+        <p>今日賽事</p>
+      </li> -->
+      <li><i class="i1"></i>
+        <p>優惠</p>
+        <a href="../event/event.html"></a>
+      </li>
+      <!-- <li><i class="i2"></i>
+        <p>贊助</p>
+      </li> -->
+      <li><i class="i3"></i>
+        <p>我的</p> <a href="../my/my_bill_now.html"></a>
+      </li>
+    </ul>
+    <div class="right">
+      <div class="sign_yet">
+        <div class="wrap">
+          <i></i>
+          <p><span class="in">登入</span> / <span class="up">註冊</span></p>
+        </div>
       </div>
-      <ul class="m_yet">
-        <li class="active">
-          <p>Home</p>
-        </li>
-        <li>
-          <p>Highlight</p>
-        </li>
-        <li>
-          <p>Today'sEvents</p>
-        </li>
-        <li><i class="i1"></i>Sponsorship</li>
-        <li><i class="i2"></i>Discount</li>
-        <li><i class="i3"></i>
-          <p>My&ensp;Account</p>
-        </li>
-      </ul>
-      <div class="right">
-        <div class="sign_yet active">
-          <div class="wrap">
-            <i></i>
-            <p><span class="in">Log&ensp;in</span> <span class="m">/</span> <span class="up">Sign&ensp;up</span></p>
-          </div>
-        </div>
-        <div class="sign_in">
-          <div class="wrap">
-            <div class="row">
-              <p class="gray">user545</p>
-              <div class="vip"><i></i>
-                <p>0</p>
-              </div>
+      <div class="sign_in active">
+        <div class="wrap">
+          <div class="row">
+            <p class="gray">user545</p>
+            <div class="vip"><i></i>
+              <p>0</p>
             </div>
-            <div class="row bot">
-              <p class="blue">NT$ <span>0.00</span></p>
-            </div>
-          </div>
-        </div>
 
+          </div>
+          <div class="row bot">
+            <p class="blue my_money">NT$ <span>0.00</span></p>
+            <i class="q"></i>
+            <button class="sign_out">
+              <p>登出</p>
+            </button>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </header>
 <!--藉由containerfixed 使用mobile模式-->
-<div class="test_box">
-  <div class="en_cn">
-    <li class="en">英文</li>
-    <li class="cn">中文</li>
-  </div>
-</div>
+
 
 <aside class="bet_solo black_bg">
   <div class="bet_box blue">
@@ -240,7 +264,203 @@
     </div>
   </div>
 </aside>
-
+<aside class="bet_double black_bg">
+  <div class="bet_box red">
+    <div class="title">
+      <span class="num_box">4</span>
+      <p>串一</p>
+      <p class="hidden_i_block active">-注單確認</p>
+      <span class="close"></span>
+    </div>
+    <div class="content">
+      <ul class="bets">
+        <div class="limit_area">
+          <div class="li_box">
+            <li class="line">
+              <div class="bet_gn">
+                <span class="i3"></span>
+                <p>足球-全場-獨贏</p>
+                <div class="close"></div>
+              </div>
+            </li>
+            <li>
+              <div class="bet_bill">
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="team_n">1</span>
+                    <span class="line_box"></span>
+                    <span class="team_n">維羅納</span>
+                    <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                  </em>
+                </div>
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="bet_row">
+                      <span>義大利甲組聯賽&ensp;</span><span class="hidden_i_block active">F1550701</span>
+                    </span>
+                    <span class="bet_row">
+                      <span>拉素[主]</span>
+                      <span class="red">2+50</span>
+                      <span class="blue">vs</span>
+                      <span>維羅納</span>
+                    </span>
+                  </em>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="li_box">
+            <li class="line">
+              <div class="bet_gn">
+                <span class="i3"></span>
+                <p>足球-全場-獨贏</p>
+                <div class="close"></div>
+              </div>
+            </li>
+            <li>
+              <div class="bet_bill">
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="team_n">2</span>
+                    <span class="line_box"></span>
+                    <span class="team_n">維羅納</span>
+                    <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                  </em>
+                </div>
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="bet_row">
+                      <span>義大利甲組聯賽 </span><span class="hidden_i_block active">F1550701</span>
+                    </span>
+                    <span class="bet_row">
+                      <span>拉素[主]</span>
+                      <span class="red">2+50</span>
+                      <span class="blue">vs</span>
+                      <span>維羅納</span>
+                    </span>
+                  </em>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="li_box">
+            <li class="line">
+              <div class="bet_gn">
+                <span class="i3"></span>
+                <p>足球-全場-獨贏</p>
+                <div class="close"></div>
+              </div>
+            </li>
+            <li>
+              <div class="bet_bill">
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="team_n">3</span>
+                    <span class="line_box"></span>
+                    <span class="team_n">維羅納</span>
+                    <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                  </em>
+                </div>
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="bet_row">
+                      <span>義大利甲組聯賽 </span><span class="hidden_i_block active">F1550701</span>
+                    </span>
+                    <span class="bet_row">
+                      <span>拉素[主]</span>
+                      <span class="red">2+50</span>
+                      <span class="blue">vs</span>
+                      <span>維羅納</span>
+                    </span>
+                  </em>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div class="li_box">
+            <li class="line">
+              <div class="bet_gn">
+                <span class="i3"></span>
+                <p>足球-全場-獨贏</p>
+                <div class="close"></div>
+              </div>
+            </li>
+            <li>
+              <div class="bet_bill">
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="team_n">4</span>
+                    <span class="line_box"></span>
+                    <span class="team_n">維羅納</span>
+                    <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                  </em>
+                </div>
+                <div class="f_box b50">
+                  <em class="wrap">
+                    <span class="bet_row">
+                      <span>義大利甲組聯賽 </span><span class="hidden_i_block active">F1550701</span>
+                    </span>
+                    <span class="bet_row">
+                      <span>拉素[主]</span>
+                      <span class="red">2+50</span>
+                      <span class="blue">vs</span>
+                      <span>維羅納</span>
+                    </span>
+                  </em>
+                </div>
+              </div>
+            </li>
+          </div>
+        </div>
+        <li>
+          <div class="total">
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>可贏(參考):</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>單注限額:</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+            <div class="f_box b33">
+              <em class="wrap">
+                <span>餘額:</span>
+                <span class="l_blue">150</span>
+              </em>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="check_page active">
+            <div class="b50 f_box add_h">
+              <em class="wrap">
+                <span class="check_icon"></span>
+                <span class="l_red">注單已確認</span>
+              </em>
+            </div>
+            <div class="b50 f_box add_h">
+              <em class="wrap">
+                <span class="bet_row">
+                  <span>下注時間:&ensp;</span><span>2020-05-27 16:26:07</span>
+                </span>
+                <span class="bet_row">
+                  <span>單號:&ensp;</span><span class="d_blue">CPR09621621</span>
+                </span>
+                <span class="bet_row">
+                  <span>方式:&ensp;</span><span>混和過關4串一</span>
+                </span>
+              </em>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
 <aside class="black_bg sign_up">
   <div class="sign_box sign_up_size">
     <article class="title">
@@ -327,11 +547,9 @@
         <div class="btn_wrap">
           <button class="go_save">
             <p>前去存款</p>
-            <a href="./html/my/my_bill_save.html"></a>
           </button>
           <button class="cancel">
             <p>回首頁</p>
-            <a href="./index.html"></a>
           </button>
         </div>
 
@@ -389,8 +607,241 @@
 </aside>
 
 <div class="container cn">
-
-  <main>
+  <!--串關購物車 shopcar-->
+  <aside class="fixed_size bet_double bottom_mode active">
+    <div class="bet_box red fixed_size">
+      <div class="title">
+        <span class="num_box">4</span>
+        <p>串一</p>
+        <span class="arrow_w"></span>
+      </div>
+      <div class="content">
+        <ul class="bets">
+          <div class="limit_area">
+            <div class="li_box">
+              <li class="line">
+                <div class="bet_gn">
+                  <span class="i3"></span>
+                  <p>足球-全場-獨贏</p>
+                  <div class="close"></div>
+                </div>
+              </li>
+              <li>
+                <div class="bet_bill">
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="team_n">1</span>
+                      <span class="line_box"></span>
+                      <span class="team_n">維羅納</span>
+                      <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                    </em>
+                  </div>
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="bet_row">
+                        <span class="t_hidden">義大利甲組聯賽 </span><span class="hidden_i_block">F1550701</span>
+                      </span>
+                      <span class="bet_row">
+                        <span class="t_hidden">
+                          <span>拉素[主]</span>
+                          <span class="red">2+50</span>
+                          <span class="blue">vs</span>
+                          <span>維羅納</span>
+                        </span>
+                      </span>
+                    </em>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="li_box">
+              <li class="line">
+                <div class="bet_gn">
+                  <span class="i3"></span>
+                  <p>足球-全場-獨贏</p>
+                  <div class="close"></div>
+                </div>
+              </li>
+              <li>
+                <div class="bet_bill">
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="team_n">2</span>
+                      <span class="line_box"></span>
+                      <span class="team_n">維羅納</span>
+                      <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                    </em>
+                  </div>
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="bet_row">
+                        <span class="t_hidden">義大利甲組聯賽 </span><span class="hidden_i_block">F1550701</span>
+                      </span>
+                      <span class="bet_row">
+                        <span class="t_hidden">
+                          <span>拉素[主]</span>
+                          <span class="red">2+50</span>
+                          <span class="blue">vs</span>
+                          <span>維羅納</span>
+                        </span>
+                      </span>
+                    </em>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="li_box">
+              <li class="line">
+                <div class="bet_gn">
+                  <span class="i3"></span>
+                  <p>足球-全場-獨贏</p>
+                  <div class="close"></div>
+                </div>
+              </li>
+              <li>
+                <div class="bet_bill">
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="team_n">3</span>
+                      <span class="line_box"></span>
+                      <span class="team_n">維羅納</span>
+                      <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                    </em>
+                  </div>
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="bet_row">
+                        <span class="t_hidden">義大利甲組聯賽 </span><span class="hidden_i_block">F1550701</span>
+                      </span>
+                      <span class="bet_row">
+                        <span class="t_hidden">
+                          <span>拉素[主]</span>
+                          <span class="red">2+50</span>
+                          <span class="blue">vs</span>
+                          <span>維羅納</span>
+                        </span>
+                      </span>
+                    </em>
+                  </div>
+                </div>
+              </li>
+            </div>
+            <div class="li_box">
+              <li class="line">
+                <div class="bet_gn">
+                  <span class="i3"></span>
+                  <p>足球-全場-獨贏</p>
+                  <div class="close"></div>
+                </div>
+              </li>
+              <li>
+                <div class="bet_bill">
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="team_n">4</span>
+                      <span class="line_box"></span>
+                      <span class="team_n">維羅納</span>
+                      <span class="team_n">@ <span class="team_n red">1.95</span> </span>
+                    </em>
+                  </div>
+                  <div class="f_box b50">
+                    <em class="wrap">
+                      <span class="bet_row">
+                        <span class="t_hidden">義大利甲組聯賽 </span><span class="hidden_i_block">F1550701</span>
+                      </span>
+                      <span class="bet_row">
+                        <span class="t_hidden">
+                          <span>拉素[主]</span>
+                          <span class="red">2+50</span>
+                          <span class="blue">vs</span>
+                          <span>維羅納</span>
+                        </span>
+                      </span>
+                    </em>
+                  </div>
+                </div>
+              </li>
+            </div>
+          </div>
+          <li>
+            <div class="total">
+              <div class="f_box b33">
+                <em class="wrap">
+                  <span>可贏(參考):</span>
+                  <span class="l_blue">150</span>
+                </em>
+              </div>
+              <div class="f_box b33">
+                <em class="wrap">
+                  <span>單注限額:</span>
+                  <span class="l_blue">150</span>
+                </em>
+              </div>
+              <div class="f_box b33">
+                <em class="wrap">
+                  <span>餘額:</span>
+                  <span class="l_blue">150</span>
+                </em>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="computer active">
+              <p class="c_title"><span class="line_box"></span>混合過關 4串一</p>
+              <div class="f_box b48">
+                <div class="row for_input">
+                  <p>投注金額</p>
+                  <input type="text" class="bet_in" placeholder="最低限額150">
+                </div>
+                <div class="row">
+                  <p>可贏金額(參考)</p>
+                  <input class="red" type="text">
+                </div>
+              </div>
+              <div class="f_box b52">
+                <div class="row">
+                  <button class="f_box b30">+100</button>
+                  <button class="f_box b30">+100</button>
+                  <button class="f_box b30">+100</button>
+                </div>
+                <div class="row">
+                  <button class="f_box b30">+100</button>
+                  <button class="f_box b30">+100</button>
+                  <button class="f_box b30">+100</button>
+                </div>
+                <div class="row">
+                  <button class="f_box b30">取消</button>
+                  <button class="f_box b617 double_bet_btn bet_btn">投注</button>
+                </div>
+              </div>
+            </div>
+            <div class="check_page">
+              <div class="b50 f_box add_h">
+                <em class="wrap">
+                  <span class="check_icon"></span>
+                  <span class="l_red">注單已確認</span>
+                </em>
+              </div>
+              <div class="b50 f_box add_h">
+                <em class="wrap">
+                  <span class="bet_row">
+                    <span>下注時間: </span><span>2020-05-27 16:26:07</span>
+                  </span>
+                  <span class="bet_row">
+                    <span>單號: </span><span class="d_blue">CPR09621621</span>
+                  </span>
+                  <span class="bet_row">
+                    <span>方式: </span><span>混和過關4串一</span>
+                  </span>
+                </em>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+  <main class="live_mode">
     <div class="left ">
       <ul class="index active">
         <li><i class="i1"></i>
@@ -405,351 +856,122 @@
           <i class="i3"></i>
           <p>足球</p>
           <p class="num">295</p>
-          <a href="./html/balls/soccer.html"></a>
+          <a href="../balls/soccer.html"></a>
         </li>
         <li>
           <i class="i4"></i>
           <p>棒球</p>
           <p class="num">295</p>
-          <a href="./html/balls/basball.html"></a>
+          <a href="../balls/basball.html"></a>
         </li>
         <li>
           <i class="i5"></i>
           <p>籃球</p>
           <p class="num">295</p>
-          <a href="./html/balls/basketball.html"></a>
+          <a href="../balls/basketball.html"></a>
         </li>
         <li><i class="i6"></i>
           <p>賽馬賽狗</p>
           <p class="num">295</p>
-          <a href="./html/balls/horse_race.html"></a>
+          <a href="../balls/horse_race.html"></a>
         </li>
         <li><i class="i7"></i>
           <p>電競</p>
           <p class="num">295</p>
-          <a href="./html/balls/esp.html"></a>
+          <a href="../balls/esp.html"></a>
         </li>
         <li><i class="i8"></i>
           <p>股票指數</p>
           <p class="num">295</p>
-          <a href="./html/balls/stock.html"></a>
+          <a href="../balls/stock.html"></a>
         </li>
         <li><i class="i9"></i>
           <p>彩球</p>
           <p class="num">295</p>
-          <a href="./html/balls/lottery_inner.html"></a>
+          <a href="../balls/lottery.html"></a>
         </li>
         <li><i class="i10"></i>
           <p>冰球</p>
           <p class="num">295</p>
-          <a href="./html/balls/ice_ball_inner.html"></a>
+          <a href="../balls/ice_ball.html"></a>
         </li>
         <li><i class="i11"></i>
           <p>網球</p>
           <p class="num">295</p>
-          <a href="./html/balls/tennis_inner.html"></a>
+          <a href="../balls/tennis.html"></a>
         </li>
         <li><i class="i12"></i>
           <p>斯諾克</p>
           <p class="num">295</p>
-          <a href="./html/balls/snooker_inner.html"></a>
+          <a href="../balls/snooker.html"></a>
         </li>
         <li><i class="i13"></i>
           <p>排球</p>
           <p class="num">295</p>
-          <a href="./html/balls/v_ball_inner.html"></a>
+          <a href="../balls/v_ball.html"></a>
         </li>
         <li><i class="i14"></i>
           <p>賽車</p>
           <p class="num">295</p>
-          <a href="./html/balls/motor_sport_inner.html"></a>
+          <a href="../balls/motor_sport_inner.html"></a>
         </li>
         <li><i class="i15"></i>
           <p>羽毛球</p>
           <p class="num">295</p>
-          <a href="./html/balls/badminton_inner.html"></a>
+          <a href="../balls/badminton.html"></a>
         </li>
         <li><i class="i16"></i>
-          <p>沙灘足球</p>
-          <p class="num">295</p>
-          <a href="./html/balls/football_inner.html"></a>
-        </li>
-        <li><i class="i17"></i>
           <p>美式足球</p>
           <p class="num">295</p>
-          <a href="./html/balls/bso_inner.html"></a>
+          <a href="../balls/football.html"></a>
+        </li>
+        <li><i class="i17"></i>
+          <p>沙灘足球</p>
+          <p class="num">295</p>
+          <a href="../balls/bso.html"></a>
         </li>
         <li><i class="i18"></i>
           <p>乒乓球</p>
           <p class="num">295</p>
-          <a href="./html/balls/table_ball_inner.html"></a>
+          <a href="../balls/table_ball.html"></a>
         </li>
       </ul>
 
     </div>
     <div class="right">
       <!--0623 card div是方格會被float left影響 使用子物件請用span 或者p i-->
-
-      <div class="wrap none">
-        <div class="search_bar">
-        </div>
-        <!--search_bar-->
+      <div class="search_bar none">
       </div>
+      <!--search_bar-->
       <!--已登入介面-->
-      <div class="sign_in_status">
-        <div class="wrap fixed">
-          <div class="search_bar">
-            <p class="active">所有賽事
-              <a href="./html/balls/soccer.html"></a>
-            </p>
+      <div class="sign_in_status active">
+        <div class="search_bar fixed">
+          <p>所有賽事</p>
+          <div class="line"></div>
+          <p>早盤投注</p>
+          <div class="line"></div>
+          <p class="active">串關投注</p>
+          <div class="line"></div>
+          <p>比賽結果
+            <a href="../balls/soccer_result.html"></a>
+          </p>
+          <div class="right_box">
+            <p>選擇聯盟</p>
             <div class="line"></div>
-            <p>早盤投注</p>
+            <p>時間排序</p>
+            <span class="arrow"></span>
             <div class="line"></div>
-            <p>串關投注
-              <a href="./html/special/soccer_bet_page.html"></a>
-            </p>
-            <div class="line"></div>
-            <p>比賽結果
-              <a href="./html/balls/soccer_result.html"></a>
-            </p>
-            <div class="right_box">
-              <p class="ball_cho">選擇聯盟</p>
-              <span class="arrow"></span>
-              <div class="line"></div>
-              <p>時間排序</p>
-              <span class="arrow"></span>
-              <div class="line"></div>
-              <p class="beginner start">新手版</p>
-              <span class="arrow"></span>
-            </div>
-          </div>
-          <!--fixed 才是真的-->
-          <div class="league_choice">
-            <div class="row">
-              <span class="check active"></span>
-              <p>選取/取消所有聯盟</p>
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>義大利甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>法國甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭足總盃</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>埃及超級聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>阿爾及利亞甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴林超級聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西里約州甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西巴西利亞甲組聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西巴亞諾甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西伯南布哥甲組一聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>比利時盃</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>德國足協盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>法國甲組聯賽-特別投注</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>克羅地亞盃</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>超級盃(在卡塔爾)</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>卡塔爾埃米爾盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>墨西哥超級聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>摩洛哥甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>南美洲球會盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>南美自由盃</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>南非盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>奇幻賽事</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>塞浦路斯盃</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>塞浦路斯甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>沙特超級聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭超級聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>土耳其盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>突尼斯甲組聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>匈牙利甲組聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>希臘盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>西班牙盃</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>亞洲足聯盃外圍賽-附加賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>以色列超級聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>以色列北部國家聯賽U19</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>伊朗超級聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>印度超級聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>印度I聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>印度果阿超級聯賽</p>
-              </div>
-
-            </div>
-            <div class="row">
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>義大利青年盃U19</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭足球協會南部全國聯賽</p>
-              </div>
-              <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭伊斯米安超級聯賽</p>
-              </div>
-
-            </div>
+            <p class="beginner">新手版</p>
+            <span class="arrow"></span>
           </div>
         </div>
-
-
         <div class="book gold">
           <span class="b1"></span>
           <p>進行中的比賽</p>
         </div>
         <ul class="card gold normal_mode">
           <li class="g_name"><i class="i1"></i>
-            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+            <p>足球</p>
           </li>
           <li class="title">
             <div class="b8 t_mid">
@@ -778,6 +1000,7 @@
             <div class="b8 t_mid red">
               <p>0 - 1</p>
             </div>
+            <a href="./soccer_inner.html"></a>
             <div class="b35 t_mid box_3">
               <span class="two_text">
                 <p>主</p>
@@ -804,7 +1027,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/soccer_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -848,7 +1070,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/soccer_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -891,7 +1112,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/soccer_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -934,7 +1154,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/soccer_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -942,15 +1161,365 @@
             </div>
           </li>
         </ul>
-
-
+        <ul class="card gold normal_mode">
+          <li class="g_name"><i class="i2"></i>
+            <p>棒球-<span>NPB日本職業棒球聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b36_3 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b8 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>3 - 5</p>
+            </div>
+            <a href="./basball_inner.html"></a>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>3 - 5</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>3 - 5</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>3 - 5</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="card gold normal_mode">
+          <li class="g_name"><i class="i3"></i>
+            <p>籃球-
+              <span>NBA職業籃球聯賽</span>
+            </p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b36_3 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b8 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>30 - 17</p>
+            </div>
+            <a href="./basketball_inner.html"></a>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>30 - 17</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>30 - 17</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid blue">
+              <p>40:20</p><span class="point"></span>
+            </div>
+            <div class="b36_3 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>30 - 17</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="red">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="red">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
         <div class="book blue">
           <span class="b1"></span>
           <p>未開始的比賽</p>
         </div>
         <ul class="card gray normal_mode">
           <li class="g_name"><i class="i1"></i>
-            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+            <p>足球</p>
           </li>
           <li class="title">
             <div class="b8 t_mid">
@@ -999,7 +1568,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/basketball_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -1039,7 +1607,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/basketball_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -1079,7 +1646,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/basketball_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -1119,7 +1685,6 @@
                   <span class="i_box">
                     <div class="cube num">
                       <span>+99&gt;</span>
-                      <a href="./html/balls/basketball_inner.html"></a>
                     </div>
                   </span>
                 </div>
@@ -1127,15 +1692,333 @@
             </div>
           </li>
         </ul>
-
-
+        <ul class="card gray normal_mode">
+          <li class="g_name"><i class="i2"></i>
+            <p>棒球-<span>NPB日本職業棒球聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b46 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="card gray normal_mode">
+          <li class="g_name"><i class="i3"></i>
+            <p>籃球-
+              <span>NBA職業籃球聯賽</span>
+            </p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b46 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>40:20</p>
+            </div>
+            <div class="b46 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b35 t_mid box_2">
+              <span class="two_text">
+                <p>主</p>
+                <p class="blue">0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p class="blue">0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
         <div class="book gray">
           <span class="b1"></span>
           <p>已完成的比賽</p>
         </div>
         <ul class="card gray normal_mode">
           <li class="g_name"><i class="i1"></i>
-            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+            <p>足球</p>
           </li>
           <li class="title">
             <div class="b8 t_mid">
@@ -1239,120 +2122,159 @@
             </div>
           </li>
         </ul>
+        <ul class="card gray normal_mode">
+          <li class="g_name"><i class="i2"></i>
+            <p>棒球-<span>NPB日本職業棒球聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b36_3 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b8 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>03:45</p>
+            </div>
+            <div class="b36_3 t_left">
+              <p>日本火腿 <span class="blue">VS</span> 橫濱灣星</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>2 - 3</p>
+            </div>
+            <div class="b35 t_mid box_2 no_use">
+              <span class="two_text">
+                <p>主</p>
+                <p>0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p>0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="card gray normal_mode">
+          <li class="g_name"><i class="i3"></i>
+            <p>籃球-
+              <span>NBA職業籃球聯賽</span>
+            </p>
+          </li>
+          <li class="title">
+            <div class="b8 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b36_3 t_mid">
+              <p>隊伍</p>
+            </div>
+            <div class="b8 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b35 t_mid">
+              <p>獨贏</p>
+            </div>
+            <div class="b11 t_mid">
+              <p>更多</p>
+            </div>
+          </li>
+          <li class="row">
+            <div class="b8 t_mid gray">
+              <p>03:45</p>
+            </div>
+            <div class="b36_3 t_left">
+              <p>多倫多暴龍 <span class="blue">VS</span> 聖安東尼奧馬刺</p>
+            </div>
+            <div class="b8 t_mid red">
+              <p>88 - 105</p>
+            </div>
+            <div class="b35 t_mid box_2 no_use">
+              <span class="two_text">
+                <p>主</p>
+                <p>0.960</p>
+              </span>
+              <span class="two_text">
+                <p>客</p>
+                <p>0.960</p>
+              </span>
+            </div>
+            <div class="b11 t_mid icon_box">
+              <div class="ii_wrap">
+                <div class="icon_box_wrap">
+                  <span class="i_box">
+                    <div class="cube tv"></div>
+                  </span>
+                  <span class="i_box heart_size">
+                    <div class="cube heart"></div>
+                  </span>
+                  <span class="i_box">
+                    <div class="cube num">
+                      <span>+99&gt;</span>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
       <!--未登入介面-->
-      <div class="yet_sign_in_status active">
-        <div class="wrap fixed big_size">
-          <div class="search_box">
-            <div class="search_bar big_size">
-              <div class="day_wrap">
-                <div class="l_btn"></div>
-                <span>今日</span>
-                <div class="r_btn"></div>
-              </div>
-              <div class="line"></div>
-              <div class="tag_wrap">
-                <span class="tag"><span>明日</span></span>
-                <span class="tag"><span>本週</span></span>
-                <span class="tag"><span>下週</span></span>
-              </div>
-              <!-- <p class="set">設定</p>
-              <span class="arrow"></span> -->
-              <div class="right_box">
-                <p class="ball_cho">選擇球種</p>
-                <div class="line"></div>
-                <p>時間排序</p>
-                <span class="arrow"></span>
-              </div>
-            </div>
-            <div class="balls_choice">
-              <div class="row">
-                <span class="check active"></span>
-                <p>選取/取消所有球種</p>
-              </div>
-              <div class="row">
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>足球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>棒球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>籃球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>賽馬賽狗</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>電競</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>指數</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>彩球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>冰球</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>網球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>斯諾克</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>排球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>賽車</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>羽毛球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>美式足球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>沙灘足球</p>
-                </div>
-                <div class="b12_5">
-                  <span class="check active"></span>
-                  <p>乒乓球</p>
-                </div>
-              </div>
-            </div>
+      <div class="yet_sign_in_status">
+        <div class="search_bar fixed">
+          <div class="day_wrap">
+            <div class="l_btn"></div>
+            <p>今日</p>
+            <div class="r_btn"></div>
           </div>
-
-
-
-
+          <div class="line"></div>
+          <div class="tag_wrap">
+            <span class="tag">明日</span>
+            <span class="tag">本週</span>
+            <span class="tag">下週</span>
+          </div>
+          <p class="set">設定</p>
+          <span class="arrow"></span>
+          <div class="right_box">
+            <p>選擇聯盟</p>
+            <div class="line"></div>
+            <p>時間排序</p>
+            <span class="arrow"></span>
+          </div>
         </div>
-
         <div class="book gold">
           <span class="b1"></span>
           <p>進行中的比賽</p>
         </div>
         <ul class="card gold normal_mode">
           <li class="g_name"><i class="i1"></i>
-            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+            <p>足球</p>
           </li>
           <li class="title">
             <div class="b10 t_mid">
@@ -1364,19 +2286,19 @@
             <div class="b8 t_mid">
               <p>狀態</p>
             </div>
-            <div class="b25 t_left">
+            <div class="b24 t_left">
               <p>主隊</p>
             </div>
             <div class="b8 t_mid">
               <p>全場</p>
             </div>
-            <div class="b25 t_left">
+            <div class="b24 t_left">
               <p>客隊</p>
             </div>
             <div class="b8 t_mid">
               <p>半場</p>
             </div>
-            <div class="b8 t_mid">
+            <div class="b10 t_mid">
               <p>更多</p>
             </div>
           </li>
@@ -1390,19 +2312,19 @@
             <div class="b8 t_mid red">
               <p>下半場</p>
             </div>
-            <div class="b25 t_left"><em class="wrap">
+            <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
-            <div class="b25 t_left"><em class="wrap">
+            <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
-            <div class="b8 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
+            <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
           <li class="row">
             <div class="b10 t_mid r_bg"><em class="wrap">
@@ -1414,19 +2336,19 @@
             <div class="b8 t_mid red">
               <p>下半場</p>
             </div>
-            <div class="b25 t_left"><em class="wrap">
+            <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
-            <div class="b25 t_left "><em class="wrap">
+            <div class="b24 t_left "><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
-            <div class="b8 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
+            <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
           <li class="row">
             <div class="b10 t_mid p_bg"><em class="wrap">
@@ -1438,19 +2360,19 @@
             <div class="b8 t_mid red">
               <p>下半場</p>
             </div>
-            <div class="b25 t_left"><em class="wrap">
+            <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
-            <div class="b25 t_left "><em class="wrap">
+            <div class="b24 t_left "><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
-            <div class="b8 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
+            <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
           <li class="row">
             <div class="b10 t_mid g_bg"><em class="wrap">
@@ -1462,26 +2384,26 @@
             <div class="b8 t_mid red">
               <p>下半場</p>
             </div>
-            <div class="b25 t_left"><em class="wrap">
+            <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
-            <div class="b25 t_left "><em class="wrap">
+            <div class="b24 t_left "><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
-            <div class="b8 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
+            <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
         </ul>
         <ul class="card gold big_mode">
           <li class="g_name"><i class="i3"></i>
             <p>籃球-
-              <span>NBA職業籃球聯賽</span></p> 
-            <span>02月06日 03:45</span>
+              <span>NBA職業籃球聯賽</span>
+            </p>
           </li>
           <li class="title">
             <div class="b10 t_mid">
@@ -1578,11 +2500,41 @@
                 <p>-</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
+            </div>
+          </li>
+          <li class="title">
+            <div class="b10 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b10 t_mid">
+              <p>狀態</p>
+            </div>
+            <div class="b38 t_mid">
+              <p>主客隊伍</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>1</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>2</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>3</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>4</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>OT</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>總分</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>更多</p>
             </div>
           </li>
           <li class="row">
@@ -1648,11 +2600,9 @@
                 <p>-</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
             </div>
           </li>
         </ul>
@@ -1744,13 +2694,7 @@
                 <span class="point_b"></span>
               </div>
             </div>
-            <div class="b12 t_mid">
-              <span class="bb_base">
-                <div class="b1 active"></div>
-                <div class="b2 active"></div>
-                <div class="b3 active"></div>
-              </span>
-            </div>
+            <div class="b12 t_mid"><span class="bb_base"></span></div>
             <div class="b13 t_mid half">
               <div><em class="wrap">
                   <p class="t_hidden">日本火腿</p>
@@ -1863,11 +2807,68 @@
                 <p>-</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
+            </div>
+          </li>
+          <li class="title">
+            <div class="b10 t_mid">
+              <p>時間</p>
+            </div>
+            <div class="b10 t_mid">
+              <p>狀態</p>
+            </div>
+            <div class="b10 t_mid">
+              <p>BSO</p>
+            </div>
+            <div class="b12 t_mid">
+              <p>最新</p>
+            </div>
+            <div class="b13 t_mid">
+              <p>主客隊伍</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>1</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>2</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>3</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>4</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>5</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>6</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>7</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>8</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>9</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>OT</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>R</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>H</p>
+            </div>
+            <div class="b3 t_mid">
+              <p>E</p>
+            </div>
+            <div class="b6 t_mid">
+              <p>更多</p>
             </div>
           </li>
           <li class="row">
@@ -1895,11 +2896,7 @@
                 <span class="point_b"></span>
               </div>
             </div>
-            <div class="b12 t_mid"><span class="bb_base">
-                <div class="b1"></div>
-                <div class="b2"></div>
-                <div class="b3"></div>
-              </span></div>
+            <div class="b12 t_mid"><span class="bb_base"></span></div>
             <div class="b13 t_mid half">
               <div><em class="wrap">
                   <p class="t_hidden">日本火腿</p>
@@ -2012,11 +3009,9 @@
                 <p>-</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
             </div>
           </li>
         </ul>
@@ -2026,7 +3021,7 @@
         </div>
         <ul class="card gray normal_mode">
           <li class="g_name"><i class="i1"></i>
-            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+            <p>足球</p>
           </li>
           <li class="title">
             <div class="b10 t_mid">
@@ -2167,11 +3162,7 @@
                 <span class="point_b"></span>
               </div>
             </div>
-            <div class="b12 t_mid"><span class="bb_base">
-                <div class="b1"></div>
-                <div class="b2"></div>
-                <div class="b3"></div>
-              </span></div>
+            <div class="b12 t_mid"><span class="bb_base"></span></div>
             <div class="b13 t_mid half">
               <div><em class="wrap">
                   <p class="t_hidden">日本火腿</p>
@@ -2284,11 +3275,9 @@
                 <p>-</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
             </div>
           </li>
 
@@ -2296,8 +3285,8 @@
         <ul class="card gray big_mode">
           <li class="g_name"><i class="i3"></i>
             <p>籃球-
-              <span>NBA職業籃球聯賽</span></p> 
-            <span>02月06日 03:45</span>
+              <span>NBA職業籃球聯賽</span>
+            </p>
           </li>
           <li class="title">
             <div class="b10 t_mid">
@@ -2394,11 +3383,9 @@
                 <p>-</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
             </div>
           </li>
         </ul>
@@ -2408,7 +3395,7 @@
         </div>
         <ul class="card gray normal_mode">
           <li class="g_name"><i class="i1"></i>
-            <p>足球-<span>義大利甲組聯賽</span>&ensp;<span>02月06日&ensp;03:45</span></p>
+            <p>足球</p>
           </li>
           <li class="title">
             <div class="b10 t_mid">
@@ -2450,13 +3437,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -2474,13 +3461,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -2498,13 +3485,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -2522,13 +3509,13 @@
                 <p class="t_hidden">拉素</p>
               </em></div>
             <div class="b8 t_mid red">
-              <p>4 - 2</p>
+              <p>4 - 2</p>
             </div>
             <div class="b24 t_left"><em class="wrap">
                 <p class="t_hidden">維羅納</p>
               </em></div>
             <div class="b8 t_mid gray">
-              <p>3 - 0</p>
+              <p>3 - 0</p>
             </div>
             <div class="b10 t_mid icon_margin"><i class="m_icon tv"></i><i class="m_icon heart"></i></div>
           </li>
@@ -2621,11 +3608,7 @@
                 <span class="point_b"></span>
               </div>
             </div>
-            <div class="b12 t_mid"><span class="bb_base">
-                <div class="b1"></div>
-                <div class="b2"></div>
-                <div class="b3"></div>
-              </span></div>
+            <div class="b12 t_mid"><span class="bb_base"></span></div>
             <div class="b13 t_mid half">
               <div><em class="wrap">
                   <p class="t_hidden">日本火腿</p>
@@ -2738,11 +3721,9 @@
                 <p>0</p>
               </div>
             </div>
-            <div class="b6 t_mid half no_use_top">
-              <div class="half_wrap">
-                <i class="m_icon tv"></i>
-                <i class="m_icon heart"></i>
-              </div>
+            <div class="b6 t_mid half">
+              <div><i class="m_icon tv"></i></div>
+              <div><i class="m_icon heart"></i></div>
             </div>
           </li>
 
@@ -2751,8 +3732,7 @@
       <!--yet_sign_in_status-->
 
     </div>
-    <!--right-->
-    <div class="right_2">
+    <div class="right_2 active">
       <div class="live_page">
         <div class="live_title">
           <div class="wrap">
@@ -2760,7 +3740,7 @@
               <p class="live_t">體育直播</p>
             </div>
             <div class="r_box">
-              <p class="teach_btn">投注教程</p><span class="icon_infor"></span>
+              <p class='teach_btn'>投注教程</p><span class="icon_infor"></span>
             </div>
             <div class="infor_con">
               <p>
@@ -2810,12 +3790,12 @@
                   <li>
                     <div class="drow_left">
                       <h1 class="t_hidden">俱樂部友誼賽</h1>
-                      <p class="t_hidden">布咸美恩斯&ensp;1905</p>
-                      <p class="t_hidden">布拉格斯拉維亞&ensp;B</p>
+                      <p class="t_hidden">布咸美恩斯 1905</p>
+                      <p class="t_hidden">布拉格斯拉維亞 B</p>
                     </div>
                     <div class="drow_right">
                       <div class="change_wrap">
-                        <h1 class="">06/24&ensp;18:00</h1>
+                        <h1 class="">06/24 18:00</h1>
                         <div class="doing_wrap">
                           <p>直播中</p><span class="red_point"></span>
                         </div>
@@ -3576,7 +4556,7 @@
                 </div>
                 <div class="talk_box">
                   <div class="time_tag">
-                    2020-06-29&ensp;18:06:02
+                    2020-06-29 18:06:02
                   </div>
                   <div class="play_wrap">
                     <div class="p_name">
@@ -3595,7 +4575,7 @@
                     </div>
                   </div>
                   <div class="time_tag">
-                    2020-06-29&ensp;18:02:52
+                    2020-06-29 18:02:52
                   </div>
                   <div class="play_wrap">
                     <div class="p_name">
@@ -3614,7 +4594,7 @@
                     </div>
                   </div>
                   <div class="time_tag">
-                    2020-06-29&ensp;18:00:52
+                    2020-06-29 18:00:52
                   </div>
                   <div class="play_wrap myself">
                     <div class="p_name">
@@ -3676,7 +4656,7 @@
           <div class="title">
             <p>熱門賽事</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li><span class="i1"></span> 義大利甲組聯賽<p class="num">(12)</p>
             </li>
             <li><span class="i2"></span>法國甲組聯賽<p class="num">(12)</p>
@@ -3689,7 +4669,7 @@
           <div class="title">
             <p>埃及</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>埃及超級聯賽<p class="num">(12)</p>
             </li>
           </ul>
@@ -3698,7 +4678,7 @@
           <div class="title">
             <p>阿爾及利亞</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>阿爾及利亞甲組聯賽<p class="num">(12)</p>
             </li>
           </ul>
@@ -3707,7 +4687,7 @@
           <div class="title">
             <p>巴林</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>巴林超級聯賽<p class="num">(12)</p>
             </li>
           </ul>
@@ -3716,7 +4696,7 @@
           <div class="title">
             <p>巴西</p><span class="arrow"></span>
           </div>
-          <ul>
+          <ul style="display: none;">
             <li>巴西杯<p class="num">(12)</p>
             </li>
             <li>巴西里約州甲組聯賽<p class="num">(12)</p>
@@ -3733,65 +4713,59 @@
   </div>
   <div class="f_wrap">
     <div class="f_bot">
-      <ul class="yet active">
+      <ul class="yet">
         <li>
           <i class="i2"></i>
           <p class="red">存款</p>
-          <a href="./html/my/my_bill_save.html"></a>
         </li>
         <li>
           <i class="i6"></i>
           <p>幫助中心</p>
-          <a href="./html/my/my_help.html"></a>
         </li>
         <li>
           <i class="i7"></i>
           <p>在線客服</p>
-          <a href="./html/my/my_contact_us_sev.html"></a>
         </li>
         <li>
           <i class="i8"></i>
           <p>APP下載</p>
-          <a href="./html/my/my_download_app.html"></a>
         </li>
       </ul>
-      <ul class="in ">
+      <ul class="in active">
         <li>
           <i class="i2"></i>
           <p class="red">存款</p>
-          <a href="./html/my/my_bill_save.html"></a>
+          <span class="nb">1</span>
         </li>
         <li>
           <i class="i3"></i>
           <p>轉點</p>
-          <a href="./html/my/my_bill_trans.html"></a>
+          <span class="nb">2</span>
         </li>
         <li>
           <i class="i4"></i>
           <p>交易紀錄</p>
           <span class="nb active">6</span>
-          <a href="./html/my/my_bill_trans_record.html"></a>
         </li>
         <li>
           <i class="i5"></i>
           <p>投注紀錄</p>
           <span class="nb active">3</span>
-          <a href="./html/my/my_bill_record.html"></a>
         </li>
         <li>
           <i class="i6"></i>
           <p>幫助中心</p>
-          <a href="./html/my/my_help.html"></a>
+          <span class="nb ">5</span>
         </li>
         <li>
           <i class="i7"></i>
           <p>在線客服</p>
-          <a href="./html/my/my_contact_us_sev.html"></a>
+          <span class="nb">6</span>
         </li>
         <li>
           <i class="i8"></i>
           <p>APP下載</p>
-          <a href="./html/my/my_download_app.html"></a>
+          <span class="nb">7</span>
         </li>
 
       </ul>
@@ -4917,7 +5891,7 @@
         </li>
         <li>
           <i class="i4"></i>
-          <p>transaction<br>record</p>
+          <p>transaction</br>record</p>
           <span class="nb active">6</span>
         </li>
         <li>
@@ -4946,3 +5920,7 @@
   <div class="bg_t"></div>
 </div>
 <!--en-->
+
+<script type="text/javascript" src="../../js/index.js"></script>
+
+</body
