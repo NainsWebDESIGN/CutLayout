@@ -1,11 +1,11 @@
 /* @charset "UTF-8";
- Box sizing rules 
+ Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/*
 @font-face {
   font-family: "my_font";
   src: local("微軟正黑體");
@@ -1552,39 +1552,39 @@ header .time_line .time_box.in_status .right_box {
   left: 0;
   border-radius: 5px;
 }
-.h_wrap .right {
+.h_wrap .h_right {
   float: right;
   line-height: 6em;
   height: 6em;
 }
-.h_wrap .right .sign_yet,
-.h_wrap .right .sign_in {
+.h_wrap .h_right .sign_yet,
+.h_wrap .h_right .sign_in {
   overflow: hidden;
   display: none;
 }
-.h_wrap .right .sign_yet.active,
-.h_wrap .right .sign_in.active {
+.h_wrap .h_right .sign_yet.active,
+.h_wrap .h_right .sign_in.active {
   display: block;
 }
-.h_wrap .right .sign_in.active {
+.h_wrap .h_right .sign_in.active {
   text-align: right;
   padding-right: calc(0.8em + 7px);
 }
-.h_wrap .right .sign_yet {
+.h_wrap .h_right .sign_yet {
   line-height: 6em;
   padding-right: calc(0.8em + 7px);
 }
-.h_wrap .right .sign_yet .wrap {
+.h_wrap .h_right .sign_yet .wrap {
   line-height: 4em;
   display: inline-block;
   vertical-align: middle;
 }
-.h_wrap .right .sign_yet p,
-.h_wrap .right .sign_yet i,
-.h_wrap .right .sign_yet span {
+.h_wrap .h_right .sign_yet p,
+.h_wrap .h_right .sign_yet i,
+.h_wrap .h_right .sign_yet span {
   display: inline-block;
 }
-.h_wrap .right .sign_yet i {
+.h_wrap .h_right .sign_yet i {
   width: 30px;
   height: 30px;
   background: url(../../assets/image/icon/avatar.png) no-repeat;
@@ -1592,39 +1592,39 @@ header .time_line .time_box.in_status .right_box {
   vertical-align: middle;
   margin: 0 4px 0 0;
 }
-.h_wrap .right .sign_yet p {
+.h_wrap .h_right .sign_yet p {
   vertical-align: middle;
   line-height: 100%;
 }
-.h_wrap .right .sign_yet span {
+.h_wrap .h_right .sign_yet span {
   cursor: pointer;
   font-size: 1.2em;
   color: #4d515d;
   position: relative;
 }
-.h_wrap .right .sign_in {
+.h_wrap .h_right .sign_in {
   line-height: 6em;
 }
-.h_wrap .right .sign_in .wrap {
+.h_wrap .h_right .sign_in .wrap {
   display: inline-block;
   line-height: 4em;
   vertical-align: middle;
 }
-.h_wrap .right .sign_in .wrap .row {
+.h_wrap .h_right .sign_in .wrap .row {
   line-height: 1.5em;
 }
-.h_wrap .right .sign_in .wrap .row p {
+.h_wrap .h_right .sign_in .wrap .row p {
   font-size: 1.143em;
   display: inline-block;
   vertical-align: baseline;
 }
-.h_wrap .right .sign_in .wrap .row p.gray {
+.h_wrap .h_right .sign_in .wrap .row p.gray {
   color: #4d515d;
 }
-.h_wrap .right .sign_in .wrap .row p.blue {
+.h_wrap .h_right .sign_in .wrap .row p.blue {
   color: #2d43b6;
 }
-.h_wrap .right .sign_in .wrap .row .vip {
+.h_wrap .h_right .sign_in .wrap .row .vip {
   display: inline-block;
   vertical-align: top;
   line-height: 1.1em;
@@ -1635,7 +1635,7 @@ header .time_line .time_box.in_status .right_box {
   padding: 2px 0;
   text-align: center;
 }
-.h_wrap .right .sign_in .wrap .row .vip i {
+.h_wrap .h_right .sign_in .wrap .row .vip i {
   background: url(../../assets/image/icon/vip.png) no-repeat;
   background-size: 100%;
   display: inline-block;
@@ -1643,7 +1643,7 @@ header .time_line .time_box.in_status .right_box {
   height: 0.8em;
   vertical-align: text-bottom;
 }
-.h_wrap .right .sign_in .wrap .row .vip p {
+.h_wrap .h_right .sign_in .wrap .row .vip p {
   display: inline-block;
   font-family: "微軟正黑體";
   font-weight: bold;
@@ -1653,10 +1653,10 @@ header .time_line .time_box.in_status .right_box {
   font-size: 0.8em;
   white-space: nowrap;
 }
-.h_wrap .right .sign_in .wrap .row.bot {
+.h_wrap .h_right .sign_in .wrap .row.bot {
   text-align: left;
 }
-.h_wrap .right .sign_in .wrap .row.bot i {
+.h_wrap .h_right .sign_in .wrap .row.bot i {
   width: 1.2em;
   height: 1.2em;
   background: url(../../assets/image/icon/q_icon.png) no-repeat;
@@ -1664,13 +1664,13 @@ header .time_line .time_box.in_status .right_box {
   display: inline-block;
   vertical-align: middle;
 }
-.h_wrap .right .sign_in .wrap .row.bot .my_money {
+.h_wrap .h_right .sign_in .wrap .row.bot .my_money {
   display: inline-block;
   vertical-align: middle;
   padding-top: 4px;
   line-height: 1;
 }
-.h_wrap .right .sign_in .wrap .row.bot .sign_out {
+.h_wrap .h_right .sign_in .wrap .row.bot .sign_out {
   background: linear-gradient(to bottom, #ddb692 0%, #b78a61 100%);
   border: 1px solid #ffeddd;
   color: #fff;
@@ -1679,10 +1679,10 @@ header .time_line .time_box.in_status .right_box {
   padding: 4px 9px 2px;
   width: 3.5em;
 }
-.h_wrap .right .sign_in .wrap .row.bot .sign_out:hover {
+.h_wrap .h_right .sign_in .wrap .row.bot .sign_out:hover {
   background: linear-gradient(to bottom, #b78a61 0%, #ddb692 100%);
 }
-.h_wrap .right .sign_in .wrap .row.bot .sign_out p {
+.h_wrap .h_right .sign_in .wrap .row.bot .sign_out p {
   font-size: 1.071em;
   line-height: 1;
   vertical-align: middle;
@@ -9873,7 +9873,8 @@ body {
 .container main.live_mode .left .index li .num {
   right: 0.5em;
 }
-.container main .right {
+.container main .right,
+.right {
   width: 83.2%;
   float: left;
   padding: 0.8em 0.8em 8em 0.8em;
@@ -9884,29 +9885,35 @@ body {
   overflow-y: scroll;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .right {
+  .container main .right,
+  .right {
     position: static;
   }
 }
-.container main .right::-webkit-scrollbar {
+.container main .right::-webkit-scrollbar,
+.right::-webkit-scrollbar {
   width: 0.5em;
   position: absolute;
   left: 0;
 }
-.container main .right::-webkit-scrollbar-thumb {
+.container main .right::-webkit-scrollbar-thumb,
+.right::-webkit-scrollbar-thumb {
   background: #b9becf;
   border-radius: 10px;
 }
-.container main .right::-webkit-scrollbar-track {
+.container main .right::-webkit-scrollbar-track,
+.right::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .right .wrap.none {
+  .container main .right .wrap.none,
+  .right .wrap.none {
     display: none;
   }
 }
-.container main .right .wrap.fixed.fixed.fixed.fixed {
+.container main .right .wrap.fixed.fixed.fixed.fixed,
+.right .wrap.fixed.fixed.fixed.fixed {
   position: fixed;
   top: 0.8em;
   width: 968px;
@@ -9916,34 +9923,42 @@ body {
   border-radius: 5px;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .right .wrap.fixed.fixed.fixed.fixed {
+  .container main .right .wrap.fixed.fixed.fixed.fixed,
+  .right .wrap.fixed.fixed.fixed.fixed {
     position: static;
     width: 100%;
   }
 }
-.container main .right .wrap.fixed.fixed.fixed.fixed .search_bar {
+.container main .right .wrap.fixed.fixed.fixed.fixed .search_bar,
+.right .wrap.fixed.fixed.fixed.fixed .search_bar {
   overflow: visible;
 }
-.container main .right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card {
+.container main .right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card,
+.right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card {
   position: absolute;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card {
+  .container main .right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card,
+  .right .wrap.fixed.fixed.fixed.fixed .bill_record_d_card {
     position: static;
   }
 }
-.container main .right .wrap.fixed.fixed.fixed.fixed.big_size {
+.container main .right .wrap.fixed.fixed.fixed.fixed.big_size,
+.right .wrap.fixed.fixed.fixed.fixed.big_size {
   width: calc((83.2% - 1.6em) - 6px);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .right .wrap.fixed.fixed.fixed.fixed.big_size {
+  .container main .right .wrap.fixed.fixed.fixed.fixed.big_size,
+  .right .wrap.fixed.fixed.fixed.fixed.big_size {
     width: 100%;
   }
 }
-.container main .right .wrap.fixed.fixed.fixed.fixed.active {
+.container main .right .wrap.fixed.fixed.fixed.fixed.active,
+.right .wrap.fixed.fixed.fixed.fixed.active {
   display: block;
 }
-.container main .right .search_bar {
+.container main .right .search_bar,
+.right .search_bar {
   width: 100%;
   line-height: 3.214em;
   height: 3.214em;
@@ -9955,27 +9970,33 @@ body {
   z-index: 2;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .right .search_bar.none {
+  .container main .right .search_bar.none,
+  .right .search_bar.none {
     display: none;
   }
 }
-.container main .right .search_bar .blue {
+.container main .right .search_bar .blue,
+.right .search_bar .blue {
   color: #556de7;
 }
-.container main .right .search_bar.fixed {
+.container main .right .search_bar.fixed,
+.right .search_bar.fixed {
   position: fixed;
   top: 0.7em;
   width: calc((65.5% - 1.6em) - 4px);
   box-shadow: 0 0 6px 1px #bcc2dc;
   z-index: 5;
 }
-.container main .right .search_bar.fixed.big_size {
+.container main .right .search_bar.fixed.big_size,
+.right .search_bar.fixed.big_size {
   width: calc((83.2% - 1.6em) - 4px);
 }
-.container main .right .search_bar.fixed.active {
+.container main .right .search_bar.fixed.active,
+.right .search_bar.fixed.active {
   display: block;
 }
-.container main .right .search_bar .back_wrap {
+.container main .right .search_bar .back_wrap,
+.right .search_bar .back_wrap {
   display: inline-block;
   line-height: 1.1em;
   padding: 2px 0.5em;
@@ -9987,10 +10008,12 @@ body {
   position: relative;
   z-index: 1;
 }
-.container main .right .search_bar .back_wrap:hover {
+.container main .right .search_bar .back_wrap:hover,
+.right .search_bar .back_wrap:hover {
   background: linear-gradient(to bottom, #2f45b7 0%, #8f9cdc 100%);
 }
-.container main .right .search_bar .back_wrap .arrow_w {
+.container main .right .search_bar .back_wrap .arrow_w,
+.right .search_bar .back_wrap .arrow_w {
   background: url(../../assets/image/icon/arrow_w.png) no-repeat;
   background-size: 100%;
   width: 0.6em;
@@ -10001,18 +10024,24 @@ body {
   margin: 0 0.3em 0 0;
   cursor: pointer;
 }
-.container main .right .search_bar .back_wrap p {
+.container main .right .search_bar .back_wrap p,
+.right .search_bar .back_wrap p {
   color: #fff;
 }
 .container main .right .search_bar .back_wrap p:hover,
-.container main .right .search_bar .back_wrap p.active {
+.container main .right .search_bar .back_wrap p.active,
+.right .search_bar .back_wrap p:hover,
+.right .search_bar .back_wrap p.active {
   color: #fff;
 }
 .container main .right .search_bar .back_wrap p:hover:before,
-.container main .right .search_bar .back_wrap p.active:before {
+.container main .right .search_bar .back_wrap p.active:before,
+.right .search_bar .back_wrap p:hover:before,
+.right .search_bar .back_wrap p.active:before {
   display: none;
 }
-.container main .right .search_bar p {
+.container main .right .search_bar p,
+.right .search_bar p {
   display: inline-block;
   font-size: 1.071em;
   color: #4d515d;
@@ -10023,11 +10052,15 @@ body {
   position: relative;
 }
 .container main .right .search_bar p.active,
-.container main .right .search_bar p:hover {
+.container main .right .search_bar p:hover,
+.right .search_bar p.active,
+.right .search_bar p:hover {
   color: #6272cc;
 }
 .container main .right .search_bar p.active:before,
-.container main .right .search_bar p:hover:before {
+.container main .right .search_bar p:hover:before,
+.right .search_bar p.active:before,
+.right .search_bar p:hover:before {
   content: "";
   position: absolute;
   bottom: -14px;
@@ -10037,10 +10070,12 @@ body {
   border-radius: 170px;
   background: #6272cc;
 }
-.container main .right .search_bar p.set {
+.container main .right .search_bar p.set,
+.right .search_bar p.set {
   margin: 0 0 0 0.5em;
 }
-.container main .right .search_bar span {
+.container main .right .search_bar span,
+.right .search_bar span {
   display: inline-block;
   font-size: 1.071em;
   color: #4d515d;
@@ -10049,7 +10084,8 @@ body {
   padding: 2px 0 0;
   position: relative;
 }
-.container main .right .search_bar .arrow {
+.container main .right .search_bar .arrow,
+.right .search_bar .arrow {
   background: url(../../assets/image/icon/arrow_g.png) no-repeat;
   background-size: 100%;
   width: 0.4em;
@@ -10061,12 +10097,14 @@ body {
   margin: 0 0 0 0.5em;
   cursor: pointer;
 }
-.container main .right .search_bar .day_wrap {
+.container main .right .search_bar .day_wrap,
+.right .search_bar .day_wrap {
   float: left;
   width: 10.5%;
   text-align: center;
 }
-.container main .right .search_bar .day_wrap .l_btn {
+.container main .right .search_bar .day_wrap .l_btn,
+.right .search_bar .day_wrap .l_btn {
   width: 0;
   height: 0;
   border-style: solid;
@@ -10076,7 +10114,8 @@ body {
   line-height: 1;
   vertical-align: middle;
 }
-.container main .right .search_bar .day_wrap .r_btn {
+.container main .right .search_bar .day_wrap .r_btn,
+.right .search_bar .day_wrap .r_btn {
   width: 0;
   height: 0;
   border-style: solid;
@@ -10087,10 +10126,13 @@ body {
   vertical-align: middle;
 }
 .container main .right .search_bar .day_wrap .l_btn,
-.container main .right .search_bar .day_wrap .r_btn {
+.container main .right .search_bar .day_wrap .r_btn,
+.right .search_bar .day_wrap .l_btn,
+.right .search_bar .day_wrap .r_btn {
   cursor: pointer;
 }
-.container main .right .search_bar .day_wrap span {
+.container main .right .search_bar .day_wrap span,
+.right .search_bar .day_wrap span {
   display: inline-block;
   width: 60%;
   background: #6272cc;
@@ -10102,11 +10144,13 @@ body {
   vertical-align: middle;
   margin: 0 0.25em 0;
 }
-.container main .right .search_bar .tag_wrap {
+.container main .right .search_bar .tag_wrap,
+.right .search_bar .tag_wrap {
   display: inline-block;
   margin: 0 0 0 0.5em;
 }
-.container main .right .search_bar .tag_wrap .tag {
+.container main .right .search_bar .tag_wrap .tag,
+.right .search_bar .tag_wrap .tag {
   margin: 0 4px 0 0;
   border: 1px solid #3145b2;
   line-height: 1.1;
@@ -10118,36 +10162,48 @@ body {
   font-size: 14px;
   cursor: pointer;
 }
-.container main .right .search_bar .tag_wrap .tag span {
+.container main .right .search_bar .tag_wrap .tag span,
+.right .search_bar .tag_wrap .tag span {
   font-size: 1.071em;
   line-height: 1;
   vertical-align: middle;
   color: #3145b2;
 }
-.container main .right .search_bar .tag_wrap .tag:last-child {
+.container main .right .search_bar .tag_wrap .tag:last-child,
+.right .search_bar .tag_wrap .tag:last-child {
   margin: 0;
 }
 .container main .right .search_bar .tag_wrap .tag:hover,
-.container main .right .search_bar .tag_wrap .tag.active {
+.container main .right .search_bar .tag_wrap .tag.active,
+.right .search_bar .tag_wrap .tag:hover,
+.right .search_bar .tag_wrap .tag.active {
   background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
 }
 .container main .right .search_bar .tag_wrap .tag:hover span,
-.container main .right .search_bar .tag_wrap .tag.active span {
+.container main .right .search_bar .tag_wrap .tag.active span,
+.right .search_bar .tag_wrap .tag:hover span,
+.right .search_bar .tag_wrap .tag.active span {
   color: #fff;
 }
-.container main .right .search_bar .right_box {
+.container main .right .search_bar .right_box,
+.right .search_bar .right_box {
   float: right;
   height: 100%;
 }
-.container main .right .search_bar .edit {
+.container main .right .search_bar .edit,
+.right .search_bar .edit {
   display: none;
 }
-.container main .right .search_bar .edit.active {
+.container main .right .search_bar .edit.active,
+.right .search_bar .edit.active {
   display: block;
 }
 .container main .right .search_bar .edit .do,
 .container main .right .search_bar .edit .delete,
-.container main .right .search_bar .edit .cancel {
+.container main .right .search_bar .edit .cancel,
+.right .search_bar .edit .do,
+.right .search_bar .edit .delete,
+.right .search_bar .edit .cancel {
   display: inline-block;
   border: 1px solid #3145b2;
   line-height: 100%;
@@ -10158,33 +10214,47 @@ body {
 }
 .container main .right .search_bar .edit .do span,
 .container main .right .search_bar .edit .delete span,
-.container main .right .search_bar .edit .cancel span {
+.container main .right .search_bar .edit .cancel span,
+.right .search_bar .edit .do span,
+.right .search_bar .edit .delete span,
+.right .search_bar .edit .cancel span {
   font-size: 1.1em;
   color: #3145b2;
 }
 .container main .right .search_bar .edit .do:hover,
 .container main .right .search_bar .edit .delete:hover,
-.container main .right .search_bar .edit .cancel:hover {
+.container main .right .search_bar .edit .cancel:hover,
+.right .search_bar .edit .do:hover,
+.right .search_bar .edit .delete:hover,
+.right .search_bar .edit .cancel:hover {
   background: #3145b2;
 }
 .container main .right .search_bar .edit .do:hover span,
 .container main .right .search_bar .edit .delete:hover span,
-.container main .right .search_bar .edit .cancel:hover span {
+.container main .right .search_bar .edit .cancel:hover span,
+.right .search_bar .edit .do:hover span,
+.right .search_bar .edit .delete:hover span,
+.right .search_bar .edit .cancel:hover span {
   color: #fff;
 }
-.container main .right .search_bar .edit .delete {
+.container main .right .search_bar .edit .delete,
+.right .search_bar .edit .delete {
   margin-right: 0.2em;
 }
-.container main .right .search_bar .edit .doing {
+.container main .right .search_bar .edit .doing,
+.right .search_bar .edit .doing {
   display: none;
 }
-.container main .right .search_bar .edit.editing .do {
+.container main .right .search_bar .edit.editing .do,
+.right .search_bar .edit.editing .do {
   display: none;
 }
-.container main .right .search_bar .edit.editing .doing {
+.container main .right .search_bar .edit.editing .doing,
+.right .search_bar .edit.editing .doing {
   display: inline-block;
 }
-.container main .right .search_bar .line {
+.container main .right .search_bar .line,
+.right .search_bar .line {
   background: #bcbcbc;
   width: 1px;
   height: 60%;
@@ -10193,7 +10263,8 @@ body {
   vertical-align: middle;
   margin: 0 0.5em;
 }
-.container main .right .search_bar .row_line {
+.container main .right .search_bar .row_line,
+.right .search_bar .row_line {
   background: #3145b2;
   width: 0.5em;
   height: 0.125em;
@@ -10202,7 +10273,8 @@ body {
   vertical-align: middle;
   margin: 0 0.25em;
 }
-.container main .right .search_bar span.date_icon {
+.container main .right .search_bar span.date_icon,
+.right .search_bar span.date_icon {
   width: 1.3em;
   height: 1.3em;
   vertical-align: middle;
@@ -10212,7 +10284,8 @@ body {
   cursor: pointer;
   margin-right: 4px;
 }
-.container main .right .search_bar span.tri {
+.container main .right .search_bar span.tri,
+.right .search_bar span.tri {
   width: 0;
   height: 0;
   border-style: solid;
@@ -10222,7 +10295,8 @@ body {
   vertical-align: middle;
   margin: -0.125em 0 0 0.25em;
 }
-.container main .right .search_bar .day_box {
+.container main .right .search_bar .day_box,
+.right .search_bar .day_box {
   display: inline-block;
   vertical-align: middle;
   width: auto;
@@ -10238,16 +10312,23 @@ body {
 }
 .container main .right .search_bar .day_box:active .day_drow,
 .container main .right .search_bar .day_box:hover .day_drow,
-.container main .right .search_bar .day_box.active .day_drow {
+.container main .right .search_bar .day_box.active .day_drow,
+.right .search_bar .day_box:active .day_drow,
+.right .search_bar .day_box:hover .day_drow,
+.right .search_bar .day_box.active .day_drow {
   display: block;
 }
 .container main .right .search_bar .day_box:active span.tri,
 .container main .right .search_bar .day_box:hover span.tri,
-.container main .right .search_bar .day_box.active span.tri {
+.container main .right .search_bar .day_box.active span.tri,
+.right .search_bar .day_box:active span.tri,
+.right .search_bar .day_box:hover span.tri,
+.right .search_bar .day_box.active span.tri {
   transform: rotate(180deg);
   transition: all 0.2s ease-in-out;
 }
-.container main .right .search_bar .day_box .day_drow {
+.container main .right .search_bar .day_box .day_drow,
+.right .search_bar .day_box .day_drow {
   display: none;
   line-height: 1.786em;
   width: calc(100% + 2px);
@@ -10261,21 +10342,25 @@ body {
   background: #fff;
   z-index: 1;
 }
-.container main .right .search_bar .day_box .day_drow span {
+.container main .right .search_bar .day_box .day_drow span,
+.right .search_bar .day_box .day_drow span {
   width: 100%;
   padding: 0 0.5em;
   line-height: 1.786em;
 }
-.container main .right .search_bar .day_box .day_drow span:hover {
+.container main .right .search_bar .day_box .day_drow span:hover,
+.right .search_bar .day_box .day_drow span:hover {
   background: #3145b2;
   color: #fff;
 }
-.container main .right .teach {
+.container main .right .teach,
+.right .teach {
   background: transparent;
   padding: 0;
   margin-top: 0.8rem;
 }
-.container main .right .teach p {
+.container main .right .teach p,
+.right .teach p {
   width: 10%;
   padding: 0.5rem 0;
   text-align: center;
@@ -10285,21 +10370,27 @@ body {
   border-radius: 5px;
 }
 .container main .right .teach p.active,
-.container main .right .teach p:hover {
+.container main .right .teach p:hover,
+.right .teach p.active,
+.right .teach p:hover {
   color: #fff;
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   border: 1px solid #444f8b;
 }
 .container main .right .teach p.active:before,
-.container main .right .teach p:hover:before {
+.container main .right .teach p:hover:before,
+.right .teach p.active:before,
+.right .teach p:hover:before {
   content: "";
   height: 0;
   background: #6272cc;
 }
-.container main .right .search_box {
+.container main .right .search_box,
+.right .search_box {
   position: relative;
 }
-.container main .left {
+.container main .left,
+.left {
   width: 16.8%;
   float: left;
   top: 0;
@@ -10313,33 +10404,41 @@ body {
   padding: 0 0 8em;
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .container main .left {
+  .container main .left,
+  .left {
     position: static;
   }
 }
-.container main .left.my_page {
+.container main .left.my_page,
+.left.my_page {
   width: 20%;
 }
-.container main .left::-webkit-scrollbar {
+.container main .left::-webkit-scrollbar,
+.left::-webkit-scrollbar {
   width: 0.5em;
   position: absolute;
   left: 0;
 }
-.container main .left::-webkit-scrollbar-thumb {
+.container main .left::-webkit-scrollbar-thumb,
+.left::-webkit-scrollbar-thumb {
   background: #b9becf;
   border-radius: 10px;
 }
-.container main .left::-webkit-scrollbar-track {
+.container main .left::-webkit-scrollbar-track,
+.left::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
-.container main .left ul.index {
+.container main .left ul.index,
+.left ul.index {
   display: none;
 }
-.container main .left ul.index.active {
+.container main .left ul.index.active,
+.left ul.index.active {
   display: block;
 }
-.container main .left ul.index li {
+.container main .left ul.index li,
+.left ul.index li {
   line-height: 3.8em;
   width: 100%;
   padding: 0 0 0 1em;
@@ -10347,10 +10446,13 @@ body {
   position: relative;
 }
 .container main .left ul.index li i,
-.container main .left ul.index li p {
+.container main .left ul.index li p,
+.left ul.index li p,
+.left ul.index li i {
   display: inline-block;
 }
-.container main .left ul.index li i {
+.container main .left ul.index li i,
+.left ul.index li i {
   width: 1.5em;
   height: 1.5em;
   background: url(../../assets/image/icon/list.png) no-repeat;
@@ -10358,68 +10460,88 @@ body {
   vertical-align: middle;
   margin: 0 0.5em 0 0;
 }
-.container main .left ul.index li i.i1 {
+.container main .left ul.index li i.i1,
+.left ul.index li i.i1 {
   background-position: 0em 0;
 }
-.container main .left ul.index li i.i2 {
+.container main .left ul.index li i.i2,
+.left ul.index li i.i2 {
   background-position: -1.5em 0;
 }
-.container main .left ul.index li i.i3 {
+.container main .left ul.index li i.i3,
+.left ul.index li i.i3 {
   background-position: -3em 0;
 }
-.container main .left ul.index li i.i4 {
+.container main .left ul.index li i.i4,
+.left ul.index li i.i4 {
   background-position: -4.5em 0;
 }
-.container main .left ul.index li i.i5 {
+.container main .left ul.index li i.i5,
+.left ul.index li i.i5 {
   background-position: -6em 0;
 }
-.container main .left ul.index li i.i6 {
+.container main .left ul.index li i.i6,
+.left ul.index li i.i6 {
   background-position: -7.5em 0;
 }
-.container main .left ul.index li i.i7 {
+.container main .left ul.index li i.i7,
+.left ul.index li i.i7 {
   background-position: -9em 0;
 }
-.container main .left ul.index li i.i8 {
+.container main .left ul.index li i.i8,
+.left ul.index li i.i8 {
   background-position: -10.5em 0;
 }
-.container main .left ul.index li i.i9 {
+.container main .left ul.index li i.i9,
+.left ul.index li i.i9 {
   background-position: -12em 0;
 }
-.container main .left ul.index li i.i10 {
+.container main .left ul.index li i.i10,
+.left ul.index li i.i10 {
   background-position: -13.5em 0;
 }
-.container main .left ul.index li i.i11 {
+.container main .left ul.index li i.i11,
+.left ul.index li i.i11 {
   background-position: -15em 0;
 }
-.container main .left ul.index li i.i12 {
+.container main .left ul.index li i.i12,
+.left ul.index li i.i12 {
   background-position: -16.5em 0;
 }
-.container main .left ul.index li i.i13 {
+.container main .left ul.index li i.i13,
+.left ul.index li i.i13 {
   background-position: -18em 0;
 }
-.container main .left ul.index li i.i14 {
+.container main .left ul.index li i.i14,
+.left ul.index li i.i14 {
   background-position: -19.5em 0;
 }
-.container main .left ul.index li i.i15 {
+.container main .left ul.index li i.i15,
+.left ul.index li i.i15 {
   background-position: -21em 0;
 }
-.container main .left ul.index li i.i16 {
+.container main .left ul.index li i.i16,
+.left ul.index li i.i16 {
   background-position: -22.5em 0;
 }
-.container main .left ul.index li i.i17 {
+.container main .left ul.index li i.i17,
+.left ul.index li i.i17 {
   background-position: -24em 0;
 }
-.container main .left ul.index li i.i18 {
+.container main .left ul.index li i.i18,
+.left ul.index li i.i18 {
   background-position: -25.5em 0;
 }
-.container main .left ul.index li p {
+.container main .left ul.index li p,
+.left ul.index li p {
   font-size: 1.15em;
   line-height: 100%;
   width: 50%;
   vertical-align: middle;
   padding-top: 4px;
 }
-.container main .left ul.index li p.num {
+.container main .left ul.index li p.num,
+.left ul.index li p.num {
   position: absolute;
   right: 0.9em;
   top: 50%;
@@ -10434,110 +10556,174 @@ body {
 }
 .container main .left ul.index li:hover,
 .container main .left ul.index li:active,
-.container main .left ul.index li.active {
+.container main .left ul.index li.active,
+.left ul.index li:hover,
+.left ul.index li:active,
+.left ul.index li.active {
   background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
 }
 .container main .left ul.index li:hover p,
 .container main .left ul.index li:active p,
-.container main .left ul.index li.active p {
+.container main .left ul.index li.active p,
+.left ul.index li:hover p,
+.left ul.index li:active p,
+.left ul.index li.active p {
   color: #fff;
 }
 .container main .left ul.index li:hover p.num,
 .container main .left ul.index li:active p.num,
-.container main .left ul.index li.active p.num {
+.container main .left ul.index li.active p.num,
+.left ul.index li:hover p.num,
+.left ul.index li:active p.num,
+.left ul.index li.active p.num {
   background: #fff;
   color: #3549b7;
 }
 .container main .left ul.index li:hover i.i1,
 .container main .left ul.index li:active i.i1,
-.container main .left ul.index li.active i.i1 {
+.container main .left ul.index li.active i.i1,
+.left ul.index li:hover i.i1,
+.left ul.index li:active i.i1,
+.left ul.index li.active i.i1 {
   background-position: 0em -1.5em;
 }
 .container main .left ul.index li:hover i.i2,
 .container main .left ul.index li:active i.i2,
-.container main .left ul.index li.active i.i2 {
+.container main .left ul.index li.active i.i2,
+.left ul.index li:hover i.i2,
+.left ul.index li:active i.i2,
+.left ul.index li.active i.i2 {
   background-position: -1.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i3,
 .container main .left ul.index li:active i.i3,
-.container main .left ul.index li.active i.i3 {
+.container main .left ul.index li.active i.i3,
+.left ul.index li:hover i.i3,
+.left ul.index li:active i.i3,
+.left ul.index li.active i.i3 {
   background-position: -3em -1.5em;
 }
 .container main .left ul.index li:hover i.i4,
 .container main .left ul.index li:active i.i4,
-.container main .left ul.index li.active i.i4 {
+.container main .left ul.index li.active i.i4,
+.left ul.index li:hover i.i4,
+.left ul.index li:active i.i4,
+.left ul.index li.active i.i4 {
   background-position: -4.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i5,
 .container main .left ul.index li:active i.i5,
-.container main .left ul.index li.active i.i5 {
+.container main .left ul.index li.active i.i5,
+.left ul.index li:hover i.i5,
+.left ul.index li:active i.i5,
+.left ul.index li.active i.i5 {
   background-position: -6em -1.5em;
 }
 .container main .left ul.index li:hover i.i6,
 .container main .left ul.index li:active i.i6,
-.container main .left ul.index li.active i.i6 {
+.container main .left ul.index li.active i.i6,
+.left ul.index li:hover i.i6,
+.left ul.index li:active i.i6,
+.left ul.index li.active i.i6 {
   background-position: -7.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i7,
 .container main .left ul.index li:active i.i7,
-.container main .left ul.index li.active i.i7 {
+.container main .left ul.index li.active i.i7,
+.left ul.index li:hover i.i7,
+.left ul.index li:active i.i7,
+.left ul.index li.active i.i7 {
   background-position: -9em -1.5em;
 }
 .container main .left ul.index li:hover i.i8,
 .container main .left ul.index li:active i.i8,
-.container main .left ul.index li.active i.i8 {
+.container main .left ul.index li.active i.i8,
+.left ul.index li:hover i.i8,
+.left ul.index li:active i.i8,
+.left ul.index li.active i.i8 {
   background-position: -10.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i9,
 .container main .left ul.index li:active i.i9,
-.container main .left ul.index li.active i.i9 {
+.container main .left ul.index li.active i.i9,
+.left ul.index li:hover i.i9,
+.left ul.index li:active i.i9,
+.left ul.index li.active i.i9 {
   background-position: -12em -1.5em;
 }
 .container main .left ul.index li:hover i.i10,
 .container main .left ul.index li:active i.i10,
-.container main .left ul.index li.active i.i10 {
+.container main .left ul.index li.active i.i10,
+.left ul.index li:hover i.i10,
+.left ul.index li:active i.i10,
+.left ul.index li.active i.i10 {
   background-position: -13.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i11,
 .container main .left ul.index li:active i.i11,
-.container main .left ul.index li.active i.i11 {
+.container main .left ul.index li.active i.i11,
+.left ul.index li:hover i.i11,
+.left ul.index li:active i.i11,
+.left ul.index li.active i.i11 {
   background-position: -15em -1.5em;
 }
 .container main .left ul.index li:hover i.i12,
 .container main .left ul.index li:active i.i12,
-.container main .left ul.index li.active i.i12 {
+.container main .left ul.index li.active i.i12,
+.left ul.index li:hover i.i12,
+.left ul.index li:active i.i12,
+.left ul.index li.active i.i12 {
   background-position: -16.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i13,
 .container main .left ul.index li:active i.i13,
-.container main .left ul.index li.active i.i13 {
+.container main .left ul.index li.active i.i13,
+.left ul.index li:hover i.i13,
+.left ul.index li:active i.i13,
+.left ul.index li.active i.i13 {
   background-position: -18em -1.5em;
 }
 .container main .left ul.index li:hover i.i14,
 .container main .left ul.index li:active i.i14,
-.container main .left ul.index li.active i.i14 {
+.container main .left ul.index li.active i.i14,
+.left ul.index li:hover i.i14,
+.left ul.index li:active i.i14,
+.left ul.index li.active i.i14 {
   background-position: -19.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i15,
 .container main .left ul.index li:active i.i15,
-.container main .left ul.index li.active i.i15 {
+.container main .left ul.index li.active i.i15,
+.left ul.index li:hover i.i15,
+.left ul.index li:active i.i15,
+.left ul.index li.active i.i15 {
   background-position: -21em -1.5em;
 }
 .container main .left ul.index li:hover i.i16,
 .container main .left ul.index li:active i.i16,
-.container main .left ul.index li.active i.i16 {
+.container main .left ul.index li.active i.i16,
+.left ul.index li:hover i.i16,
+.left ul.index li:active i.i16,
+.left ul.index li.active i.i16 {
   background-position: -22.5em -1.5em;
 }
 .container main .left ul.index li:hover i.i17,
 .container main .left ul.index li:active i.i17,
-.container main .left ul.index li.active i.i17 {
+.container main .left ul.index li.active i.i17,
+.left ul.index li:hover i.i17,
+.left ul.index li:active i.i17,
+.left ul.index li.active i.i17 {
   background-position: -24em -1.5em;
 }
 .container main .left ul.index li:hover i.i18,
 .container main .left ul.index li:active i.i18,
-.container main .left ul.index li.active i.i18 {
+.container main .left ul.index li.active i.i18,
+.left ul.index li:hover i.i18,
+.left ul.index li:active i.i18,
+.left ul.index li.active i.i18 {
   background-position: -25.5em -1.5em;
 }
+
 .container main .right_2 {
   width: 22.2%;
   height: auto;

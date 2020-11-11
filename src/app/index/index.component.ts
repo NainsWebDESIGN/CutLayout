@@ -13,3 +13,46 @@ export class IndexComponent implements OnInit {
   }
 
 }
+
+
+@Component({
+  selector: 'index-header',
+  templateUrl: './header.html',
+  styleUrls: ['./index.component.css']
+})
+export class IndexHeader implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-left',
+  templateUrl: './left.html',
+  styleUrls: ['./index.component.css']
+})
+export class IndexLeft implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-right',
+  templateUrl: './right.html',
+  styleUrls: ['./index.component.css']
+})
+export class IndexRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

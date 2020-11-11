@@ -7,14 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RoutingModule } from './Routes.routing';
 import { ErrorComponent } from './Error/Error.component';
-import { IndexComponent } from './index/index.component';
+import { IndexComponent, IndexHeader, IndexLeft, IndexRight } from './index/index.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorComponent,
-    IndexComponent
+    IndexComponent,
+    IndexHeader,
+    IndexLeft,
+    IndexRight
   ],
   imports: [
     BrowserModule,
