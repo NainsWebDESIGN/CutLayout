@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class IndexComponent implements OnInit {
 
@@ -18,7 +18,7 @@ export class IndexComponent implements OnInit {
 @Component({
   selector: 'index-header',
   templateUrl: './header.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class IndexHeader implements OnInit {
 
@@ -32,7 +32,7 @@ export class IndexHeader implements OnInit {
 @Component({
   selector: 'index-left',
   templateUrl: './left.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class IndexLeft implements OnInit {
 
@@ -46,7 +46,7 @@ export class IndexLeft implements OnInit {
 @Component({
   selector: 'index-right',
   templateUrl: './right.html',
-  styleUrls: ['./index.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class IndexRight implements OnInit {
 
