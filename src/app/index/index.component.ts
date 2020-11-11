@@ -56,3 +56,17 @@ export class IndexRight implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'index-login',
+  templateUrl: './login.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexLogin implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
