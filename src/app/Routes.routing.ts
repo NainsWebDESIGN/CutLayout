@@ -22,6 +22,15 @@ import { BsoComponent } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
 import { Bill_saveComponent } from './pageHTML/My/bill_save/bill_save.component';
 import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
+import { Soccer_resaultComponent } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
+import { Soccer_innerComponent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
+import { Basketball_innerComponent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
+import { HelpComponent } from './PageHTML/My/help/help.component';
+import { Contact_us_sevComponent } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
+import { Download_appComponent } from './PageHTML/My/download_app/download_app.component';
+import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.component';
+import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
+import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
@@ -47,6 +56,15 @@ const routes: Routes = [
   { path: 'tableball', component: Table_ballComponent },
   { path: 'billsave', component: Bill_saveComponent },
   { path: 'soccerbet', component: Soccer_betComponent },
+  { path: 'soccerresault', component: Soccer_resaultComponent },
+  { path: 'soccerinner', component: Soccer_innerComponent },
+  { path: 'basketballinner', component: Basketball_innerComponent },
+  { path: 'help', component: HelpComponent },
+  { path: 'contactus', component: Contact_us_sevComponent },
+  { path: 'download', component: Download_appComponent },
+  { path: 'billtrans', component: Bill_transComponent },
+  { path: 'billtransrecord', component: Bill_trans_recordComponent },
+  { path: 'billrecord', component: Bill_recordComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
 
