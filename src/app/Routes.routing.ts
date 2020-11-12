@@ -21,6 +21,7 @@ import { FootballComponent } from './pageHTML/Balls/football/football.component'
 import { BsoComponent } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
 import { Bill_saveComponent } from './pageHTML/My/bill_save/bill_save.component';
+import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
@@ -45,6 +46,7 @@ const routes: Routes = [
   { path: 'bso', component: BsoComponent },
   { path: 'tableball', component: Table_ballComponent },
   { path: 'billsave', component: Bill_saveComponent },
+  { path: 'soccerbet', component: Soccer_betComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
 
