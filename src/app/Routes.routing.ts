@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './Error/Error.component';
-import { IndexComponent } from './index/index.component';
+import { IndexComponent, IndexRight } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
@@ -33,8 +33,14 @@ import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/index', pathMatch: 'full' },
-  { path: 'index', component: IndexComponent },
+  { path: '', redirectTo: '/index/indexright', pathMatch: 'full' },
+  {
+    path: 'index', component: IndexComponent,
+    children: [
+      { path: 'indexright', component: IndexRight },
+      { path: 'tableball', component: Table_ballComponent },
+    ]
+  },
   { path: '404', component: ErrorComponent },
   { path: 'discount', component: DiscountComponent },
   { path: 'member', component: MemberComponent },
@@ -53,7 +59,6 @@ const routes: Routes = [
   { path: 'badminton', component: BadmintonComponent },
   { path: 'football', component: FootballComponent },
   { path: 'bso', component: BsoComponent },
-  { path: 'tableball', component: Table_ballComponent },
   { path: 'billsave', component: Bill_saveComponent },
   { path: 'soccerbet', component: Soccer_betComponent },
   { path: 'soccerresault', component: Soccer_resaultComponent },
