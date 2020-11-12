@@ -1,18 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
-
-import { AppComponent } from './app.component';
-import { RoutingModule } from './Routes.routing';
+import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './Error/Error.component';
-import {
-  IndexComponent, IndexHeader, IndexLeft,
-  IndexRight, IndexLogin, IndexSeachbox,
-  IndexBallBetting, IndexRightLive,
-  IndexSideOptions, IndexEnContainer
-} from './index/index.component';
+import { IndexComponent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
@@ -43,28 +32,46 @@ import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.compone
 import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 
+const routes: Routes = [
+  { path: '', redirectTo: '/index', pathMatch: 'full' },
+  { path: 'index', component: IndexComponent },
+  { path: '404', component: ErrorComponent },
+  { path: 'discount', component: DiscountComponent },
+  { path: 'member', component: MemberComponent },
+  { path: 'soccer', component: SoccerComponent },
+  { path: 'basball', component: BasballComponent },
+  { path: 'basketball', component: BasketballComponent },
+  { path: 'horse', component: Horse_raceComponent },
+  { path: 'esp', component: EspComponent },
+  { path: 'stock', component: StockComponent },
+  { path: 'lottery', component: LotteryComponent },
+  { path: 'iceball', component: Ice_ballComponent },
+  { path: 'tennis', component: TennisComponent },
+  { path: 'snooker', component: SnookerComponent },
+  { path: 'vball', component: V_ballComponent },
+  { path: 'mortor', component: MortorComponent },
+  { path: 'badminton', component: BadmintonComponent },
+  { path: 'football', component: FootballComponent },
+  { path: 'bso', component: BsoComponent },
+  { path: 'tableball', component: Table_ballComponent },
+  { path: 'billsave', component: Bill_saveComponent },
+  { path: 'soccerbet', component: Soccer_betComponent },
+  { path: 'soccerresault', component: Soccer_resaultComponent },
+  { path: 'soccerinner', component: Soccer_innerComponent },
+  { path: 'basketballinner', component: Basketball_innerComponent },
+  { path: 'help', component: HelpComponent },
+  { path: 'contactus', component: Contact_us_sevComponent },
+  { path: 'download', component: Download_appComponent },
+  { path: 'billtrans', component: Bill_transComponent },
+  { path: 'billtransrecord', component: Bill_trans_recordComponent },
+  { path: 'billrecord', component: Bill_recordComponent },
+  { path: '**', redirectTo: '/404', pathMatch: 'full' }
+];
 
 @NgModule({
-  declarations: [
-    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft,
-    IndexRight, IndexLogin, IndexSeachbox, IndexBallBetting,
-    IndexRightLive, IndexSideOptions, IndexEnContainer, DiscountComponent,
-    MemberComponent, SoccerComponent, BasballComponent, BasketballComponent,
-    Horse_raceComponent, EspComponent, StockComponent, LotteryComponent,
-    Ice_ballComponent, TennisComponent, SnookerComponent, V_ballComponent,
-    MortorComponent, BadmintonComponent, FootballComponent, BsoComponent,
-    Table_ballComponent, Bill_saveComponent, Soccer_betComponent,
-    Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
-    HelpComponent, Contact_us_sevComponent, Download_appComponent,
-    Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    RoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule]
 })
-export class AppModule { }
+export class RoutingModule {
+
+}
