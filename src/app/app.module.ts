@@ -31,6 +31,7 @@ import { BadmintonComponent } from './Ball/badminton/badminton.component';
 import { FootballComponent } from './Ball/football/football.component';
 import { BsoComponent } from './Ball/bso/bso.component';
 import { Table_ballComponent } from './Ball/table_ball/table_ball.component';
+import { Bill_saveComponent } from './MyMenber/bill_save/bill_save.component';
 
 
 @NgModule({
@@ -42,7 +43,7 @@ import { Table_ballComponent } from './Ball/table_ball/table_ball.component';
     Horse_raceComponent, EspComponent, StockComponent, LotteryComponent,
     Ice_ballComponent, TennisComponent, SnookerComponent, V_ballComponent,
     MortorComponent, BadmintonComponent, FootballComponent, BsoComponent,
-    Table_ballComponent
+    Table_ballComponent, Bill_saveComponent
   ],
   imports: [
     BrowserModule,
