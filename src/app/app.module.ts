@@ -13,25 +13,25 @@ import {
   IndexBallBetting, IndexRightLive,
   IndexSideOptions, IndexEnContainer
 } from './index/index.component';
-import { DiscountComponent } from './Discount/Discount.component';
-import { MemberComponent } from './Member/Member.component';
-import { SoccerComponent } from './Ball/soccer/soccer.component';
-import { BasballComponent } from './Ball/basball/basball.component';
-import { BasketballComponent } from './Ball/basketball/basketball.component';
-import { Horse_raceComponent } from './Ball/horse_race/horse_race.component';
-import { EspComponent } from './Ball/esp/esp.component';
-import { StockComponent } from './Ball/stock/stock.component';
-import { LotteryComponent } from './Ball/lottery/lottery.component';
-import { Ice_ballComponent } from './Ball/ice_ball/ice_ball.component';
-import { TennisComponent } from './Ball/tennis/tennis.component';
-import { SnookerComponent } from './Ball/snooker/snooker.component';
-import { V_ballComponent } from './Ball/v_ball/v_ball.component';
-import { MortorComponent } from './Ball/mortor/mortor.component';
-import { BadmintonComponent } from './Ball/badminton/badminton.component';
-import { FootballComponent } from './Ball/football/football.component';
-import { BsoComponent } from './Ball/bso/bso.component';
-import { Table_ballComponent } from './Ball/table_ball/table_ball.component';
-import { Bill_saveComponent } from './MyMenber/bill_save/bill_save.component';
+import { DiscountComponent } from './pageHTML/My/Discount.component';
+import { MemberComponent } from './pageHTML/Member/Member.component';
+import { SoccerComponent } from './pageHTML/Ball/soccer/soccer.component';
+import { BasballComponent } from './pageHTML/Ball/basball/basball.component';
+import { BasketballComponent } from './pageHTML/Ball/basketball/basketball.component';
+import { Horse_raceComponent } from './pageHTML/Ball/horse_race/horse_race.component';
+import { EspComponent } from './pageHTML/Ball/esp/esp.component';
+import { StockComponent } from './pageHTML/Ball/stock/stock.component';
+import { LotteryComponent } from './pageHTML/Ball/lottery/lottery.component';
+import { Ice_ballComponent } from './pageHTML/Ball/ice_ball/ice_ball.component';
+import { TennisComponent } from './pageHTML/Ball/tennis/tennis.component';
+import { SnookerComponent } from './pageHTML/Ball/snooker/snooker.component';
+import { V_ballComponent } from './pageHTML/Ball/v_ball/v_ball.component';
+import { MortorComponent } from './pageHTML/Ball/mortor/mortor.component';
+import { BadmintonComponent } from './pageHTML/Ball/badminton/badminton.component';
+import { FootballComponent } from './pageHTML/Ball/football/football.component';
+import { BsoComponent } from './pageHTML/Ball/bso/bso.component';
+import { Table_ballComponent } from './pageHTML/Ball/table_ball/table_ball.component';
+import { Bill_saveComponent } from './pageHTML/MyMenber/bill_save/bill_save.component';
 
 
 @NgModule({
