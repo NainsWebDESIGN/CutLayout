@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './Error/Error.component';
-import { IndexComponent, IndexRight, IndexRightLive } from './index/index.component';
+import { IndexComponent, IndexRight, IndexRightLive, IndexContent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
@@ -33,35 +33,40 @@ import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/index/indexright', pathMatch: 'full' },
+  { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
   {
     path: 'index', component: IndexComponent,
     children: [
-      { path: 'indexright', component: IndexRight },
-      { path: 'tableball', component: Table_ballComponent },
-      { path: 'basball', component: BasballComponent },
-      { path: 'indexrightlive', component: IndexRightLive },
-      { path: 'basballrightlive', component: BasballRight_Live },
-      { path: 'basballright', component: BasballRight },
-      { path: 'soccer', component: SoccerComponent },
-      { path: 'basketball', component: BasketballComponent },
-      { path: 'horse', component: Horse_raceComponent },
-      { path: 'esp', component: EspComponent },
-      { path: 'lottery', component: LotteryComponent },
-      { path: 'stock', component: StockComponent },
-      { path: 'iceball', component: Ice_ballComponent },
-      { path: 'tennis', component: TennisComponent },
-      { path: 'snooker', component: SnookerComponent },
-      { path: 'vball', component: V_ballComponent },
-      { path: 'mortor', component: MortorComponent },
-      { path: 'badminton', component: BadmintonComponent },
-      { path: 'football', component: FootballComponent },
-      { path: 'bso', component: BsoComponent },
+      {
+        path: 'indexcontent', component: IndexContent,
+        children: [
+          { path: 'indexright', component: IndexRight },
+          { path: 'tableball', component: Table_ballComponent },
+          { path: 'basball', component: BasballComponent },
+          { path: 'indexrightlive', component: IndexRightLive },
+          { path: 'basballrightlive', component: BasballRight_Live },
+          { path: 'basballright', component: BasballRight },
+          { path: 'soccer', component: SoccerComponent },
+          { path: 'basketball', component: BasketballComponent },
+          { path: 'horse', component: Horse_raceComponent },
+          { path: 'esp', component: EspComponent },
+          { path: 'lottery', component: LotteryComponent },
+          { path: 'stock', component: StockComponent },
+          { path: 'iceball', component: Ice_ballComponent },
+          { path: 'tennis', component: TennisComponent },
+          { path: 'snooker', component: SnookerComponent },
+          { path: 'vball', component: V_ballComponent },
+          { path: 'mortor', component: MortorComponent },
+          { path: 'badminton', component: BadmintonComponent },
+          { path: 'football', component: FootballComponent },
+          { path: 'bso', component: BsoComponent },
+        ]
+      },
+      { path: 'discount', component: DiscountComponent },
+      { path: 'member', component: MemberComponent },
     ]
   },
   { path: '404', component: ErrorComponent },
-  { path: 'discount', component: DiscountComponent },
-  { path: 'member', component: MemberComponent },
   { path: 'billsave', component: Bill_saveComponent },
   { path: 'soccerbet', component: Soccer_betComponent },
   { path: 'soccerresault', component: Soccer_resaultComponent },

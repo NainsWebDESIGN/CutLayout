@@ -6,10 +6,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 export class IndexComponent implements OnInit {
-  boolin = false;
-  getChild(ChildValue) {
-    this.boolin = ChildValue;
-  }
   constructor() { }
   ngOnInit() {
   }
@@ -69,9 +65,12 @@ export class IndexRight implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexLogin implements OnInit {
-
+  @Output() childEvent: EventEmitter<any> = new EventEmitter();
+  boolin = true;
   constructor() { }
-
+  change() {
+    this.childEvent.emit(this.boolin)
+  }
   ngOnInit() {
   }
 
@@ -143,6 +142,31 @@ export class IndexEnContainer implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-content',
+  templateUrl: './content.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexContent implements OnInit {
+  boolin = false;
+  constructor() { }
+  getChild(ChildValue) {
+    this.boolin = ChildValue;
+  }
+  listen() {
+    addEventListener("hashchange", () => {
+      let url = '/index/indexcontent/indexright'
+      if (location.hash = url) {
+        this.boolin = false;
+      }
+    })
+  }
+  ngOnInit() {
+    this.listen();
   }
 
 }

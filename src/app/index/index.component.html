@@ -1,14 +1,2 @@
 <index-header></index-header>
-<index-ballbetting></index-ballbetting>
-<index-login></index-login>
-<div class="container cn">
-  <main [ngClass]="{'live_mode': boolin}">
-    <index-left (childEvent)="getChild($event)"></index-left>
-    <!--<index-right></index-right>-->
-    <index-right_live></index-right_live>
-  </main>
-  <index-searchbox></index-searchbox>
-  <index-sideoptions></index-sideoptions>
-  <div class="bg_t"></div>
-</div>
-<index-encontainer></index-encontainer>
+<router-outlet></router-outlet>
