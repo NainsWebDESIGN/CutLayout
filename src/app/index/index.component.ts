@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-index',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../app.component.css']
 })
 export class IndexComponent implements OnInit {
-
+  boolin = false;
+  getChild(ChildValue) {
+    this.boolin = ChildValue;
+  }
   constructor() { }
-
   ngOnInit() {
   }
 
@@ -35,9 +37,13 @@ export class IndexHeader implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexLeft implements OnInit {
+  @Output() childEvent: EventEmitter<any> = new EventEmitter();
 
+  boolin = true;
   constructor() { }
-
+  change() {
+    this.childEvent.emit(this.boolin);
+  }
   ngOnInit() {
   }
 

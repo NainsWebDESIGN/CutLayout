@@ -16,7 +16,7 @@ import {
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
-import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
+import { BasballComponent, BasballRight_Live, BasballRight } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
@@ -56,7 +56,8 @@ import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.comp
     Table_ballComponent, Bill_saveComponent, Soccer_betComponent,
     Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
     HelpComponent, Contact_us_sevComponent, Download_appComponent,
-    Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent
+    Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
+    BasballRight_Live, BasballRight
   ],
   imports: [
     BrowserModule,
