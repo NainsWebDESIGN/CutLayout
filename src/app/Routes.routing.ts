@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ErrorComponent } from './Error/Error.component';
 import { IndexComponent, IndexRight, IndexContent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
