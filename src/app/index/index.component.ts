@@ -1,3 +1,4 @@
+import { not } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -19,10 +20,27 @@ export class IndexComponent implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexHeader implements OnInit {
-
+  boolin: any = [];
   constructor() { }
-
+  change(x) {
+    if (x == 0) {
+      this.boolin[0] = true;
+      this.boolin[1] = false;
+      this.boolin[2] = false;
+    } else if (x == 1) {
+      this.boolin[0] = false;
+      this.boolin[1] = true;
+      this.boolin[2] = false;
+    } else if (x == 2) {
+      this.boolin[0] = false;
+      this.boolin[1] = false;
+      this.boolin[2] = true;
+    }
+  }
   ngOnInit() {
+    this.boolin[0] = true;
+    this.boolin[1] = false;
+    this.boolin[2] = false;
   }
 
 }

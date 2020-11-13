@@ -12,24 +12,17 @@
                 <h1></h1>
             </div>
             <ul class="m_yet">
-                <li class="active">
+                <li [ngClass]="{'active': boolin[0]}" (click)="change(0)">
                     <p>市場列表</p>
                     <a [routerLink]="['/index/indexcontent/indexright']"></a>
                 </li>
-                <!-- <li>
-            <p>熱門賽事</p>
-          </li> -->
-                <!-- <li>
-            <p>今日賽事</p>
-          </li> -->
-                <li><i class="i1"></i>
+                <li [ngClass]="{'active': boolin[1]}" (click)="change(1)">
+                    <i class="i1"></i>
                     <p>優惠</p>
                     <a [routerLink]="['/index/discount']"></a>
                 </li>
-                <!-- <li><i class="i2"></i>
-            <p>贊助</p>
-          </li> -->
-                <li><i class="i3"></i>
+                <li [ngClass]="{'active': boolin[2]}" (click)="change(2)">
+                    <i class="i3"></i>
                     <p>我的</p> <a [routerLink]="['/index/member']"></a>
                 </li>
             </ul>
