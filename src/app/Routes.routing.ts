@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './Error/Error.component';
-import { IndexComponent, IndexRight, IndexRightLive, IndexContent } from './index/index.component';
+import { IndexComponent, IndexRight, IndexContent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
-import { BasballComponent, BasballRight_Live, BasballRight } from './pageHTML/Balls/basball/basball.component';
+import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
@@ -43,9 +43,6 @@ const routes: Routes = [
           { path: 'indexright', component: IndexRight },
           { path: 'tableball', component: Table_ballComponent },
           { path: 'basball', component: BasballComponent },
-          { path: 'indexrightlive', component: IndexRightLive },
-          { path: 'basballrightlive', component: BasballRight_Live },
-          { path: 'basballright', component: BasballRight },
           { path: 'soccer', component: SoccerComponent },
           { path: 'basketball', component: BasketballComponent },
           { path: 'horse', component: Horse_raceComponent },
