@@ -23,18 +23,12 @@ export class IndexHeader implements OnInit {
   boolin: any = [];
   constructor() { }
   change(x) {
-    if (x == 0) {
-      this.boolin[0] = true;
-      this.boolin[1] = false;
-      this.boolin[2] = false;
-    } else if (x == 1) {
-      this.boolin[0] = false;
-      this.boolin[1] = true;
-      this.boolin[2] = false;
-    } else if (x == 2) {
-      this.boolin[0] = false;
-      this.boolin[1] = false;
-      this.boolin[2] = true;
+    for (let i = 0; i < this.boolin.length; i++) {
+      if (i == x) {
+        this.boolin[i] = true;
+      } else if (i !== x) {
+        this.boolin[i] = false;
+      }
     }
   }
   ngOnInit() {
