@@ -1,0 +1,95 @@
+<div class="left ">
+    <ul class="my_page active">
+        <div class="avatar_wrap">
+            <div class="avatar"></div>
+            <div class="n_wrap">
+                <p class="name">user545</p>
+                <div class="vip"><i></i>
+                    <p>0</p>
+                </div>
+            </div>
+            <p class="day">加入第6天</p>
+        </div>
+        <div class="box_3">
+            <div class="box"><i class="cash i1"></i>
+                <p>存款</p><a [routerLink]="['/index/member/mybillsave']"></a>
+            </div>
+            <div class="box"><i class="cash i2"></i>
+                <p>轉點</p>
+                <a href="./my_bill_trans.html"></a>
+            </div>
+            <div class="box"><i class="cash i3"></i>
+                <p>取款</p>
+                <a href="./my_bill_get_cash.html"></a>
+            </div>
+        </div>
+        <li class="active">
+            <i class="i1"></i>
+            <p class="name">個人資料</p>
+            <a [routerLink]="['/index/member/memberright']"></a>
+        </li>
+        <div class="blue_line"></div>
+        <li>
+            <i class="i3"></i>
+            <p class="name">我的錢包</p>
+            <a href="./my_bill_money_bag.html"></a>
+        </li>
+        <li>
+            <i class="i4"></i>
+            <p class="name">交易紀錄</p>
+            <p class="num active">6</p>
+            <a href="./my_bill_trans_record.html"></a>
+        </li>
+        <li>
+            <i class="i5"></i>
+            <p class="name">即時注單</p>
+            <p class="num active">2</p>
+            <a href="./my_bill_now.html"></a>
+        </li>
+        <li>
+            <i class="i6"></i>
+            <p class="name">投注紀錄</p>
+            <p class="num active">3</p>
+            <a href="./my_bill_record.html"></a>
+        </li>
+        <div class="blue_line"></div>
+        <li>
+            <i class="i8"></i>
+            <p class="name">幫助中心</p>
+            <a href="./my_help.html"></a>
+        </li>
+        <li>
+            <i class="i9"></i>
+            <p class="name">聯繫我們</p>
+            <a href="./my_contact_us.html"></a>
+        </li>
+        <li>
+            <i class="i10"></i>
+            <p class="name">消息中心</p>
+            <p class="num active">6</p>
+            <a href="./my_message.html"></a>
+        </li>
+        <li>
+            <i class="i11"></i>
+            <p class="name">設定</p>
+            <a href="./my_set.html"></a>
+        </li>
+        <div class="blue_line"></div>
+        <li>
+            <i class="i12"></i>
+            <p class="name">關於</p>
+            <a href="./my_about.html"></a>
+        </li>
+        <li>
+            <i class="i13"></i>
+            <p class="name">加入我們</p>
+            <a href="./my_join_us.html"></a>
+        </li>
+        <li>
+            <i class="i14"></i>
+            <p class="name">下載APP</p>
+            <a href="./my_download_app.html"></a>
+        </li>
+    </ul>
+</div>
+<router-outlet (activate)="getChild($event)"></router-outlet>

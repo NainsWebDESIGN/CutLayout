@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './Error/Error.component';
 import { IndexComponent, IndexRight, IndexContent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
-import { MemberComponent } from './pageHTML/My/Member/Member.component';
+import { MemberComponent, MemberRight } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
@@ -32,6 +32,7 @@ import { Download_appComponent } from './PageHTML/My/download_app/download_app.c
 import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.component';
 import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
+import { My_bill_saveComponent } from './PageHTML/My/My_bill_save/My_bill_save.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -61,7 +62,14 @@ const routes: Routes = [
         ]
       },
       { path: 'discount', component: DiscountComponent },
-      { path: 'member', component: MemberComponent },
+      {
+        path: 'member', component: MemberComponent,
+        children: [
+          { path: '', redirectTo: '/index/member/memberright', pathMatch: 'full' },
+          { path: 'memberright', component: MemberRight },
+          { path: 'mybillsave', component: My_bill_saveComponent },
+        ]
+      },
     ]
   },
   { path: '404', component: ErrorComponent },

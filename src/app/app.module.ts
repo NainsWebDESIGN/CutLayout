@@ -15,7 +15,7 @@ import {
   IndexContent
 } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
-import { MemberComponent } from './pageHTML/My/Member/Member.component';
+import { MemberComponent, MemberRight, MemberOption, MemberLeft } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
@@ -43,6 +43,7 @@ import { Download_appComponent } from './PageHTML/My/download_app/download_app.c
 import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.component';
 import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
+import { My_bill_saveComponent } from './PageHTML/My/My_bill_save/My_bill_save.component';
 
 
 @NgModule({
@@ -58,7 +59,7 @@ import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.comp
     Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
     HelpComponent, Contact_us_sevComponent, Download_appComponent,
     Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
-    IndexContent
+    IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent
   ],
   imports: [
     BrowserModule,

@@ -78,10 +78,9 @@ export class IndexRight implements OnInit {
 })
 export class IndexLogin implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
-  boolin = true;
   constructor() { }
   change() {
-    this.childEvent.emit(this.boolin)
+    this.childEvent.emit(true);
   }
   ngOnInit() {
   }
