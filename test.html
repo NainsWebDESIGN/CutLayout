@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="getform()">
+    <form id="form">
+        <ul id="myul">
+            <li name="save">123</li>
+            <li name="save">123</li>
+            <li name="save">123</li>
+            <li name="save">123</li>
+            <li name="save">123</li>
+        </ul>
+    </form>
+</body>
+<script>
+    function getform() {
+        var formID = document.getElementById("myul");
+        var lis = formID.getElementsByTagName('li');
+        console.log(lis.length)
+    }
+</script>
+
+</html>
