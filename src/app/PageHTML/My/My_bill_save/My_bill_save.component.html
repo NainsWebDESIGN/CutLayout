@@ -11,7 +11,13 @@
     </div>
     <div class="save_type">
       <ul id="savebox" #savebox class="row box_7">
-        <li class="pay_1">
+        <li *ngFor="let item of money">
+          <div [ngClass]="{'active':checkbx[item.CHID]}" class="save_wrap" (click)="checksave(item.CHID)">
+            <span [class]="item.spanclass"></span>
+            <p>{{ item.title }}</p>
+          </div>
+        </li>
+        <!-- <li>
           <div [ngClass]="{'active':checkbx[0]}" class="save_wrap" (click)="checksave(savebox,0)">
             <span class="pay i1"></span>
             <p>網銀支付</p>
@@ -94,7 +100,7 @@
             <span class="pay i14"></span>
             <p>大額充值</p>
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>

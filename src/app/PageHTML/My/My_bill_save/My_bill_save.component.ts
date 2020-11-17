@@ -1,22 +1,26 @@
 import { element } from 'protractor';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { DataBassService } from '../../../../app/DataBass.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-My_bill_save',
   templateUrl: './My_bill_save.component.html',
-  styleUrls: ['./My_bill_save.component.css']
+  styleUrls: ['./My_bill_save.component.css'],
+  providers: [DataBassService]
 })
 export class My_bill_saveComponent implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
   checkbx: any = [];
-  constructor() { }
-  checksave(x, y) {
-    let obj = x.getElementsByTagName('li');
+  money: any = [];
+  constructor(private http: HttpClient, private Ajax: DataBassService) { }
+  async checksave(y) {
+    let data = await this.Start();
     this.checkbx = [];
-    for (let i = 0; i < obj.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       if (i == y) {
         this.checkbx[i] = true;
-        console.log(i)
+        console.log("這是第" + (i + 1) + "個按鈕");
       } else {
         this.checkbx[i] = false;
       }
@@ -25,10 +29,15 @@ export class My_bill_saveComponent implements OnInit {
   change(x) {
     this.childEvent.emit(x);
   }
+  Start() {
+    let data = this.Ajax.getData('money').then(el => {
+      this.money = el;
+      return el;
+    })
+    return data;
+  }
   ngOnInit() {
-    let ulName = document.getElementById('savebox');
-    this.checksave(ulName, 0);
-
+    this.checksave(0);
   }
 
 }

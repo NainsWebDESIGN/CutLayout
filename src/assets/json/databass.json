@@ -1,0 +1,182 @@
+{
+  "err": true,
+  "err_msg": "",
+  "money": [
+    {
+      "CHID": "0",
+      "liclass": "pay_1",
+      "spanclass": "pay i1",
+      "title": "網銀支付"
+    },
+    {
+      "CHID": "1",
+      "liclass": "pay_2",
+      "spanclass": "pay i2",
+      "title": "銀行卡轉帳"
+    },
+    {
+      "CHID": "2",
+      "liclass": "pay_3",
+      "spanclass": "pay i3",
+      "title": "支付寶轉卡"
+    },
+    {
+      "CHID": "3",
+      "liclass": "pay_4",
+      "spanclass": "pay i4",
+      "title": "微信"
+    },
+    {
+      "CHID": "4",
+      "liclass": "pay_5",
+      "spanclass": "pay i5",
+      "title": "支付寶"
+    },
+    {
+      "CHID": "5",
+      "liclass": "pay_6",
+      "spanclass": "pay i6",
+      "title": "QQ支付"
+    },
+    {
+      "CHID": "6",
+      "liclass": "pay_7",
+      "spanclass": "pay i7",
+      "title": "銀聯快捷"
+    },
+    {
+      "CHID": "7",
+      "liclass": "pay_8",
+      "spanclass": "pay i8",
+      "title": "流水號匯款"
+    },
+    {
+      "CHID": "8",
+      "liclass": "pay_9",
+      "spanclass": "pay i9",
+      "title": "銀聯掃碼"
+    },
+    {
+      "CHID": "9",
+      "liclass": "pay_10",
+      "spanclass": "pay i10",
+      "title": "代客充值"
+    },
+    {
+      "CHID": "10",
+      "liclass": "pay_11",
+      "spanclass": "pay i11",
+      "title": "網關卡"
+    },
+    {
+      "CHID": "11",
+      "liclass": "pay_12",
+      "spanclass": "pay i12",
+      "title": "微信轉卡"
+    },
+    {
+      "CHID": "12",
+      "liclass": "pay_13",
+      "spanclass": "pay i13",
+      "title": "閃雲付轉卡"
+    },
+    {
+      "CHID": "13",
+      "liclass": "pay_14",
+      "spanclass": "pay i14",
+      "title": "大額充值"
+    }
+  ],
+  "left": [
+    {
+      "iclass": "i1",
+      "title": "我的最愛",
+      "router": "/index/indexcontent/soccer"
+    },
+    {
+      "iclass": "i2",
+      "title": "熱門賽事",
+      "router": "/index/indexcontent/soccer"
+    },
+    {
+      "iclass": "i3",
+      "title": "足球",
+      "router": "/index/indexcontent/soccer"
+    },
+    {
+      "iclass": "i4",
+      "title": "棒球",
+      "router": "/index/indexcontent/basball"
+    },
+    {
+      "iclass": "i5",
+      "title": "籃球",
+      "router": "/index/indexcontent/basketball"
+    },
+    {
+      "iclass": "i6",
+      "title": "賽馬賽狗",
+      "router": "/index/indexcontent/horse"
+    },
+    {
+      "iclass": "i7",
+      "title": "電競",
+      "router": "/index/indexcontent/esp"
+    },
+    {
+      "iclass": "i8",
+      "title": "股票指數",
+      "router": "/index/indexcontent/stock"
+    },
+    {
+      "iclass": "i9",
+      "title": "彩球",
+      "router": "/index/indexcontent/lottery"
+    },
+    {
+      "iclass": "i10",
+      "title": "冰球",
+      "router": "/index/indexcontent/iceball"
+    },
+    {
+      "iclass": "i11",
+      "title": "網球",
+      "router": "/index/indexcontent/tennis"
+    },
+    {
+      "iclass": "i12",
+      "title": "斯諾克",
+      "router": "/index/indexcontent/snooker"
+    },
+    {
+      "iclass": "i13",
+      "title": "排球",
+      "router": "/index/indexcontent/vball"
+    },
+    {
+      "iclass": "i14",
+      "title": "賽車",
+      "router": "/index/indexcontent/mortor"
+    },
+    {
+      "iclass": "i15",
+      "title": "羽毛球",
+      "router": "/index/indexcontent/badminton"
+    },
+    {
+      "iclass": "i16",
+      "title": "沙灘足球",
+      "router": "/index/indexcontent/football"
+    },
+    {
+      "iclass": "i17",
+      "title": "美式足球",
+      "router": "/index/indexcontent/bso"
+    },
+    {
+      "iclass": "i18",
+      "title": "乒乓球",
+      "router": "/index/indexcontent/tableball"
+    }
+  ]
+}
