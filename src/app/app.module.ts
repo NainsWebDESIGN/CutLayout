@@ -32,7 +32,6 @@ import { BadmintonComponent } from './pageHTML/Balls/badminton/badminton.compone
 import { FootballComponent } from './pageHTML/Balls/football/football.component';
 import { BsoComponent } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
-import { Bill_saveComponent } from './pageHTML/My/bill_save/bill_save.component';
 import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
 import { Soccer_resaultComponent } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
 import { Soccer_innerComponent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
@@ -40,10 +39,11 @@ import { Basketball_innerComponent } from './PageHTML/Balls/basketball_inner/bas
 import { HelpComponent } from './PageHTML/My/help/help.component';
 import { Contact_us_sevComponent } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
 import { Download_appComponent } from './PageHTML/My/download_app/download_app.component';
-import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.component';
+import { Bill_transComponent, TransHeader } from './PageHTML/My/bill_trans/bill_trans.component';
 import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
-import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/My_bill_save/My_bill_save.component';
+import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/bill_save/My_bill_save.component';
+import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
 
 
 @NgModule({
@@ -55,12 +55,12 @@ import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/My_bill_sav
     Horse_raceComponent, EspComponent, StockComponent, LotteryComponent,
     Ice_ballComponent, TennisComponent, SnookerComponent, V_ballComponent,
     MortorComponent, BadmintonComponent, FootballComponent, BsoComponent,
-    Table_ballComponent, Bill_saveComponent, Soccer_betComponent,
+    Table_ballComponent, Soccer_betComponent, My_bill_moneybagComponent,
     Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
     HelpComponent, Contact_us_sevComponent, Download_appComponent,
     Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
     IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent,
-    BillSaveHeader
+    BillSaveHeader, TransHeader
   ],
   imports: [
     BrowserModule,

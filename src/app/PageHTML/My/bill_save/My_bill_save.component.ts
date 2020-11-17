@@ -1,6 +1,5 @@
-import { element } from 'protractor';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { DataBassService } from '../../../../app/DataBass.service';
+import { DataBassService } from '../../../DataBass.service';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
