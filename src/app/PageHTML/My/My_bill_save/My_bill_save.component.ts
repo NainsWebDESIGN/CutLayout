@@ -22,13 +22,29 @@ export class My_bill_saveComponent implements OnInit {
       }
     }
   }
-  change() {
-    this.childEvent.emit(false);
+  change(x) {
+    this.childEvent.emit(x);
   }
   ngOnInit() {
     let ulName = document.getElementById('savebox');
     this.checksave(ulName, 0);
 
+  }
+
+}
+
+@Component({
+  selector: 'billsave-header',
+  templateUrl: './bill_header.html',
+  styleUrls: ['./My_bill_save.component.css']
+})
+export class BillSaveHeader implements OnInit {
+  @Output() childEvent: EventEmitter<any> = new EventEmitter();
+  constructor() { }
+  change() {
+    this.childEvent.emit(false);
+  }
+  ngOnInit() {
   }
 
 }

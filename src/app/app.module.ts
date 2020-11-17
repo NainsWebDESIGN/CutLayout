@@ -43,7 +43,7 @@ import { Download_appComponent } from './PageHTML/My/download_app/download_app.c
 import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.component';
 import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
-import { My_bill_saveComponent } from './PageHTML/My/My_bill_save/My_bill_save.component';
+import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/My_bill_save/My_bill_save.component';
 
 
 @NgModule({
@@ -59,7 +59,8 @@ import { My_bill_saveComponent } from './PageHTML/My/My_bill_save/My_bill_save.c
     Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
     HelpComponent, Contact_us_sevComponent, Download_appComponent,
     Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
-    IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent
+    IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent,
+    BillSaveHeader
   ],
   imports: [
     BrowserModule,
