@@ -6543,6 +6543,7 @@ main.my_page.my_page.my_page .right_2 {
   position: relative;
   overflow: hidden;
   padding: 0.5em 0;
+  cursor: pointer;
 }
 .basic_bill .save_type .row li .save_wrap .icon_change {
   display: inline-block;
@@ -10633,4 +10634,7 @@ body {
   transform: translate(-50%, -50%);
   top: 52%;
   left: 56%;
+}
+.display {
+  display: none;
 }

@@ -16,6 +16,7 @@ export class My_bill_saveComponent implements OnInit {
     for (let i = 0; i < obj.length; i++) {
       if (i == y) {
         this.checkbx[i] = true;
+        console.log(i)
       } else {
         this.checkbx[i] = false;
       }
@@ -27,6 +28,7 @@ export class My_bill_saveComponent implements OnInit {
   ngOnInit() {
     let ulName = document.getElementById('savebox');
     this.checksave(ulName, 0);
+
   }
 
 }

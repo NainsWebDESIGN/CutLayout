@@ -51,86 +51,86 @@
     <div class="save_type">
       <ul id="savebox" #savebox class="row box_7">
         <li class="pay_1">
-          <!--<div [ngClass]="{'save_wrap active':checkbx[0],'save_wrap':!checkbx[0]}" (click)="checksave(savebox,0)">-->
-          <div class="save_wrap" (click)="checksave(savebox,0)">
+          <div [ngClass]="{'active':checkbx[0]}" class="save_wrap" (click)="checksave(savebox,0)">
+            <!--<div class="save_wrap" (click)="checksave(savebox,0)">-->
             <span class="pay i1"></span>
             <p>網銀支付</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,1)">
+          <div [ngClass]="{'active':checkbx[1]}" class="save_wrap" (click)="checksave(savebox,1)">
             <span class="pay i2"></span>
             <p>銀行卡轉帳</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,2)">
+          <div [ngClass]="{'active':checkbx[2]}" class="save_wrap" (click)="checksave(savebox,2)">
             <span class="pay i3"></span>
             <p>支付寶轉卡</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,3)">
+          <div [ngClass]="{'active':checkbx[3]}" class="save_wrap" (click)="checksave(savebox,3)">
             <span class="pay i4"></span>
             <p>微信</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,4)">
+          <div [ngClass]="{'active':checkbx[4]}" class="save_wrap" (click)="checksave(savebox,4)">
             <span class="pay i5"></span>
             <p>支付寶</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,5)">
+          <div [ngClass]="{'active':checkbx[5]}" class="save_wrap" (click)="checksave(savebox,5)">
             <span class="pay i6"></span>
             <p>QQ支付</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,6)">
+          <div [ngClass]="{'active':checkbx[6]}" class="save_wrap" (click)="checksave(savebox,6)">
             <span class="pay i7"></span>
             <p>銀聯快捷</p>
           </div>
         </li>
         <li class="pay_8">
-          <div class="save_wrap" (click)="checksave(savebox,7)">
+          <div [ngClass]="{'active':checkbx[7]}" class="save_wrap" (click)="checksave(savebox,7)">
             <span class="pay i8"></span>
             <p>流水號匯款</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,8)">
+          <div [ngClass]="{'active':checkbx[8]}" class="save_wrap" (click)="checksave(savebox,8)">
             <span class="pay i9"></span>
             <p>銀聯掃碼</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,9)">
+          <div [ngClass]="{'active':checkbx[9]}" class="save_wrap" (click)="checksave(savebox,9)">
             <span class="pay i10"></span>
             <p>代客充值</p>
           </div>
         </li>
         <li class="pay_11">
-          <div class="save_wrap" (click)="checksave(savebox,10)">
+          <div [ngClass]="{'active':checkbx[10]}" class="save_wrap" (click)="checksave(savebox,10)">
             <span class="pay i11"></span>
             <p>網關卡</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,11)">
+          <div [ngClass]="{'active':checkbx[11]}" class="save_wrap" (click)="checksave(savebox,11)">
             <span class="pay i12"></span>
             <p>微信轉卡</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,12)">
+          <div [ngClass]="{'active':checkbx[12]}" class="save_wrap" (click)="checksave(savebox,12)">
             <span class="pay i13"></span>
             <p>閃雲付轉卡</p>
           </div>
         </li>
         <li>
-          <div class="save_wrap" (click)="checksave(savebox,13)">
+          <div [ngClass]="{'active':checkbx[13]}" class="save_wrap" (click)="checksave(savebox,13)">
             <span class="pay i14"></span>
             <p>大額充值</p>
           </div>
@@ -140,7 +140,7 @@
   </div>
   <div class="pay_change">
     <!--選擇銀行-->
-    <div class="basic_bill no_hidden pay_1">
+    <div [ngClass]="{'basic_bill no_hidden pay_1':checkbx[0],'display':!checkbx[0]}">
       <div class="b_name">
         <p class="bf">選擇銀行</p>
       </div>
@@ -171,7 +171,7 @@
       </div>
     </div>
     <!--流水號匯款-->
-    <div class="basic_bill no_hidden pay_8">
+    <div class="basic_bill no_hidden pay_8" [ngClass]="{'basic_bill no_hidden pay_8':checkbx[7],'display':!checkbx[7]}">
       <div class="b_name">
         <p class="bf">流水號匯款</p>
       </div>
@@ -267,7 +267,7 @@
 
     </div>
     <!--網關卡-->
-    <div class="basic_bill pay_11">
+    <div [ngClass]="{'basic_bill pay_11':checkbx[10],'display':!checkbx[10]}">
       <div class="b_name">
         <p class="bf">支付通道</p>
       </div>
@@ -318,7 +318,7 @@
       </div>
     </div>
     <!--存款金額-->
-    <div class="basic_bill pay_1">
+    <div [ngClass]="{'basic_bill pay_1':checkbx[0],'display':!checkbx[0]}">
       <div class="b_name">
         <p class="bf">存款金額</p>
       </div>
@@ -375,7 +375,7 @@
         </ul>
       </div>
     </div>
-    <div class="basic_bill pay_8">
+    <div [ngClass]="{'basic_bill pay_8':checkbx[7],'display':!checkbx[7]}">
       <div class="b_name">
         <p class="bf">匯款金額</p>
       </div>
@@ -432,7 +432,7 @@
         </ul>
       </div>
     </div>
-    <div class="basic_bill pay_11">
+    <div [ngClass]="{'basic_bill pay_11':checkbx[10],'display':!checkbx[10]}">
       <div class="b_name">
         <p class="bf">存款金額</p>
       </div>
@@ -492,8 +492,6 @@
   </div>
 </div>
 
-
-<div class="bg_t bg_t2"></div>
 <script>
   $(document).ready(function () {
     console.log('save_page');

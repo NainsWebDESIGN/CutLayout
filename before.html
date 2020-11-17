@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myId:before {
+            content: "hello world!";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myId"></div>
+</body>
+<script>
+    let a = document.getElementById("myId");
+    let b = getComputedStyle(a, ':before');
+    console.log(b.width);
+    console.log(b.display);
+</script>
+
+</html>
