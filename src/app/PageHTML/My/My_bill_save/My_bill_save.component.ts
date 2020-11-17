@@ -20,7 +20,6 @@ export class My_bill_saveComponent implements OnInit {
     for (let i = 0; i < data.length; i++) {
       if (i == y) {
         this.checkbx[i] = true;
-        console.log("這是第" + (i + 1) + "個按鈕");
       } else {
         this.checkbx[i] = false;
       }

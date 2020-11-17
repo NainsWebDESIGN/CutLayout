@@ -1,10 +1,12 @@
-import { not } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { DataBassService } from '../DataBass.service';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
-  styleUrls: ['../app.component.css']
+  styleUrls: ['../app.component.css'],
+  providers: [DataBassService]
 })
 export class IndexComponent implements OnInit {
   constructor() { }
@@ -31,10 +33,28 @@ export class IndexHeader implements OnInit {
       }
     }
   }
+  listen() {
+    addEventListener("hashchange", () => {
+      if (location.hash = '/index/indexcontent/indexright') {
+        this.boolin[0] = true;
+        this.boolin[1] = false;
+        this.boolin[2] = false;
+      } else if (location.hash = '/index/discount') {
+        this.boolin[0] = false;
+        this.boolin[1] = true;
+        this.boolin[2] = false;
+      } else if (location.hash = '/index/member/memberright') {
+        this.boolin[0] = false;
+        this.boolin[1] = false;
+        this.boolin[2] = true;
+      }
+    })
+  }
   ngOnInit() {
     this.boolin[0] = true;
     this.boolin[1] = false;
     this.boolin[2] = false;
+    this.listen();
   }
 
 }
@@ -48,11 +68,15 @@ export class IndexLeft implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
 
   boolin = true;
-  constructor() { }
+  left: any = [];
+  constructor(private http: HttpClient, private Ajax: DataBassService) { }
   change() {
     this.childEvent.emit(this.boolin);
   }
   ngOnInit() {
+    this.Ajax.getData('left').then(el => {
+      this.left = el;
+    })
   }
 
 }

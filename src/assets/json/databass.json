@@ -4,85 +4,71 @@
   "money": [
     {
       "CHID": "0",
-      "liclass": "pay_1",
       "spanclass": "pay i1",
       "title": "網銀支付"
     },
     {
       "CHID": "1",
-      "liclass": "pay_2",
       "spanclass": "pay i2",
       "title": "銀行卡轉帳"
     },
     {
       "CHID": "2",
-      "liclass": "pay_3",
       "spanclass": "pay i3",
       "title": "支付寶轉卡"
     },
     {
       "CHID": "3",
-      "liclass": "pay_4",
       "spanclass": "pay i4",
       "title": "微信"
     },
     {
       "CHID": "4",
-      "liclass": "pay_5",
       "spanclass": "pay i5",
       "title": "支付寶"
     },
     {
       "CHID": "5",
-      "liclass": "pay_6",
       "spanclass": "pay i6",
       "title": "QQ支付"
     },
     {
       "CHID": "6",
-      "liclass": "pay_7",
       "spanclass": "pay i7",
       "title": "銀聯快捷"
     },
     {
       "CHID": "7",
-      "liclass": "pay_8",
       "spanclass": "pay i8",
       "title": "流水號匯款"
     },
     {
       "CHID": "8",
-      "liclass": "pay_9",
       "spanclass": "pay i9",
       "title": "銀聯掃碼"
     },
     {
       "CHID": "9",
-      "liclass": "pay_10",
       "spanclass": "pay i10",
       "title": "代客充值"
     },
     {
       "CHID": "10",
-      "liclass": "pay_11",
       "spanclass": "pay i11",
       "title": "網關卡"
     },
     {
       "CHID": "11",
-      "liclass": "pay_12",
       "spanclass": "pay i12",
       "title": "微信轉卡"
     },
     {
       "CHID": "12",
-      "liclass": "pay_13",
       "spanclass": "pay i13",
       "title": "閃雲付轉卡"
     },
     {
       "CHID": "13",
-      "liclass": "pay_14",
       "spanclass": "pay i14",
       "title": "大額充值"
     }
