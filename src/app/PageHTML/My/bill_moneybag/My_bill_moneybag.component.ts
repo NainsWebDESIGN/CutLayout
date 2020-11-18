@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-My_bill_moneybag',
@@ -6,8 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./My_bill_moneybag.component.css']
 })
 export class My_bill_moneybagComponent implements OnInit {
-
+  @Output() childEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
+  change(x) {
+    this.childEvent.emit(x);
+  }
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'moneybag-header',
+  templateUrl: './moneybag-header.html',
+  styleUrls: ['./My_bill_moneybag.component.css']
+})
+export class MoneyBagHeader implements OnInit {
+  @Output() childEvent: EventEmitter<any> = new EventEmitter();
+  constructor() { }
+  change() {
+    this.childEvent.emit(false)
+  }
 
   ngOnInit() {
   }
