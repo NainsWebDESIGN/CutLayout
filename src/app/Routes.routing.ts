@@ -33,6 +33,7 @@ import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 import { My_bill_saveComponent } from './PageHTML/My/bill_save/My_bill_save.component';
 import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
+import { Bill_getcashComponent } from './PageHTML/My/bill_getcash/bill_getcash.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -70,6 +71,7 @@ const routes: Routes = [
           { path: 'mybillsave', component: My_bill_saveComponent },
           { path: 'moneybag', component: My_bill_moneybagComponent },
           { path: 'billtrans', component: Bill_transComponent },
+          { path: 'getcash', component: Bill_getcashComponent },
         ]
       },
     ]

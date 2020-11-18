@@ -1,0 +1,300 @@
+<div class="right">
+  <getcash-header (childEvent)="change($event)"></getcash-header>
+  <!--錢包金額-->
+  <div class="basic_bill">
+    <div class="b_name">
+      <p class="bf">錢包金額</p>
+      <div class="right_box">
+        <div class="reset_icon"></div>
+        <p>重新整理</p>
+      </div>
+    </div>
+    <div class="save_type">
+      <div class="mb_box">
+        <div class="b50">
+          <div class="mb_i1"></div>
+          <div class="text_wrap">
+            <p>中心錢包</p>
+            <p>NT$<span>152,196,589,448</span></p>
+          </div>
+          <button class="r_btn">
+            <p>一鍵回收</p>
+          </button>
+        </div>
+        <div class="b50">
+          <div class="mb_i2"></div>
+          <div class="text_wrap">
+            <p>鎖定錢包</p>
+            <p class="red">NT$<span class="red">152,196,589,448</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--addCard-->
+  <div class="basic_bill">
+    <div class="b_name">
+      <p class="bf">銀行卡</p>
+      <div class="right_box">
+        <p>卡片數量&ensp;:&ensp;0/3</p>
+      </div>
+    </div>
+    <div class="save_type">
+      <div class="cards">
+        <div class="box_3" (click)="changecard()">
+          <div class="m_card card_box ">
+            <div class="icon_wrap">
+              <span class="c_icon"></span>
+              <p>添加銀行卡</p>
+            </div>
+          </div>
+        </div>
+        <div class="box_3" (click)="changecard()">
+          <div class="m_card card_box">
+            <div class="icon_wrap">
+              <span class="c_icon"></span>
+              <p>添加銀行卡</p>
+            </div>
+          </div>
+        </div>
+        <div class="box_3" (click)="changecard()">
+          <div class="m_card card_box">
+            <div class="icon_wrap">
+              <span class="c_icon"></span>
+              <p>添加銀行卡</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="infor_line"><i class="infor_i_g"></i>
+        <span>最多支援3張銀行卡
+        </span>
+      </span>
+    </div>
+  </div>
+  <!--added Card-->
+  <div class="basic_bill">
+    <div class="b_name">
+      <p class="bf">銀行卡</p>
+      <div class="right_box">
+        <p>卡片數量 : 3/3</p>
+      </div>
+    </div>
+    <div class="save_type">
+      <div class="cards">
+        <div class="box_3">
+          <div [ngClass]="{'check':bankcard[0]}" class="card_box blue_card text_left finish_card" (click)="check(0)">
+            <div class="card_name">
+              <i class="i1 icon"></i>
+              <div class="r_wrap">
+                <span>建設銀行</span>
+                <span>儲蓄卡</span>
+              </div>
+            </div>
+            <div class="card_num">
+              <span>◆◆◆◆</span>
+              <span>◆◆◆◆</span>
+              <span>◆◆◆◆</span>
+              <span>9572</span>
+            </div>
+            <div class="card_check blue"></div>
+          </div>
+        </div>
+        <div class="box_3">
+          <div [ngClass]="{'check':bankcard[1]}" class="card_box green_card text_left finish_card" (click)="check(1)">
+            <div class="card_name">
+              <i class="i2 icon"></i>
+              <div class="r_wrap">
+                <span>農業銀行</span>
+                <span>儲蓄卡</span>
+              </div>
+            </div>
+            <div class="card_num">
+              <span>◆◆◆◆</span>
+              <span>◆◆◆◆</span>
+              <span>◆◆◆◆</span>
+              <span>1578</span>
+            </div>
+            <div class="card_check green"></div>
+          </div>
+        </div>
+        <div class="box_3">
+          <div [ngClass]="{'check':bankcard[2]}" class="card_box pink_card text_left finish_card" (click)="check(2)">
+            <div class="card_name">
+              <i class="i3 icon"></i>
+              <div class="r_wrap">
+                <span>中國銀行</span>
+                <span>儲蓄卡</span>
+              </div>
+            </div>
+            <div class="card_num">
+              <span>◆◆◆◆</span>
+              <span>◆◆◆◆</span>
+              <span>◆◆◆◆</span>
+              <span>3682</span>
+            </div>
+            <div class="card_check pink"></div>
+          </div>
+        </div>
+      </div>
+      <span class="infor_line"><i class="infor_i_g"></i>
+        <span>您的銀行卡以綁定,如需修改提領銀行卡請 <span class="blue link_area">洽詢客服
+            <a href="../my/my_contact_us_sev.html"></a>
+          </span></span>
+      </span>
+    </div>
+  </div>
+  <div class="basic_bill">
+    <div class="b_name">
+      <p class="bf">取款金額</p>
+    </div>
+    <div class="save_type">
+      <p>為了方便您快速取款，請先將所有場館錢包金額回收中心錢包</p>
+      <ul class="row">
+        <li class="full">
+          <input type="text" placeholder="請輸入取款金額" (focus)="Focus()" (focusout)="FocusOut()">
+          <div class="text_tag li_h_2_3">
+            <span class="infor_i"></span>
+            <p>單筆取款範圍：100,00元-10000,00元</p>
+          </div>
+        </li>
+      </ul>
+      <ul class="row">
+        <li class="full">
+          <button class="cash_btn" [ngClass]="{'active':btn}">
+            <p>立即取款</p>
+          </button>
+        </li>
+      </ul>
+      <div class="cards cash_num">
+        <div class="box_3">
+          <div class="card_box gray_top">
+            <p class="g_top">取款次數</p>
+            <div class="icon_wrap">
+              <span class="g_top_mid">10</span>
+              <p>今日可用次數</p>
+            </div>
+          </div>
+        </div>
+        <div class="box_3">
+          <div class="card_box gray_top">
+            <p class="g_top">取款額度</p>
+            <div class="icon_wrap">
+              <span class="g_top_mid">10</span>
+              <p>今日可用額度</p>
+            </div>
+          </div>
+        </div>
+        <div class="box_3">
+          <div class="card_box gray_top">
+            <p class="g_top">單筆額度</p>
+            <div class="icon_wrap">
+              <span class="g_top_mid">10</span>
+              <p>單筆最高取款額度</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <script>
+  $(document).ready(function () {
+    console.log('get_cash_page');
+    //warning彈窗
+    let warning_clch = $('aside .bet_box.free_w .title .close ,aside .bet_box.blue .content .window_box .blue_btn');
+    let warning_w = $('aside.black_bg.warning');
+
+    warning_clch.click(function () {
+      return warning_w.removeClass('active');
+    })
+
+
+    //<span>修改密碼</span>彈窗
+    let ch_pw = $('.tag_wrap .tag.ch_pw');
+    let ch_window = $('.black_bg.ch_pw');
+    ch_pw.click(function () {
+      if (ch_window.hasClass('active') != true) {
+        return ch_window.addClass('active');
+      }
+    })
+    //pw_ch close
+    let pw_close = $('aside .bet_box.pw_w .title .close');
+    pw_close.click(function () {
+      return ch_window.removeClass('active');
+    })
+
+
+    //添加銀行卡彈窗
+    let add_btn = $('.box_3 .card_box.m_card');
+    let add_window = $('.black_bg.add_b_card');
+    add_btn.click(function () {
+      if (add_window.hasClass('active') != true) {
+        return add_window.addClass('active');
+      }
+    })
+    //add_card close
+    let add_close = $('aside .add_card_w .title .close');
+    add_close.click(function () {
+      return add_window.removeClass('active');
+    })
+
+
+
+    //立即取款 輸入觸發
+    let input_cash = $('.basic_bill .save_type .row li input');
+    let cash_btn = $('.row li .cash_btn');
+    input_cash.click(function () {
+      if (cash_btn.hasClass('active') != true) {
+        return cash_btn.addClass('active');
+      } else {
+        return cash_btn.removeClass('active')
+      }
+    })
+
+    //選擇卡片.check
+    let finish_card = $('.card_box.finish_card ');
+    finish_card.click(function () {
+      if ($(this).hasClass('check') != true) {
+        $(this).parent().siblings().children().removeClass('check');
+        $(this).addClass('check');
+      }
+    })
+
+    //dummy同步本尊的寬
+    // let search_bar_obj = $('.container main .right .search_bar');
+    // let search_bar_dummy = $('.search_bar.fixed');
+    // let ball_search_dummy = $('.wrap.fixed');
+
+    // let obj_w = search_bar_obj.outerWidth();
+    // search_bar_dummy.css({ width: obj_w });
+    // ball_search_dummy.css({ width: obj_w });
+    // function dummy(page) {
+    //   search_bar_dummy.css({ width: obj_w });
+    //   ball_search_dummy.css({ width: obj_w });
+    //   if (page == 'my') {
+    //     let search_bar_my = $('.container main.my_page .right .my_bill');
+    //     let my_wrap = $('.container main.my_page .right .my_bill .wrap.fixed');
+    //     let obj_w = search_bar_my.outerWidth();
+    //     my_wrap.css({ width: obj_w });
+    //     console.log('my')
+    //   }
+    // }
+    //
+    //視窗偵測
+    $('.container main .right').scroll(function () {
+
+      var scrollVal = $(this).scrollTop();
+      //  console.log('scrollVal = '+scrollVal);
+      if (scrollVal >= 50) {
+        $('.search_bar.fixed,.right .wrap.fixed').addClass('active');
+      } else if (scrollVal <= 49) {
+        $('.search_bar.fixed,.right .wrap.fixed').removeClass('active');
+      }
+    });
+    //<------------------
+  })//document_ready
+</script> -->

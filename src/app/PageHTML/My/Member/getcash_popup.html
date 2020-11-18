@@ -1,0 +1,21 @@
+<aside [ngClass]="{'active':boolin}" class="warning black_bg">
+    <div class="bet_box blue free_w">
+        <div class="title">
+            <p>注意</p>
+            <span class="close" (click)="close()"></span>
+        </div>
+        <div class="content">
+            <div class="window_box">
+                <p class="db mg_bot_5">您尚未綁定銀行卡，無法使用取款功能，請依循下列步驟綁定銀行卡：</p>
+                <span class="mg_bot_1">
+                    1. <span class="d_blue">點擊網站首頁｢我的｣</span> <span class="gray">&ensp;→&ensp;</span>
+                    2. <span class="d_blue">點擊｢我的錢包｣</span> <span class="gray">&ensp;→&ensp;</span>
+                    3. <span class="d_blue">添加銀行卡</span>
+                </span>
+                <div class="t_mid">
+                    <button class="blue_btn" (click)="close()">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>

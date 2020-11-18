@@ -1,6 +1,9 @@
+<getcash-popup [getFather]="cashboolin" (childEvent)="getcash($event)"></getcash-popup>
+<addcard [getFather]="cardboolin" (childEvent)="getcard($event)"></addcard>
 <div class="container cn">
   <main class="my_page">
-    <member-left (childEvent)="getChild($event)"></member-left>
+    <member-left (childEvent)="getChild($event)" (cashEvent)="getcash($event)" (cardEvent)="getcard($event)">
+    </member-left>
   </main>
   <member-option></member-option>
   <div class="bg_t bg_t2"></div>

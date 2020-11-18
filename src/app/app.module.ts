@@ -15,7 +15,7 @@ import {
   IndexContent
 } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
-import { MemberComponent, MemberRight, MemberOption, MemberLeft } from './pageHTML/My/Member/Member.component';
+import { MemberComponent, MemberRight, MemberOption, MemberLeft, GetCashPopup, AddCard } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
@@ -44,6 +44,7 @@ import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/bill_save/My_bill_save.component';
 import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
+import { Bill_getcashComponent, GetCashHeader } from './PageHTML/My/bill_getcash/bill_getcash.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_m
     HelpComponent, Contact_us_sevComponent, Download_appComponent,
     Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
     IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent,
-    BillSaveHeader, TransHeader
+    BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup,
+    GetCashHeader, AddCard
   ],
   imports: [
     BrowserModule,
