@@ -43,7 +43,7 @@ import { HelpComponent } from './PageHTML/My/help/help.component';
 import { Contact_us_sevComponent } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
 import { Download_appComponent } from './PageHTML/My/download_app/download_app.component';
 import { Bill_transComponent, TransHeader } from './PageHTML/My/bill_trans/bill_trans.component';
-import { Bill_trans_recordComponent, Tr_RecordBox } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
+import { Bill_trans_recordComponent, Tr_RecordBox, TransFor, TakeOut } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/bill_save/My_bill_save.component';
 import { My_bill_moneybagComponent, MoneyBagHeader } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
@@ -65,7 +65,8 @@ import { Bill_getcashComponent, GetCashHeader } from './PageHTML/My/bill_getcash
     Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
     IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent,
     BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup,
-    GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox
+    GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox, TransFor,
+    TakeOut
   ],
   imports: [
     BrowserModule,

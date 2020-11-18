@@ -76,9 +76,11 @@ export class MemberLeft implements OnInit {
         this.cardEvent.emit(boolin);
       })
     }
-    ChildValue.childEvent.subscribe(boolin => {
-      this.childEvent.emit(boolin)
-    })
+    if (ChildValue.childEvent) {
+      ChildValue.childEvent.subscribe(boolin => {
+        this.childEvent.emit(boolin)
+      })
+    }
   }
   ngOnInit() {
   }

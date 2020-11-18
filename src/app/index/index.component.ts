@@ -23,13 +23,13 @@ export class IndexComponent implements OnInit {
 })
 export class IndexHeader implements OnInit {
   boolin: any = [];
+  total = 3;
   constructor() { }
   change(x) {
-    for (let i = 0; i < this.boolin.length; i++) {
+    for (let i = 0; i < this.total; i++) {
+      this.boolin[i] = false;
       if (i == x) {
         this.boolin[i] = true;
-      } else if (i !== x) {
-        this.boolin[i] = false;
       }
     }
   }
@@ -51,9 +51,7 @@ export class IndexHeader implements OnInit {
     })
   }
   ngOnInit() {
-    this.boolin[0] = true;
-    this.boolin[1] = false;
-    this.boolin[2] = false;
+    this.change(0)
     this.listen();
   }
 
