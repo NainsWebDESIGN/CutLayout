@@ -32,13 +32,13 @@
         <li>
             <i class="i3"></i>
             <p class="name">我的錢包</p>
-            <a [routerLink]="['/index/member/moneybag']"></a>
+            <a [routerLink]="['/index/member/moneybag']" (click)="changecash()"></a>
         </li>
         <li>
             <i class="i4"></i>
             <p class="name">交易紀錄</p>
             <p class="num active">6</p>
-            <a href="./my_bill_trans_record.html"></a>
+            <a [routerLink]="['/index/member/transrecord']"></a>
         </li>
         <li>
             <i class="i5"></i>

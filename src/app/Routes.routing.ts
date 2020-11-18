@@ -29,7 +29,7 @@ import { HelpComponent } from './PageHTML/My/help/help.component';
 import { Contact_us_sevComponent } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
 import { Download_appComponent } from './PageHTML/My/download_app/download_app.component';
 import { Bill_transComponent } from './PageHTML/My/bill_trans/bill_trans.component';
-import { Bill_trans_recordComponent } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
+import { Bill_trans_recordComponent, Tr_RecordBox } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.component';
 import { My_bill_saveComponent } from './PageHTML/My/bill_save/My_bill_save.component';
 import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
@@ -72,6 +72,13 @@ const routes: Routes = [
           { path: 'moneybag', component: My_bill_moneybagComponent },
           { path: 'billtrans', component: Bill_transComponent },
           { path: 'getcash', component: Bill_getcashComponent },
+          {
+            path: 'transrecord', component: Bill_trans_recordComponent,
+            children: [
+              { path: '', redirectTo: '/index/member/transrecord/recordbox', pathMatch: 'full' },
+              { path: 'recordbox', component: Tr_RecordBox },
+            ]
+          },
         ]
       },
     ]
@@ -84,7 +91,6 @@ const routes: Routes = [
   { path: 'help', component: HelpComponent },
   { path: 'contactus', component: Contact_us_sevComponent },
   { path: 'download', component: Download_appComponent },
-  { path: 'billtransrecord', component: Bill_trans_recordComponent },
   { path: 'billtrans', component: Bill_transComponent },
   { path: 'billrecord', component: Bill_recordComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }

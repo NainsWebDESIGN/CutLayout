@@ -13,3 +13,17 @@ export class Bill_trans_recordComponent implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'tr_record-box',
+  templateUrl: './tr_recordbox.html',
+  styleUrls: ['./bill_trans_record.component.css']
+})
+export class Tr_RecordBox implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

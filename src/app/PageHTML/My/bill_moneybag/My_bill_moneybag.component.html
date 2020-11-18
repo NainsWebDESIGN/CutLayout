@@ -41,7 +41,7 @@
     </div>
     <div class="save_type">
       <div class="cards">
-        <div class="box_3">
+        <div class="box_3" (click)="changecard()">
           <div class="m_card card_box ">
             <div class="icon_wrap">
               <span class="c_icon"></span>
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="box_3">
+        <div class="box_3" (click)="changecard()">
           <div class="m_card card_box">
             <div class="icon_wrap">
               <span class="c_icon"></span>
@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="box_3">
+        <div class="box_3" (click)="changecard()">
           <div class="m_card card_box">
             <div class="icon_wrap">
               <span class="c_icon"></span>
@@ -211,7 +211,7 @@
     <div class="save_type">
       <div class="cards">
         <div class="box_3">
-          <div class="card_box blue_card text_left finish_card ">
+          <div [ngClass]="{'check':bankcard[0]}" class="card_box blue_card text_left finish_card " (click)="check(0)">
             <div class="card_name">
               <i class="i1 icon"></i>
               <div class="r_wrap">
@@ -229,7 +229,7 @@
           </div>
         </div>
         <div class="box_3">
-          <div class="card_box green_card text_left finish_card">
+          <div [ngClass]="{'check':bankcard[1]}" class="card_box green_card text_left finish_card" (click)="check(1)">
             <div class="card_name">
               <i class="i2 icon"></i>
               <div class="r_wrap">
@@ -247,7 +247,7 @@
           </div>
         </div>
         <div class="box_3">
-          <div class="card_box pink_card text_left finish_card">
+          <div [ngClass]="{'check':bankcard[2]}" class="card_box pink_card text_left finish_card" (click)="check(2)">
             <div class="card_name">
               <i class="i3 icon"></i>
               <div class="r_wrap">
