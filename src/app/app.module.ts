@@ -19,7 +19,7 @@ import {
   MemberComponent, MemberRight, MemberOption,
   MemberLeft, GetCashPopup, AddCard
 } from './pageHTML/My/Member/Member.component';
-import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
+import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent, BasballHeader, BasballContent, BasballRight } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent } from './pageHTML/Balls/horse_race/horse_race.component';
@@ -28,17 +28,17 @@ import { StockComponent } from './pageHTML/Balls/stock/stock.component';
 import { LotteryComponent, LotteryRight, LotteryHeader, LotteryContent } from './pageHTML/Balls/lottery/lottery.component';
 import { Ice_ballComponent, IceRight, IceHeader, IceContent } from './pageHTML/Balls/ice_ball/ice_ball.component';
 import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
-import { SnookerComponent } from './pageHTML/Balls/snooker/snooker.component';
+import { SnookerComponent, SnookerRight, SnookerHeader, SnookerContent } from './pageHTML/Balls/snooker/snooker.component';
 import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
-import { MortorComponent } from './pageHTML/Balls/mortor/mortor.component';
+import { MortorComponent, MortorRight, MortorHeader, MortorContent } from './pageHTML/Balls/mortor/mortor.component';
 import { BadmintonComponent, BadmintonHeader, BadmintonContent, BadmintonRight } from './pageHTML/Balls/badminton/badminton.component';
 import { FootballComponent, FootballRight, FootballHeader, FootballContent } from './pageHTML/Balls/football/football.component';
 import { BsoComponent, BsoHeader, BsoContent, BsoRight } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
 import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
 import { Soccer_resaultComponent } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
-import { Soccer_innerComponent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
-import { Basketball_innerComponent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
+import { Soccer_innerComponent, SoinnerRight, SoinnerHeader, SoinnerContent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
+import { Basketball_innerComponent, BasketRight, BasketHeader, BasketContent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
 import { HelpComponent, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup } from './PageHTML/My/help/help.component';
 import { Contact_us_sevComponent, ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
 import { Download_appComponent, DownloadHeader, DownloadContent } from './PageHTML/My/download_app/download_app.component';
@@ -81,7 +81,9 @@ import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.comp
     BasballHeader, BasballContent, BasballRight, BasketballHeader, BsoRight,
     EspRight, EspHeader, EspContent, FootballRight, FootballHeader, FootballContent,
     HorseRight, HorseHeader, HorseContent, IceRight, IceHeader, IceContent,
-    LotteryRight, LotteryHeader, LotteryContent
+    LotteryRight, LotteryHeader, LotteryContent, MortorRight, MortorHeader, MortorContent,
+    SnookerRight, SnookerHeader, SnookerContent, SoccerRight, SoccerHeader, SoccerContent,
+    BasketRight, BasketHeader, BasketContent, SoinnerRight, SoinnerHeader, SoinnerContent
   ],
   imports: [
     BrowserModule,

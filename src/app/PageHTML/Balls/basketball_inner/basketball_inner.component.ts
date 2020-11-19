@@ -13,3 +13,45 @@ export class Basketball_innerComponent implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'basket-header',
+  templateUrl: './basketballinner-header.html',
+  styleUrls: ['./basketball_inner.component.css']
+})
+export class BasketHeader implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'basket-content',
+  templateUrl: './basketballinner-content.html',
+  styleUrls: ['./basketball_inner.component.css']
+})
+export class BasketContent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'basket-right',
+  templateUrl: './basketballinner-right.html',
+  styleUrls: ['./basketball_inner.component.css']
+})
+export class BasketRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
