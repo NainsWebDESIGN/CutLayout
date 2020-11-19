@@ -25,8 +25,8 @@ import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRig
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent, EspRight, EspHeader, EspContent } from './pageHTML/Balls/esp/esp.component';
 import { StockComponent } from './pageHTML/Balls/stock/stock.component';
-import { LotteryComponent } from './pageHTML/Balls/lottery/lottery.component';
-import { Ice_ballComponent } from './pageHTML/Balls/ice_ball/ice_ball.component';
+import { LotteryComponent, LotteryRight, LotteryHeader, LotteryContent } from './pageHTML/Balls/lottery/lottery.component';
+import { Ice_ballComponent, IceRight, IceHeader, IceContent } from './pageHTML/Balls/ice_ball/ice_ball.component';
 import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent } from './pageHTML/Balls/snooker/snooker.component';
 import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
@@ -80,7 +80,8 @@ import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.comp
     DownloadContent, BadmintonHeader, BadmintonContent, BadmintonRight,
     BasballHeader, BasballContent, BasballRight, BasketballHeader, BsoRight,
     EspRight, EspHeader, EspContent, FootballRight, FootballHeader, FootballContent,
-    HorseRight, HorseHeader, HorseContent
+    HorseRight, HorseHeader, HorseContent, IceRight, IceHeader, IceContent,
+    LotteryRight, LotteryHeader, LotteryContent
   ],
   imports: [
     BrowserModule,
