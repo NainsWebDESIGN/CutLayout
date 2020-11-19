@@ -20,8 +20,8 @@ import {
   MemberLeft, GetCashPopup, AddCard
 } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
-import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
-import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
+import { BasballComponent, BasballHeader, BasballContent, BasballRight } from './pageHTML/Balls/basball/basball.component';
+import { BasketballComponent, BasketballRight, BasketballHeader, BasketballContent } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
 import { StockComponent } from './pageHTML/Balls/stock/stock.component';
@@ -31,7 +31,7 @@ import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent } from './pageHTML/Balls/snooker/snooker.component';
 import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
 import { MortorComponent } from './pageHTML/Balls/mortor/mortor.component';
-import { BadmintonComponent } from './pageHTML/Balls/badminton/badminton.component';
+import { BadmintonComponent, BadmintonHeader, BadmintonContent, BadmintonRight } from './pageHTML/Balls/badminton/badminton.component';
 import { FootballComponent } from './pageHTML/Balls/football/football.component';
 import { BsoComponent } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
@@ -41,7 +41,7 @@ import { Soccer_innerComponent } from './PageHTML/Balls/soccer_inner/soccer_inne
 import { Basketball_innerComponent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
 import { HelpComponent, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup } from './PageHTML/My/help/help.component';
 import { Contact_us_sevComponent, ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
-import { Download_appComponent } from './PageHTML/My/download_app/download_app.component';
+import { Download_appComponent, DownloadHeader, DownloadContent } from './PageHTML/My/download_app/download_app.component';
 import { Bill_transComponent, TransHeader } from './PageHTML/My/bill_trans/bill_trans.component';
 import { Bill_trans_recordComponent, Tr_RecordBox, TransFor, TakeOut } from './PageHTML/My/bill_trans_record/bill_trans_record.component';
 import { Bill_recordComponent, BillRecordHeader } from './PageHTML/My/bill_record/bill_record.component';
@@ -76,7 +76,10 @@ import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.comp
     ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno,
     MessageComponent, MessageHeader, MessageMessage, MessageEvents, MessageAnno,
     MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader,
-    AboutAbout, AboutLink, Join_usComponent, JoinHeader
+    AboutAbout, AboutLink, Join_usComponent, JoinHeader, DownloadHeader,
+    DownloadContent, BadmintonHeader, BadmintonContent, BadmintonRight,
+    , BasballHeader, BasballContent, BasballRight, BasketballRight, BasketballHeader,
+    BasketballContent
   ],
   imports: [
     BrowserModule,
