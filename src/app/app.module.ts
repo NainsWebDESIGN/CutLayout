@@ -36,7 +36,7 @@ import { FootballComponent, FootballRight, FootballHeader, FootballContent } fro
 import { BsoComponent, BsoHeader, BsoContent, BsoRight } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
 import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
-import { Soccer_resaultComponent } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
+import { Soccer_resaultComponent, SoresContent, SoresHeader } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
 import { Soccer_innerComponent, SoinnerRight, SoinnerHeader, SoinnerContent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
 import { Basketball_innerComponent, BasketRight, BasketHeader, BasketContent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
 import { HelpComponent, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup } from './PageHTML/My/help/help.component';
@@ -83,7 +83,8 @@ import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.comp
     HorseRight, HorseHeader, HorseContent, IceRight, IceHeader, IceContent,
     LotteryRight, LotteryHeader, LotteryContent, MortorRight, MortorHeader, MortorContent,
     SnookerRight, SnookerHeader, SnookerContent, SoccerRight, SoccerHeader, SoccerContent,
-    BasketRight, BasketHeader, BasketContent, SoinnerRight, SoinnerHeader, SoinnerContent
+    BasketRight, BasketHeader, BasketContent, SoinnerRight, SoinnerHeader, SoinnerContent,
+    SoresContent, SoresHeader
   ],
   imports: [
     BrowserModule,

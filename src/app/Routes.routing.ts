@@ -67,6 +67,7 @@ const routes: Routes = [
           { path: 'bso', component: BsoComponent },
           { path: 'basketballinner', component: Basketball_innerComponent },
           { path: 'soccerinner', component: Soccer_innerComponent },
+          { path: 'soccerresault', component: Soccer_resaultComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },
@@ -103,7 +104,6 @@ const routes: Routes = [
   },
   { path: '404', component: ErrorComponent },
   { path: 'soccerbet', component: Soccer_betComponent },
-  { path: 'soccerresault', component: Soccer_resaultComponent },
   { path: 'billtrans', component: Bill_transComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
