@@ -38,10 +38,8 @@ export class ContactHeader implements OnInit {
   boolin: any = [];
   pagetotal = 4;
   constructor() { }
-  change(x) {
-    this.childEvent.emit(x);
-  }
   changeboolin(x) {
+    this.childEvent.emit(x);
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
       if (x == i) {
@@ -52,7 +50,7 @@ export class ContactHeader implements OnInit {
   ngOnInit() {
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
-      if (i == 0) {
+      if (i == (this.pagetotal - 1)) {
         this.boolin[i] = true;
       }
     }

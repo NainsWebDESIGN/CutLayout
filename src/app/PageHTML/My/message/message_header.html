@@ -1,0 +1,50 @@
+<div class="wrap none">
+    <div class="game_in my_page_bill">
+    </div>
+    <!--gi-->
+    <div class="search_bar">
+    </div>
+    <!--sb-->
+</div>
+<div class="wrap fixed">
+    <div class="game_in my_page_bill">
+        <div class="bill_left">
+            <p>消息中心</p>
+        </div>
+        <div class="bill_right">
+
+        </div>
+    </div>
+    <div class="search_bar">
+        <p class="messages" (click)="changeboolin(0)" [ngClass]="{'active':boolin[0]}">通知</p>
+        <div class="line"></div>
+        <p class="events" (click)="changeboolin(1)" [ngClass]="{'active':boolin[1]}">活動</p>
+        <div class="line"></div>
+        <p class="anno" (click)="changeboolin(2)" [ngClass]="{'active':boolin[2]}">公告</p>
+        <div class="line"></div>
+        <p class="active game_anno" (click)="changeboolin(3)" [ngClass]="{'active':boolin[3]}">賽事公告</p>
+        <div class="right_box">
+            <div class="mess_sw active">
+                <div [ngClass]="{'active':sportActive[0]}" (click)="changeSport(0)" class="s_b50">
+                    <div class="sp">IM體育</div>
+                </div>
+                <div [ngClass]="{'active':sportActive[1]}" (click)="changeSport(1)" class="s_b50">
+                    <div class="sp">UR體育</div>
+                </div>
+            </div>
+            <div class="edit">
+                <div class="do">
+                    <span>編輯</span>
+                </div>
+                <div class="doing">
+                    <div class="delete">
+                        <span>刪除</span>
+                    </div>
+                    <div class="cancel">
+                        <span>取消</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

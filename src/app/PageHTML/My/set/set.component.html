@@ -1,0 +1,92 @@
+<div class="right">
+  <set-header (childEvent)="change($event)"></set-header>
+  <div class="basic_bill">
+    <div class="b_name">
+      <p class="bf">介面設定</p>
+    </div>
+    <div class="save_type set_size">
+      <div class="mb_box no_border">
+        <div class="b50">
+          <p class="set_title">盤口切換</p>
+          <div class="set_sw">
+            <!-- <div class="s_ball"></div> -->
+            <div [ngClass]="{'active':boolin[0][0]}" (click)="btnSwitch(0,0)" class="s_b50">
+              <p>歐洲盤</p>
+            </div>
+            <div [ngClass]="{'active':boolin[0][1]}" (click)="btnSwitch(0,1)" class="s_b50">
+              <p>香港盤</p>
+            </div>
+          </div>
+        </div>
+        <div class="b50">
+          <p class="set_title">主題風格</p>
+          <div class="set_sw">
+            <!-- <div class="s_ball"></div> -->
+            <div [ngClass]="{'active':boolin[1][0]}" (click)="btnSwitch(1,0)" class="s_b50">
+              <p>日間</p>
+            </div>
+            <div [ngClass]="{'active':boolin[1][1]}" (click)="btnSwitch(1,1)" class="s_b50">
+              <p>夜間</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="basic_bill">
+    <div class="b_name">
+      <p class="bf">通知設定</p>
+      <div class="right_box">
+        <i class="infor infor_margin_r"></i><span>開啟通知，可隨時掌握最新賽事比分</span>
+      </div>
+    </div>
+    <div class="save_type set_size">
+      <div class="mb_box no_border">
+        <div class="b50">
+          <p class="set_title">桌面通知</p>
+          <div class="set_sw">
+            <!-- <div class="s_ball"></div> -->
+            <div [ngClass]="{'active':boolin[2][0]}" (click)="btnSwitch(2,0)" class="s_b50">
+              <p>開啟</p>
+            </div>
+            <div [ngClass]="{'active':boolin[2][1]}" (click)="btnSwitch(2,1)" class="s_b50">
+              <p>關閉</p>
+            </div>
+          </div>
+        </div>
+        <div class="b50">
+          <p class="set_title">電子郵件通知</p>
+          <div class="set_sw">
+            <!-- <div class="s_ball"></div> -->
+            <div [ngClass]="{'active':boolin[3][0]}" (click)="btnSwitch(3,0)" class="s_b50">
+              <p>開啟</p>
+            </div>
+            <div [ngClass]="{'active':boolin[3][1]}" (click)="btnSwitch(3,1)" class="s_b50">
+              <p>關閉</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="basic_bill b50">
+    <div class="b_name">
+      <p class="bf">版本資訊</p>
+    </div>
+    <div class="save_type version_size">
+      <div class="mb_box">
+        <div class="b50">
+          <div class="v_wrap">
+            <span class="v_title">目前為最新版本</span>
+            <span class="v_data">V4.0.3</span>
+          </div>
+        </div>
+        <div class="b50">
+          <div class="v_wrap">
+            <div class="v_icon_check"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

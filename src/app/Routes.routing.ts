@@ -35,6 +35,9 @@ import { My_bill_saveComponent } from './PageHTML/My/bill_save/My_bill_save.comp
 import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
 import { Bill_getcashComponent } from './PageHTML/My/bill_getcash/bill_getcash.component';
 import { Bill_nowComponent } from './PageHTML/My/bill_now/bill_now.component';
+import { MessageComponent } from './PageHTML/My/message/message.component';
+import { SetComponent } from './PageHTML/My/set/set.component';
+import { AboutComponent } from './PageHTML/My/about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -86,6 +89,9 @@ const routes: Routes = [
           { path: 'billrecord', component: Bill_recordComponent },
           { path: 'help', component: HelpComponent },
           { path: 'contactus', component: Contact_us_sevComponent },
+          { path: 'message', component: MessageComponent },
+          { path: 'set', component: SetComponent },
+          { path: 'about', component: AboutComponent },
         ]
       },
     ]

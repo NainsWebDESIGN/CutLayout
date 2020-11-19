@@ -49,6 +49,9 @@ import { My_bill_saveComponent, BillSaveHeader } from './PageHTML/My/bill_save/M
 import { My_bill_moneybagComponent, MoneyBagHeader } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
 import { Bill_getcashComponent, GetCashHeader } from './PageHTML/My/bill_getcash/bill_getcash.component';
 import { Bill_nowComponent, NowHeader } from './PageHTML/My/bill_now/bill_now.component';
+import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, MessageAnno, MessageGameAnno } from './PageHTML/My/message/message.component';
+import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
+import { AboutComponent, AboutHeader } from './PageHTML/My/about/about.component';
 
 
 @NgModule({
@@ -69,7 +72,9 @@ import { Bill_nowComponent, NowHeader } from './PageHTML/My/bill_now/bill_now.co
     GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox, TransFor,
     TakeOut, Bill_nowComponent, NowHeader, Bill_recordComponent, BillRecordHeader,
     HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup,
-    ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno
+    ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno,
+    MessageComponent, MessageHeader, MessageMessage, MessageEvents, MessageAnno,
+    MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader
   ],
   imports: [
     BrowserModule,

@@ -38,10 +38,8 @@ export class HelpHeader implements OnInit {
   boolin: any = [];
   pagetotal = 6;
   constructor() { }
-  change(x) {
-    this.childEvent.emit(x);
-  }
   changeboolin(x) {
+    this.childEvent.emit(x);
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
       if (i == x) {

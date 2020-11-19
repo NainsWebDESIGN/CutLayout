@@ -1,14 +1,14 @@
 <div class="right">
   <now-header></now-header>
   <!--單關格式-->
-  <div [ngClass]="{'active':boolin[1]}" class="basic_bill">
+  <div [ngClass]="{'active':boolin[1]}" class="basic_bill" (click)="changeboolin(1)">
     <div class="b_name">
       <p class="bf">足球-全場-獨贏</p>
       <div class="row_line"></div>
       <p>未開獎</p>
       <div class="right_box">
         <p class="time">2020-05-27&ensp;16:26:07</p>
-        <span class="arrow" (click)="changeboolin(1)"></span>
+        <span class="arrow"></span>
       </div>
     </div>
     <ul class="close bill_row">
@@ -97,14 +97,14 @@
     </ul>
   </div>
   <!--串關格式-->
-  <div [ngClass]="{'active':boolin[0]}" class="basic_bill">
+  <div [ngClass]="{'active':boolin[0]}" class="basic_bill" (click)="changeboolin(0)">
     <div class="b_name">
       <p class="bf">足球-全場-獨贏</p>
       <div class="row_line"></div>
       <p>未開獎</p>
       <div class="right_box">
         <p class="time">2020-05-27 16:26:07</p>
-        <span class="arrow" (click)="changeboolin(0)"></span>
+        <span class="arrow"></span>
       </div>
     </div>
     <ul class="close bill_row">

@@ -1,0 +1,16 @@
+<div class="right">
+  <message-header (childEvent)="changeboolin($event)"></message-header>
+  <div [ngClass]="{'active':boolin[0]}" class="messages_page">
+    <message-message></message-message>
+  </div>
+  <div [ngClass]="{'active':boolin[1]}" class="events_page">
+    <message-events></message-events>
+  </div>
+  <div [ngClass]="{'active':boolin[2]}" class="anno_page">
+    <message-anno></message-anno>
+  </div>
+  <div [ngClass]="{'active':boolin[3]}" class="game_anno_page">
+    <message-gameanno></message-gameanno>
+  </div>
+
+</div>
