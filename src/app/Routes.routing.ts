@@ -85,6 +85,7 @@ const routes: Routes = [
           { path: 'billnow', component: Bill_nowComponent },
           { path: 'billrecord', component: Bill_recordComponent },
           { path: 'help', component: HelpComponent },
+          { path: 'contactus', component: Contact_us_sevComponent },
         ]
       },
     ]
@@ -94,7 +95,6 @@ const routes: Routes = [
   { path: 'soccerresault', component: Soccer_resaultComponent },
   { path: 'soccerinner', component: Soccer_innerComponent },
   { path: 'basketballinner', component: Basketball_innerComponent },
-  { path: 'contactus', component: Contact_us_sevComponent },
   { path: 'download', component: Download_appComponent },
   { path: 'billtrans', component: Bill_transComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }

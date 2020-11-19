@@ -1,0 +1,51 @@
+<div class="wrap none">
+    <div class="game_in my_page_bill">
+    </div>
+    <!--gi-->
+    <div class="search_bar">
+    </div>
+    <!--sb-->
+</div>
+<div class="wrap fixed">
+    <div class="game_in my_page_bill">
+        <div class="bill_left">
+            <p>聯繫我們</p>
+        </div>
+        <div class="bill_right">
+
+        </div>
+    </div>
+    <div class="search_bar">
+        <p [ngClass]="{'active':boolin[0]}" class="messages" (click)="change(0)" (click)="changeboolin(0)">聯繫我們</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[1]}" class="events" (click)="change(1)" (click)="changeboolin(1)">意見反饋</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[2]}" class="anno" (click)="change(2)" (click)="changeboolin(2)">我的反饋</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[3]}" class="game_anno" (click)="change(3)" (click)="changeboolin(3)">線上客服</p>
+        <div class="right_box">
+            <span class="date_icon"></span>
+            <div class="day_box">
+                <span>2020-05-25</span>
+                <span class="tri"></span>
+                <div class="day_drow">
+                    <span>2020-05-26</span>
+                    <span>2020-05-27</span>
+                    <span>2020-05-28</span>
+                    <span>2020-05-29</span>
+                    <span>2020-05-30</span>
+                </div>
+            </div>
+            <div class="row_line"></div>
+            <span class="date_icon"></span>
+            <div class="day_box">
+                <span>2020-05-31</span>
+                <span class="tri"></span>
+            </div>
+            <div class="tag_wrap">
+                <span class="tag"><span>查詢</span></span>
+            </div>
+        </div>
+        <!--right_box-->
+    </div>
+</div>
