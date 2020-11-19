@@ -13,3 +13,31 @@ export class Download_appComponent implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'download-header',
+  templateUrl: './download-header.html',
+  styleUrls: ['./download_app.component.css']
+})
+export class DownloadHeader implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'download-content',
+  templateUrl: './download-content.html',
+  styleUrls: ['./download_app.component.css']
+})
+export class DownloadContent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
