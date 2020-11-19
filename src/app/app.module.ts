@@ -51,7 +51,8 @@ import { Bill_getcashComponent, GetCashHeader } from './PageHTML/My/bill_getcash
 import { Bill_nowComponent, NowHeader } from './PageHTML/My/bill_now/bill_now.component';
 import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, MessageAnno, MessageGameAnno } from './PageHTML/My/message/message.component';
 import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
-import { AboutComponent, AboutHeader } from './PageHTML/My/about/about.component';
+import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
+import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
 
 
 @NgModule({
@@ -74,7 +75,8 @@ import { AboutComponent, AboutHeader } from './PageHTML/My/about/about.component
     HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup,
     ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno,
     MessageComponent, MessageHeader, MessageMessage, MessageEvents, MessageAnno,
-    MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader
+    MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader,
+    AboutAbout, AboutLink, Join_usComponent, JoinHeader
   ],
   imports: [
     BrowserModule,

@@ -23,9 +23,9 @@
         </div>
     </div>
     <div class="search_bar">
-        <p class="a_about active">關於我們</p>
+        <p (click)="change(0)" [ngClass]="{'active':boolin[0]}" class="a_about">關於我們</p>
         <div class="line"></div>
-        <p class="a_link">相關連結</p>
+        <p (click)="change(1)" [ngClass]="{'active':boolin[1]}" class="a_link">相關連結</p>
     </div>
     <!--search_bar-->
 </div>

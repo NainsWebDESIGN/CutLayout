@@ -38,6 +38,7 @@ import { Bill_nowComponent } from './PageHTML/My/bill_now/bill_now.component';
 import { MessageComponent } from './PageHTML/My/message/message.component';
 import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
+import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -92,6 +93,8 @@ const routes: Routes = [
           { path: 'message', component: MessageComponent },
           { path: 'set', component: SetComponent },
           { path: 'about', component: AboutComponent },
+          { path: 'joinus', component: Join_usComponent },
+          { path: 'download', component: Download_appComponent },
         ]
       },
     ]
@@ -101,7 +104,6 @@ const routes: Routes = [
   { path: 'soccerresault', component: Soccer_resaultComponent },
   { path: 'soccerinner', component: Soccer_innerComponent },
   { path: 'basketballinner', component: Basketball_innerComponent },
-  { path: 'download', component: Download_appComponent },
   { path: 'billtrans', component: Bill_transComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
