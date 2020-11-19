@@ -1,0 +1,39 @@
+<div class="wrap none">
+    <div class="game_in my_page_bill">
+    </div>
+    <!--gi-->
+    <div class="search_bar">
+    </div>
+    <!--search_bar-->
+</div>
+<!--wrap-->
+
+<div class="wrap fixed">
+    <div class="game_in my_page_bill">
+        <div class="bill_left">
+            <p>幫助中心</p>
+        </div>
+        <div class="my_bill_mid">
+            <div class="m_box">
+                <p></p>
+                <p class="blue"></p>
+            </div>
+        </div>
+        <div class="bill_right">
+
+        </div>
+    </div>
+    <div class="search_bar">
+        <p [ngClass]="{'active':boolin[0]}" class="q_save" (click)="change(0)" (click)="changeboolin(0)">存款問題</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[1]}" class="q_trans" (click)="change(1)" (click)="changeboolin(1)">轉點問題</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[2]}" class="q_cash" (click)="change(2)" (click)="changeboolin(2)">取款問題</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[3]}" class="q_bet" (click)="change(3)" (click)="changeboolin(3)">投注相關</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[4]}" class="q_rules" (click)="change(4)" (click)="changeboolin(4)">體育規則</p>
+        <div class="line"></div>
+        <p [ngClass]="{'active':boolin[5]}" class="q_sup" (click)="change(5)" (click)="changeboolin(5)">技術支持</p>
+    </div>
+</div>

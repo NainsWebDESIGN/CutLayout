@@ -1,0 +1,270 @@
+<div class="right">
+  <now-header></now-header>
+  <!--單關格式-->
+  <div [ngClass]="{'active':boolin[1]}" class="basic_bill">
+    <div class="b_name">
+      <p class="bf">足球-全場-獨贏</p>
+      <div class="row_line"></div>
+      <p>未開獎</p>
+      <div class="right_box">
+        <p class="time">2020-05-27&ensp;16:26:07</p>
+        <span class="arrow" (click)="changeboolin(1)"></span>
+      </div>
+    </div>
+    <ul class="close bill_row">
+      <li>
+        <div class="b11 g_bg">投注選項</div>
+        <div class="b25 t_left">
+          <span class="blue">維羅納</span>
+          <span>@</span>
+          <span class="red">1.95</span>
+        </div>
+        <div class="b10 g_bg">賠率</div>
+        <div class="b22 t_left"><span class="red">0.96</span></div>
+        <div class="b10 g_bg">投注金額</div>
+        <div class="b22 t_left"><span>10000</span></div>
+      </li>
+    </ul>
+    <ul class="open bill_row">
+      <li class="title">
+        <i class="i1"></i>
+        <span>足球-全場-獨贏</span>
+        <div class="right_box">
+          <p>比賽時間</p>
+          <div class="row_line"></div>
+          <p>2020-0528&ensp;00:00</p>
+        </div>
+      </li>
+      <li class="big_line">
+        <div class="b11 g_bg">投注選項</div>
+        <div class="b25 t_left">
+          <span class="blue">維羅納</span>
+          <span>@</span>
+          <span class="red">1.95</span>
+        </div>
+        <div class="b10 g_bg">投注賽事</div>
+        <div class="b54 t_left ">
+          <em class="wrap big_li_half">
+            <p>義大利甲組聯賽
+            <p>
+            <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+          </em>
+
+        </div>
+      </li>
+      <li>
+        <div class="b11 g_bg">下注時間</div>
+        <div class="b25 t_left">
+          <span>2020-05-27&ensp;16:16:07</span>
+        </div>
+        <div class="b10 g_bg">比賽時間</div>
+        <div class="b22 t_left">
+          <span>2020-05-28&ensp;16:16:07</span>
+        </div>
+        <div class="b10 g_bg">帳務日期</div>
+        <div class="b22 t_left">
+          <span>2020-05-28</span>
+        </div>
+      </li>
+      <li>
+        <div class="b11 g_bg">單號</div>
+        <div class="b25 t_left">
+          <span class="d_blue">CPR09621621</span>
+        </div>
+        <div class="b10 g_bg">賠率</div>
+        <div class="b22 t_left">
+          <span>0.96</span>
+        </div>
+        <div class="b10 g_bg">可贏(參考)</div>
+        <div class="b22 t_left">
+          <span class="red">150</span>
+        </div>
+      </li>
+      <li class="footer_bg_blue white">
+        <div class="b11">投注金額</div>
+        <div class="b25 t_left">
+          <span>1000</span>
+        </div>
+        <div class="b10">有效下注</div>
+        <div class="b22 t_left">
+          <span>0.96</span>
+        </div>
+        <div class="b10">結果</div>
+        <div class="b22 t_left">
+          <span>未開獎</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--串關格式-->
+  <div [ngClass]="{'active':boolin[0]}" class="basic_bill">
+    <div class="b_name">
+      <p class="bf">足球-全場-獨贏</p>
+      <div class="row_line"></div>
+      <p>未開獎</p>
+      <div class="right_box">
+        <p class="time">2020-05-27 16:26:07</p>
+        <span class="arrow" (click)="changeboolin(0)"></span>
+      </div>
+    </div>
+    <ul class="close bill_row">
+      <li>
+        <div class="b11 g_bg">投注選項</div>
+        <div class="b25 t_left">
+          <span class="blue">3串一</span>
+        </div>
+        <div class="b10 g_bg">賠率</div>
+        <div class="b22 t_left"><span class="red">0.96</span></div>
+        <div class="b10 g_bg">投注金額</div>
+        <div class="b22 t_left"><span>10000</span></div>
+      </li>
+    </ul>
+    <ul class="open bill_row">
+      <div class="num_wrap">
+        <div class="b5">
+          <p>1</p>
+        </div>
+        <div class="li_wrap">
+          <li class="title">
+            <i class="i1"></i>
+            <span>足球-全場-獨贏</span>
+            <div class="right_box">
+              <p>比賽時間</p>
+              <div class="row_line"></div>
+              <p>2020-0528 00:00</p>
+            </div>
+          </li>
+          <li class="big_line">
+            <div class="b9 g_bg">投注選項</div>
+            <div class="b23_6 t_left">
+              <span class="blue">維羅納</span>
+              <span>@</span>
+              <span class="red">1.95</span>
+            </div>
+            <div class="b10_6 g_bg">投注賽事</div>
+            <div class="b54 t_left ">
+              <em class="wrap big_li_half">
+                <p>義大利甲組聯賽</p>
+                <p>
+                </p>
+                <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+              </em>
+
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="num_wrap">
+        <div class="b5">
+          <p>2</p>
+        </div>
+        <div class="li_wrap">
+          <li class="title">
+            <i class="i1"></i>
+            <span>足球-全場-獨贏</span>
+            <div class="right_box">
+              <p>比賽時間</p>
+              <div class="row_line"></div>
+              <p>2020-0528 00:00</p>
+            </div>
+          </li>
+          <li class="big_line">
+            <div class="b9 g_bg">投注選項</div>
+            <div class="b23_6 t_left">
+              <span class="blue">維羅納</span>
+              <span>@</span>
+              <span class="red">1.95</span>
+            </div>
+            <div class="b10_6 g_bg">投注賽事</div>
+            <div class="b54 t_left ">
+              <em class="wrap big_li_half">
+                <p>義大利甲組聯賽</p>
+                <p>
+                </p>
+                <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+              </em>
+
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="num_wrap">
+        <div class="b5">
+          <p>3</p>
+        </div>
+        <div class="li_wrap">
+          <li class="title">
+            <i class="i1"></i>
+            <span>足球-全場-獨贏</span>
+            <div class="right_box">
+              <p>比賽時間</p>
+              <div class="row_line"></div>
+              <p>2020-0528 00:00</p>
+            </div>
+          </li>
+          <li class="big_line">
+            <div class="b9 g_bg">投注選項</div>
+            <div class="b23_6 t_left">
+              <span class="blue">維羅納</span>
+              <span>@</span>
+              <span class="red">1.95</span>
+            </div>
+            <div class="b10_6 g_bg">投注賽事</div>
+            <div class="b54 t_left ">
+              <em class="wrap big_li_half">
+                <p>義大利甲組聯賽</p>
+                <p>
+                </p>
+                <p>拉素[主] <span class="red">2+50</span> <span class="blue">VS</span>維羅納 </p>
+              </em>
+
+            </div>
+          </li>
+        </div>
+      </div>
+      <li>
+        <div class="b11 g_bg">下注時間</div>
+        <div class="b25 t_left">
+          <span>2020-05-27 16:16:07</span>
+        </div>
+        <div class="b10 g_bg">比賽時間</div>
+        <div class="b22 t_left">
+          <span>2020-05-28 16:16:07</span>
+        </div>
+        <div class="b10 g_bg">帳務日期</div>
+        <div class="b22 t_left">
+          <span>2020-05-28</span>
+        </div>
+      </li>
+      <li>
+        <div class="b11 g_bg">單號</div>
+        <div class="b25 t_left">
+          <span class="d_blue">CPR09621621</span>
+        </div>
+        <div class="b10 g_bg">賠率</div>
+        <div class="b22 t_left">
+          <span>0.96</span>
+        </div>
+        <div class="b10 g_bg">可贏(參考)</div>
+        <div class="b22 t_left">
+          <span class="red">150</span>
+        </div>
+      </li>
+      <li class="footer_bg_blue white">
+        <div class="b11">投注金額</div>
+        <div class="b25 t_left">
+          <span>1000</span>
+        </div>
+        <div class="b10">有效下注</div>
+        <div class="b22 t_left">
+          <span>0.96</span>
+        </div>
+        <div class="b10">結果</div>
+        <div class="b22 t_left">
+          <span>未開獎</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

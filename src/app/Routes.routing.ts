@@ -34,6 +34,7 @@ import { Bill_recordComponent } from './PageHTML/My/bill_record/bill_record.comp
 import { My_bill_saveComponent } from './PageHTML/My/bill_save/My_bill_save.component';
 import { My_bill_moneybagComponent } from './PageHTML/My/bill_moneybag/My_bill_moneybag.component';
 import { Bill_getcashComponent } from './PageHTML/My/bill_getcash/bill_getcash.component';
+import { Bill_nowComponent } from './PageHTML/My/bill_now/bill_now.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -81,6 +82,9 @@ const routes: Routes = [
               { path: 'takeout', component: TakeOut },
             ]
           },
+          { path: 'billnow', component: Bill_nowComponent },
+          { path: 'billrecord', component: Bill_recordComponent },
+          { path: 'help', component: HelpComponent },
         ]
       },
     ]
@@ -90,11 +94,9 @@ const routes: Routes = [
   { path: 'soccerresault', component: Soccer_resaultComponent },
   { path: 'soccerinner', component: Soccer_innerComponent },
   { path: 'basketballinner', component: Basketball_innerComponent },
-  { path: 'help', component: HelpComponent },
   { path: 'contactus', component: Contact_us_sevComponent },
   { path: 'download', component: Download_appComponent },
   { path: 'billtrans', component: Bill_transComponent },
-  { path: 'billrecord', component: Bill_recordComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
 
