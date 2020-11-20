@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-soccer',
@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./soccer.component.css']
 })
 export class SoccerComponent implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
   ngOnInit() {
   }
 
@@ -20,9 +19,8 @@ export class SoccerComponent implements OnInit {
   styleUrls: ['./soccer.component.css']
 })
 export class SoccerHeader implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-
   ngOnInit() {
   }
 

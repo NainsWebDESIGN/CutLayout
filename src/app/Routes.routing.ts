@@ -40,6 +40,7 @@ import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
 import { Soccer_teachComponent } from './PageHTML/Balls/soccer_teach/soccer_teach.component';
+import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -60,6 +61,7 @@ const routes: Routes = [
               { path: 'soccerresault', component: Soccer_resaultComponent },
               { path: 'soccerbet', component: Soccer_betComponent },
               { path: 'soccerteach', component: Soccer_teachComponent },
+              { path: 'soteachbs', component: Soteach_bsComponent },
             ]
           },
           { path: 'basketball', component: BasketballComponent },

@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
+import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 
 @Component({
   selector: 'app-index',
@@ -64,6 +65,7 @@ export class IndexHeader implements OnInit {
 })
 export class IndexLeft implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
 
   boolin = true;
   left: any = [];
@@ -187,17 +189,20 @@ export class IndexEnContainer implements OnInit {
 export class IndexContent implements OnInit {
   boolin = false;
   popup = false;
-  constructor() { }
+  constructor(private router: Router) { }
   getChild(ChildValue) {
     this.boolin = ChildValue;
   }
   listen() {
-    addEventListener("hashchange", () => {
-      let url = '/index/indexcontent/indexright'
-      if (location.hash = url) {
-        this.boolin = false;
-      }
-    })
+    let url = '/index/indexcontent/indexright'
+    let url1 = '/index/indexcontent/soccer/soccerbet'
+    this.router.events
+      .subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          event['url'] == url ? this.boolin = false : this.boolin = true;
+          event['url'] == url1 ? this.popup = true : this.popup = false;
+        }
+      })
   }
   ngOnInit() {
     this.listen();
@@ -211,7 +216,11 @@ export class IndexContent implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class SkewersPopup implements OnInit {
+  boolin = false;
   constructor() { }
+  change() {
+    this.boolin = !this.boolin;
+  }
   ngOnInit() {
   }
 
