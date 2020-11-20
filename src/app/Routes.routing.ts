@@ -5,7 +5,7 @@ import { ErrorComponent } from './Error/Error.component';
 import { IndexComponent, IndexRight, IndexContent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent, MemberRight } from './pageHTML/My/Member/Member.component';
-import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
+import { SoccerComponent, SoccerContent } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
@@ -39,6 +39,7 @@ import { MessageComponent } from './PageHTML/My/message/message.component';
 import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
+import { Soccer_teachComponent } from './PageHTML/Balls/soccer_teach/soccer_teach.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -51,7 +52,16 @@ const routes: Routes = [
           { path: 'indexright', component: IndexRight },
           { path: 'tableball', component: Table_ballComponent },
           { path: 'basball', component: BasballComponent },
-          { path: 'soccer', component: SoccerComponent },
+          {
+            path: 'soccer', component: SoccerComponent,
+            children: [
+              { path: '', redirectTo: '/index/indexcontent/soccer/soccercontent', pathMatch: 'full' },
+              { path: 'soccercontent', component: SoccerContent },
+              { path: 'soccerresault', component: Soccer_resaultComponent },
+              { path: 'soccerbet', component: Soccer_betComponent },
+              { path: 'soccerteach', component: Soccer_teachComponent },
+            ]
+          },
           { path: 'basketball', component: BasketballComponent },
           { path: 'horse', component: Horse_raceComponent },
           { path: 'esp', component: EspComponent },
@@ -67,7 +77,6 @@ const routes: Routes = [
           { path: 'bso', component: BsoComponent },
           { path: 'basketballinner', component: Basketball_innerComponent },
           { path: 'soccerinner', component: Soccer_innerComponent },
-          { path: 'soccerresault', component: Soccer_resaultComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },
@@ -103,7 +112,6 @@ const routes: Routes = [
     ]
   },
   { path: '404', component: ErrorComponent },
-  { path: 'soccerbet', component: Soccer_betComponent },
   { path: 'billtrans', component: Bill_transComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];

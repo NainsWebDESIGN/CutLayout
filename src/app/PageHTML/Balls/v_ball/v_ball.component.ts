@@ -13,3 +13,45 @@ export class V_ballComponent implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'vball-header',
+  templateUrl: './vball-header.html',
+  styleUrls: ['./v_ball.component.css']
+})
+export class VballHeader implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'vball-content',
+  templateUrl: './vball-content.html',
+  styleUrls: ['./v_ball.component.css']
+})
+export class VballContent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'vball-right',
+  templateUrl: './vball-right.html',
+  styleUrls: ['./v_ball.component.css']
+})
+export class VballRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

@@ -24,17 +24,17 @@ import { BasballComponent, BasballHeader, BasballContent, BasballRight } from '.
 import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent, EspRight, EspHeader, EspContent } from './pageHTML/Balls/esp/esp.component';
-import { StockComponent } from './pageHTML/Balls/stock/stock.component';
+import { StockComponent, StockHeader, StockRight, StockContent } from './pageHTML/Balls/stock/stock.component';
 import { LotteryComponent, LotteryRight, LotteryHeader, LotteryContent } from './pageHTML/Balls/lottery/lottery.component';
 import { Ice_ballComponent, IceRight, IceHeader, IceContent } from './pageHTML/Balls/ice_ball/ice_ball.component';
-import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
+import { TennisComponent, TennisRight, TennisContent, TennisHeader } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent, SnookerRight, SnookerHeader, SnookerContent } from './pageHTML/Balls/snooker/snooker.component';
-import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
+import { V_ballComponent, VballRight, VballHeader, VballContent } from './pageHTML/Balls/v_ball/v_ball.component';
 import { MortorComponent, MortorRight, MortorHeader, MortorContent } from './pageHTML/Balls/mortor/mortor.component';
 import { BadmintonComponent, BadmintonHeader, BadmintonContent, BadmintonRight } from './pageHTML/Balls/badminton/badminton.component';
 import { FootballComponent, FootballRight, FootballHeader, FootballContent } from './pageHTML/Balls/football/football.component';
 import { BsoComponent, BsoHeader, BsoContent, BsoRight } from './pageHTML/Balls/bso/bso.component';
-import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
+import { Table_ballComponent, TableRight, TableHeader, TableContent } from './pageHTML/Balls/table_ball/table_ball.component';
 import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
 import { Soccer_resaultComponent, SoresContent, SoresHeader } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
 import { Soccer_innerComponent, SoinnerRight, SoinnerHeader, SoinnerContent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
@@ -53,38 +53,30 @@ import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, Message
 import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
+import { Soccer_teachComponent } from './PageHTML/Balls/soccer_teach/soccer_teach.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft,
-    IndexRight, IndexLogin, IndexSeachbox, IndexBallBetting, BasketballContent,
-    IndexRightLive, IndexSideOptions, IndexEnContainer, DiscountComponent,
-    MemberComponent, SoccerComponent, BasballComponent, BasketballComponent,
-    Horse_raceComponent, EspComponent, StockComponent, LotteryComponent,
-    Ice_ballComponent, TennisComponent, SnookerComponent, V_ballComponent,
-    MortorComponent, BadmintonComponent, FootballComponent, BsoComponent,
-    Table_ballComponent, Soccer_betComponent, My_bill_moneybagComponent,
-    Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
-    HelpComponent, Contact_us_sevComponent, Download_appComponent, BasketballRight,
-    Bill_transComponent, Bill_trans_recordComponent, Bill_recordComponent,
-    IndexContent, MemberRight, MemberOption, MemberLeft, My_bill_saveComponent,
-    BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup, BsoContent,
-    GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox, TransFor, BsoHeader,
-    TakeOut, Bill_nowComponent, NowHeader, Bill_recordComponent, BillRecordHeader,
-    HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup,
-    ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno,
-    MessageComponent, MessageHeader, MessageMessage, MessageEvents, MessageAnno,
-    MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader,
-    AboutAbout, AboutLink, Join_usComponent, JoinHeader, DownloadHeader,
-    DownloadContent, BadmintonHeader, BadmintonContent, BadmintonRight,
-    BasballHeader, BasballContent, BasballRight, BasketballHeader, BsoRight,
-    EspRight, EspHeader, EspContent, FootballRight, FootballHeader, FootballContent,
-    HorseRight, HorseHeader, HorseContent, IceRight, IceHeader, IceContent,
-    LotteryRight, LotteryHeader, LotteryContent, MortorRight, MortorHeader, MortorContent,
-    SnookerRight, SnookerHeader, SnookerContent, SoccerRight, SoccerHeader, SoccerContent,
-    BasketRight, BasketHeader, BasketContent, SoinnerRight, SoinnerHeader, SoinnerContent,
-    SoresContent, SoresHeader
+    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent,
+    IndexRight, IndexLogin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoHeader,
+    IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LotteryComponent, HelpBet,
+    Horse_raceComponent, EspComponent, StockComponent, Ice_ballComponent, TennisComponent, SnookerComponent, TransFor,
+    V_ballComponent, MortorComponent, BadmintonComponent, FootballComponent, BsoComponent, My_bill_moneybagComponent,
+    Table_ballComponent, Soccer_betComponent, Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
+    HelpComponent, Contact_us_sevComponent, Download_appComponent, BasketballRight, Bill_recordComponent, BsoContent,
+    Bill_transComponent, Bill_trans_recordComponent, IndexContent, MemberRight, MemberOption, MemberLeft, SoccerContent,
+    BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup, GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox,
+    TakeOut, Bill_nowComponent, NowHeader, BillRecordHeader, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpRules, HelpSup,
+    ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno, MessageEvents, MessageAnno, MessageMessage,
+    MessageComponent, MessageHeader, MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader, DownloadHeader,
+    AboutAbout, AboutLink, Join_usComponent, JoinHeader, BadmintonContent, BadmintonRight, TableHeader, BadmintonHeader,
+    DownloadContent, BasballHeader, BasballContent, BasballRight, BasketballHeader, BsoRight, FootballHeader, FootballContent,
+    EspRight, EspHeader, EspContent, FootballRight, IceRight, IceHeader, IceContent, TableContent, HorseRight, HorseHeader,
+    HorseContent, LotteryRight, LotteryHeader, LotteryContent, MortorRight, MortorHeader, MortorContent, SoccerRight,
+    SnookerRight, SnookerHeader, SnookerContent, SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent,
+    BasketRight, BasketHeader, BasketContent, SoinnerRight, StockHeader, StockRight, StockContent, TableRight, SoresHeader,
+    SoresContent, TennisRight, TennisContent, TennisHeader, VballRight, VballHeader, VballContent, Soccer_teachComponent,
   ],
   imports: [
     BrowserModule,

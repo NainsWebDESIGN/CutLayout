@@ -13,3 +13,45 @@ export class TennisComponent implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'tennis-header',
+  templateUrl: './tennis-header.html',
+  styleUrls: ['./tennis.component.css']
+})
+export class TennisHeader implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'tennis-content',
+  templateUrl: './tennis-content.html',
+  styleUrls: ['./tennis.component.css']
+})
+export class TennisContent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'tennis-right',
+  templateUrl: './tennis-right.html',
+  styleUrls: ['./tennis.component.css']
+})
+export class TennisRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
