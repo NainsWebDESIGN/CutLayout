@@ -186,6 +186,7 @@ export class IndexEnContainer implements OnInit {
 })
 export class IndexContent implements OnInit {
   boolin = false;
+  popup = false;
   constructor() { }
   getChild(ChildValue) {
     this.boolin = ChildValue;
@@ -200,6 +201,18 @@ export class IndexContent implements OnInit {
   }
   ngOnInit() {
     this.listen();
+  }
+
+}
+
+@Component({
+  selector: 'skewers_popup',
+  templateUrl: './skewers_popup.html',
+  styleUrls: ['../app.component.css']
+})
+export class SkewersPopup implements OnInit {
+  constructor() { }
+  ngOnInit() {
   }
 
 }

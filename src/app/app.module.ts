@@ -12,7 +12,7 @@ import {
   IndexRight, IndexLogin, IndexSeachbox,
   IndexBallBetting, IndexRightLive,
   IndexSideOptions, IndexEnContainer,
-  IndexContent
+  IndexContent, SkewersPopup
 } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import {
@@ -77,6 +77,7 @@ import { Soccer_teachComponent } from './PageHTML/Balls/soccer_teach/soccer_teac
     SnookerRight, SnookerHeader, SnookerContent, SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent,
     BasketRight, BasketHeader, BasketContent, SoinnerRight, StockHeader, StockRight, StockContent, TableRight, SoresHeader,
     SoresContent, TennisRight, TennisContent, TennisHeader, VballRight, VballHeader, VballContent, Soccer_teachComponent,
+    SkewersPopup
   ],
   imports: [
     BrowserModule,
