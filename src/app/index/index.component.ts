@@ -194,14 +194,15 @@ export class IndexContent implements OnInit {
     this.boolin = ChildValue;
   }
   listen() {
-    let url = '/index/indexcontent/indexright'
-    let url1 = '/index/indexcontent/soccer/soccerbet'
+    let url = '/index/indexcontent/indexright';
+    let url1 = '/index/indexcontent/soccer/soccerbet';
     this.router.events
       .subscribe(event => {
         if (event instanceof NavigationEnd) {
           event['url'] == url ? this.boolin = false : this.boolin = true;
           event['url'] == url1 ? this.popup = true : this.popup = false;
         }
+        console.log(event['url'])
       })
   }
   ngOnInit() {
