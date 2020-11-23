@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-esp',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./esp.component.css']
 })
 export class EspComponent implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  getPopup(PopupValue) {
+    this.popupEvent.emit(PopupValue);
+  }
   ngOnInit() {
   }
 
@@ -20,10 +22,28 @@ export class EspComponent implements OnInit {
   styleUrls: ['./esp.component.css']
 })
 export class EspHeader implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  boolin: any = [];
+  pagetotal = 5;
   constructor() { }
-
+  changeboolin(x) {
+    if (x == 2) {
+      this.popupEvent.emit(true);
+    } else if (x !== 2) {
+      this.popupEvent.emit(false);
+    }
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      if (i == x) {
+        this.boolin[i] = true;
+      }
+    }
+  }
   ngOnInit() {
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      this.boolin[0] = true;
+    }
   }
 
 }
@@ -48,6 +68,34 @@ export class EspContent implements OnInit {
   styleUrls: ['./esp.component.css']
 })
 export class EspRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'espbet',
+  templateUrl: './espbet.html',
+  styleUrls: ['./esp.component.css']
+})
+export class EspBet implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'espresult',
+  templateUrl: './espresult.html',
+  styleUrls: ['./esp.component.css']
+})
+export class EspResult implements OnInit {
 
   constructor() { }
 

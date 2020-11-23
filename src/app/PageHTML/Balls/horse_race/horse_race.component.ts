@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-horse_race',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./horse_race.component.css']
 })
 export class Horse_raceComponent implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-
+  getPopup(PopupValue) {
+    this.popupEvent.emit(PopupValue);
+  }
   ngOnInit() {
   }
 
@@ -20,10 +22,28 @@ export class Horse_raceComponent implements OnInit {
   styleUrls: ['./horse_race.component.css']
 })
 export class HorseHeader implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  boolin: any = [];
+  pagetotal = 4;
   constructor() { }
-
+  changeboolin(x) {
+    if (x == 2) {
+      this.popupEvent.emit(true);
+    } else if (x !== 2) {
+      this.popupEvent.emit(false);
+    }
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      if (i == x) {
+        this.boolin[i] = true;
+      }
+    }
+  }
   ngOnInit() {
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      this.boolin[0] = true;
+    }
   }
 
 }
@@ -48,6 +68,34 @@ export class HorseContent implements OnInit {
   styleUrls: ['./horse_race.component.css']
 })
 export class HorseRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'horsebet',
+  templateUrl: './horsebet.html',
+  styleUrls: ['./horse_race.component.css']
+})
+export class HorseBet implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'horseresult',
+  templateUrl: './horseresult.html',
+  styleUrls: ['./horse_race.component.css']
+})
+export class HorseResult implements OnInit {
 
   constructor() { }
 

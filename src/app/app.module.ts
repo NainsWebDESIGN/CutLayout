@@ -21,11 +21,11 @@ import {
 } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult } from './pageHTML/Balls/basball/basball.component';
-import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight } from './pageHTML/Balls/basketball/basketball.component';
-import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent } from './pageHTML/Balls/horse_race/horse_race.component';
-import { EspComponent, EspRight, EspHeader, EspContent } from './pageHTML/Balls/esp/esp.component';
-import { StockComponent, StockHeader, StockRight, StockContent } from './pageHTML/Balls/stock/stock.component';
-import { LotteryComponent, LotteryRight, LotteryHeader, LotteryContent } from './pageHTML/Balls/lottery/lottery.component';
+import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight, BasketTeach, BasketResult, BasketBet } from './pageHTML/Balls/basketball/basketball.component';
+import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent, HorseResult, HorseBet } from './pageHTML/Balls/horse_race/horse_race.component';
+import { EspComponent, EspRight, EspHeader, EspContent, EspResult, EspBet } from './pageHTML/Balls/esp/esp.component';
+import { StockComponent, StockHeader, StockRight, StockContent, StResult, StBet } from './pageHTML/Balls/stock/stock.component';
+import { LotteryComponent, LotteryRight, LotteryHeader, LotteryContent, LotteryResult, LotteryBet } from './pageHTML/Balls/lottery/lottery.component';
 import { Ice_ballComponent, IceRight, IceHeader, IceContent } from './pageHTML/Balls/ice_ball/ice_ball.component';
 import { TennisComponent, TennisRight, TennisContent, TennisHeader } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent, SnookerRight, SnookerHeader, SnookerContent } from './pageHTML/Balls/snooker/snooker.component';
@@ -75,6 +75,7 @@ import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.comp
     SnookerRight, SnookerHeader, SnookerContent, SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent,
     BasketRight, BasketHeader, BasketContent, SoinnerRight, StockHeader, StockRight, StockContent, TableRight, SkewersPopup,
     TennisRight, TennisContent, TennisHeader, VballRight, VballHeader, VballContent, Soteach_bsComponent, SoTeach, SoBet,
+    BasketTeach, BasketResult, BasketBet, HorseResult, HorseBet, EspResult, EspBet, StResult, StBet, LotteryResult, LotteryBet
   ],
   imports: [
     BrowserModule,

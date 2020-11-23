@@ -3,17 +3,13 @@
 <!--search_bar-->
 <div class="wrap fixed">
     <div class="search_bar">
-        <p class="active">所有賽事</p>
+        <p [ngClass]="{'active':boolin[0]}" (click)="changeboolin(0)">所有賽事</p>
         <div class="line"></div>
-        <p>早盤投注</p>
+        <p [ngClass]="{'active':boolin[1]}" (click)="changeboolin(1)">早盤投注</p>
         <div class="line"></div>
-        <p>串關投注
-            <a href="../special/bet_page.html"></a>
-        </p>
+        <p [ngClass]="{'active':boolin[2]}" (click)="changeboolin(2)">串關投注</p>
         <div class="line"></div>
-        <p>比賽結果
-            <a href="./soccer_result.html"></a>
-        </p>
+        <p [ngClass]="{'active':boolin[3]}" (click)="changeboolin(3)">比賽結果</p>
         <div class="right_box">
             <p class="ball_cho">選擇聯盟</p>
             <span class="arrow"></span>
@@ -242,4 +238,13 @@
 
         </div>
     </div>
+</div>
+<div [ngClass]="{'active':boolin[0]}" class="sign_in_status">
+    <stock-content></stock-content>
+</div>
+<div [ngClass]="{'active':boolin[2]}" class="sign_in_status">
+    <stbet></stbet>
+</div>
+<div [ngClass]="{'active':boolin[3]}" class="sign_in_status">
+    <stresult></stresult>
 </div>

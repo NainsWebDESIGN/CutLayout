@@ -55,3 +55,31 @@ export class LotteryRight implements OnInit {
   }
 
 }
+
+@Component({
+  selector: 'lotterybet',
+  templateUrl: './lotterybet.html',
+  styleUrls: ['./lottery.component.css']
+})
+export class LotteryBet implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'lotteryresult',
+  templateUrl: './lotteryresult.html',
+  styleUrls: ['./lottery.component.css']
+})
+export class LotteryResult implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
