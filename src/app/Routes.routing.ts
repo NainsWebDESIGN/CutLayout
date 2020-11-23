@@ -11,7 +11,7 @@ import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.comp
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
 import { StockComponent } from './pageHTML/Balls/stock/stock.component';
-import { LotteryComponent } from './pageHTML/Balls/lottery/lottery.component';
+import { LottinnerComponent } from './PageHTML/Balls/lottery_inner/lottinner.component';
 import { Ice_ballComponent } from './pageHTML/Balls/ice_ball/ice_ball.component';
 import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent } from './pageHTML/Balls/snooker/snooker.component';
@@ -37,6 +37,7 @@ import { MessageComponent } from './PageHTML/My/message/message.component';
 import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
+import { LotteryComponent } from './PageHTML/Balls/lottery/lottery.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -53,7 +54,7 @@ const routes: Routes = [
           { path: 'basketball', component: BasketballComponent },
           { path: 'horse', component: Horse_raceComponent },
           { path: 'esp', component: EspComponent },
-          { path: 'lottery', component: LotteryComponent },
+          { path: 'lottinner', component: LottinnerComponent },
           { path: 'stock', component: StockComponent },
           { path: 'iceball', component: Ice_ballComponent },
           { path: 'tennis', component: TennisComponent },
@@ -65,6 +66,7 @@ const routes: Routes = [
           { path: 'bso', component: BsoComponent },
           { path: 'basketballinner', component: Basketball_innerComponent },
           { path: 'soccerinner', component: Soccer_innerComponent },
+          { path: 'lottery', component: LotteryComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },

@@ -25,7 +25,7 @@ import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRig
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent, HorseResult, HorseBet } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent, EspRight, EspHeader, EspContent, EspResult, EspBet } from './pageHTML/Balls/esp/esp.component';
 import { StockComponent, StockHeader, StockRight, StockContent, StResult, StBet } from './pageHTML/Balls/stock/stock.component';
-import { LotteryComponent, LotteryRight, LotteryHeader, LotteryContent, LotteryResult, LotteryBet } from './pageHTML/Balls/lottery/lottery.component';
+import { LottinnerComponent, LottinnerRight, LottinnerHeader, LottinnerContent } from './PageHTML/Balls/lottery_inner/lottinner.component';
 import { Ice_ballComponent, IceRight, IceHeader, IceContent } from './pageHTML/Balls/ice_ball/ice_ball.component';
 import { TennisComponent, TennisRight, TennisContent, TennisHeader } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent, SnookerRight, SnookerHeader, SnookerContent } from './pageHTML/Balls/snooker/snooker.component';
@@ -52,13 +52,14 @@ import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
 import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.component';
+import { LotteryComponent, LotteryHeader, LotteryContent, LotteryRight, LotteryResult, LotteryBet } from './PageHTML/Balls/lottery/lottery.component';
 
 
 @NgModule({
   declarations: [
     AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent,
     IndexRight, IndexLogin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoHeader,
-    IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LotteryComponent, HelpBet,
+    IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet,
     Horse_raceComponent, EspComponent, StockComponent, Ice_ballComponent, TennisComponent, SnookerComponent, TransFor,
     V_ballComponent, MortorComponent, BadmintonComponent, FootballComponent, BsoComponent, My_bill_moneybagComponent,
     Table_ballComponent, Soccer_innerComponent, Basketball_innerComponent, BasTeach, BasBet, BasResult, SoResult,
@@ -71,11 +72,12 @@ import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.comp
     AboutAbout, AboutLink, Join_usComponent, JoinHeader, BadmintonContent, BadmintonRight, TableHeader, BadmintonHeader,
     DownloadContent, BasballHeader, BasballContent, BasballRight, BasketballHeader, BsoRight, FootballHeader, FootballContent,
     EspRight, EspHeader, EspContent, FootballRight, IceRight, IceHeader, IceContent, TableContent, HorseRight, HorseHeader,
-    HorseContent, LotteryRight, LotteryHeader, LotteryContent, MortorRight, MortorHeader, MortorContent, SoccerRight,
+    HorseContent, LottinnerRight, LottinnerHeader, LottinnerContent, MortorRight, MortorHeader, MortorContent, SoccerRight,
     SnookerRight, SnookerHeader, SnookerContent, SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent,
     BasketRight, BasketHeader, BasketContent, SoinnerRight, StockHeader, StockRight, StockContent, TableRight, SkewersPopup,
     TennisRight, TennisContent, TennisHeader, VballRight, VballHeader, VballContent, Soteach_bsComponent, SoTeach, SoBet,
-    BasketTeach, BasketResult, BasketBet, HorseResult, HorseBet, EspResult, EspBet, StResult, StBet, LotteryResult, LotteryBet
+    BasketTeach, BasketResult, BasketBet, HorseResult, HorseBet, EspResult, EspBet, StResult, StBet, LotteryResult, LotteryBet,
+    LotteryComponent, LotteryHeader, LotteryContent, LotteryRight
   ],
   imports: [
     BrowserModule,

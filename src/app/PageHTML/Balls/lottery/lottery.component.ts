@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-lottery',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lottery.component.css']
 })
 export class LotteryComponent implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  getPopup(PopupValue) {
+    this.popupEvent.emit(PopupValue);
+  }
   ngOnInit() {
   }
 
@@ -20,10 +22,28 @@ export class LotteryComponent implements OnInit {
   styleUrls: ['./lottery.component.css']
 })
 export class LotteryHeader implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  boolin: any = [];
+  pagetotal = 5;
   constructor() { }
-
+  changeboolin(x) {
+    if (x == 2) {
+      this.popupEvent.emit(true);
+    } else if (x !== 2) {
+      this.popupEvent.emit(false);
+    }
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      if (i == x) {
+        this.boolin[i] = true;
+      }
+    }
+  }
   ngOnInit() {
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      this.boolin[0] = true;
+    }
   }
 
 }
