@@ -13,7 +13,7 @@ import { EspComponent } from './pageHTML/Balls/esp/esp.component';
 import { StockComponent } from './pageHTML/Balls/stock/stock.component';
 import { LottinnerComponent } from './PageHTML/Balls/lottery_inner/lottinner.component';
 import { Ice_InnerComponent } from './pageHTML/Balls/iceball_inner/ice_inner.component';
-import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
+import { TennisinnerComponent } from './PageHTML/Balls/tennis_inner/tennisinner.component';
 import { SnookerComponent } from './pageHTML/Balls/snooker/snooker.component';
 import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
 import { MortorComponent } from './pageHTML/Balls/mortor/mortor.component';
@@ -39,6 +39,7 @@ import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
 import { LotteryComponent } from './PageHTML/Balls/lottery/lottery.component';
 import { IceballComponent } from './PageHTML/Balls/iceball/iceball.component';
+import { TennisComponent } from './PageHTML/Balls/tennis/tennis.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -50,6 +51,7 @@ const routes: Routes = [
         children: [
           { path: 'indexright', component: IndexRight },
           { path: 'tableball', component: Table_ballComponent },
+          { path: 'tennis', component: TennisComponent },
           { path: 'basball', component: BasballComponent },
           { path: 'soccer', component: SoccerComponent },
           { path: 'basketball', component: BasketballComponent },
@@ -58,7 +60,7 @@ const routes: Routes = [
           { path: 'lottinner', component: LottinnerComponent },
           { path: 'stock', component: StockComponent },
           { path: 'iceinner', component: Ice_InnerComponent },
-          { path: 'tennis', component: TennisComponent },
+          { path: 'tennisinner', component: TennisinnerComponent },
           { path: 'snooker', component: SnookerComponent },
           { path: 'vball', component: V_ballComponent },
           { path: 'mortor', component: MortorComponent },
