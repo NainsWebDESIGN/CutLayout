@@ -4,7 +4,7 @@
     <skewers_popup></skewers_popup>
   </aside>
   <main (load)="listen()" [ngClass]="{'live_mode': boolin}">
-    <index-left (childEvent)="getChild($event)"></index-left>
+    <index-left (childEvent)="getChild($event)" (popupEvent)="getPopup($event)"></index-left>
   </main>
   <index-searchbox></index-searchbox>
   <index-sideoptions></index-sideoptions>

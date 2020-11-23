@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
 import { Router, NavigationEnd } from '@angular/router';
@@ -71,8 +71,16 @@ export class IndexLeft implements OnInit {
   boolin = true;
   left: any = [];
   constructor(private http: HttpClient, private Ajax: DataBassService) { }
+  emit(ChildValue) {
+    if (ChildValue.popupEvent) {
+      ChildValue.popupEvent.subscribe(el => {
+        this.popupEvent.emit(el);
+      })
+    }
+  }
   change() {
     this.childEvent.emit(this.boolin);
+    this.popupEvent.emit(false);
   }
   ngOnInit() {
     this.Ajax.getData('left').then(el => {
@@ -191,21 +199,21 @@ export class IndexContent implements OnInit {
   boolin = false;
   popup = false;
   constructor(private router: Router, private reload: Location) { }
+  getPopup(PopupValue) {
+    this.popup = PopupValue;
+  }
   getChild(ChildValue) {
     this.boolin = ChildValue;
   }
   listen() {
     let url = '/index/indexcontent/indexright';
-    let url1 = '/index/indexcontent/soccer/soccerbet';
     this.router.events
       .subscribe(event => {
         if (event instanceof NavigationEnd) {
           event['url'] == url ? this.boolin = false : this.boolin = true;
-          event['url'] == url1 ? this.popup = true : this.popup = false;
         }
       })
     this.reload.path() == url ? this.boolin = false : this.boolin = true;
-    this.reload.path() == url1 ? this.popup = true : this.popup = false;
   }
   ngOnInit() {
     this.listen();

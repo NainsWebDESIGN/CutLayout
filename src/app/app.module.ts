@@ -19,7 +19,7 @@ import {
   MemberComponent, MemberRight, MemberOption,
   MemberLeft, GetCashPopup, AddCard
 } from './pageHTML/My/Member/Member.component';
-import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent } from './pageHTML/Balls/soccer/soccer.component';
+import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent, BasballHeader, BasballContent, BasballRight } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent } from './pageHTML/Balls/horse_race/horse_race.component';
@@ -35,8 +35,6 @@ import { BadmintonComponent, BadmintonHeader, BadmintonContent, BadmintonRight }
 import { FootballComponent, FootballRight, FootballHeader, FootballContent } from './pageHTML/Balls/football/football.component';
 import { BsoComponent, BsoHeader, BsoContent, BsoRight } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent, TableRight, TableHeader, TableContent } from './pageHTML/Balls/table_ball/table_ball.component';
-import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
-import { Soccer_resaultComponent } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
 import { Soccer_innerComponent, SoinnerRight, SoinnerHeader, SoinnerContent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
 import { Basketball_innerComponent, BasketRight, BasketHeader, BasketContent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
 import { HelpComponent, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup } from './PageHTML/My/help/help.component';
@@ -53,8 +51,10 @@ import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, Message
 import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
-import { Soccer_teachComponent } from './PageHTML/Balls/soccer_teach/soccer_teach.component';
 import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.component';
+import { Basball_betComponent } from './PageHTML/Special/basball_bet/basball_bet.component';
+import { Basball_resultComponent } from './PageHTML/Balls/basball_result/basball_result.component';
+import { Basball_teachComponent } from './PageHTML/Balls/basball_teach/basball_teach.component';
 
 
 @NgModule({
@@ -64,7 +64,7 @@ import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.comp
     IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LotteryComponent, HelpBet,
     Horse_raceComponent, EspComponent, StockComponent, Ice_ballComponent, TennisComponent, SnookerComponent, TransFor,
     V_ballComponent, MortorComponent, BadmintonComponent, FootballComponent, BsoComponent, My_bill_moneybagComponent,
-    Table_ballComponent, Soccer_betComponent, Soccer_resaultComponent, Soccer_innerComponent, Basketball_innerComponent,
+    Table_ballComponent, Soccer_innerComponent, Basketball_innerComponent,
     HelpComponent, Contact_us_sevComponent, Download_appComponent, BasketballRight, Bill_recordComponent, BsoContent,
     Bill_transComponent, Bill_trans_recordComponent, IndexContent, MemberRight, MemberOption, MemberLeft, SoccerContent,
     BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup, GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox,
@@ -77,8 +77,8 @@ import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.comp
     HorseContent, LotteryRight, LotteryHeader, LotteryContent, MortorRight, MortorHeader, MortorContent, SoccerRight,
     SnookerRight, SnookerHeader, SnookerContent, SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent,
     BasketRight, BasketHeader, BasketContent, SoinnerRight, StockHeader, StockRight, StockContent, TableRight, SkewersPopup,
-    TennisRight, TennisContent, TennisHeader, VballRight, VballHeader, VballContent, Soccer_teachComponent, Soteach_bsComponent
-
+    TennisRight, TennisContent, TennisHeader, VballRight, VballHeader, VballContent, Soteach_bsComponent,
+    Basball_betComponent, Basball_resultComponent, Basball_teachComponent, SoTeach, SoBet, SoResult
   ],
   imports: [
     BrowserModule,

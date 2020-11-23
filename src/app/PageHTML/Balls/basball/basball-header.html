@@ -4,21 +4,21 @@
 <div class="wrap fixed">
     <div class="search_bar">
         <p class="active">所有賽事
-            <a href="../special/basball_bet_page.html"></a>
+            <a [routerLink]="['/index/indexcontent/basball/basballright']"></a>
         </p>
         <div class="line"></div>
         <p>早盤投注</p>
         <div class="line"></div>
         <p>串關投注
-            <a href="../special/basball_bet_page.html"></a>
+            <a [routerLink]="['/index/indexcontent/basball/basballbet']"></a>
         </p>
         <div class="line"></div>
         <p>比賽結果
-            <a href="./basball_result.html"></a>
+            <a [routerLink]="['/index/indexcontent/basball/basresult']"></a>
         </p>
         <div class="line"></div>
         <p>盤口教程
-            <a href="./basball_teach.html"></a>
+            <a [routerLink]="['/index/indexcontent/basball/basteach']"></a>
         </p>
         <div class="right_box">
             <p class="ball_cho">選擇聯盟</p>
@@ -249,3 +249,4 @@
         </div>
     </div>
 </div>
+<router-outlet></router-outlet>

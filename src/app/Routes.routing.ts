@@ -6,7 +6,7 @@ import { IndexComponent, IndexRight, IndexContent } from './index/index.componen
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent, MemberRight } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent, SoccerContent } from './pageHTML/Balls/soccer/soccer.component';
-import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
+import { BasballComponent, BasballContent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
@@ -21,8 +21,6 @@ import { BadmintonComponent } from './pageHTML/Balls/badminton/badminton.compone
 import { FootballComponent } from './pageHTML/Balls/football/football.component';
 import { BsoComponent } from './pageHTML/Balls/bso/bso.component';
 import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
-import { Soccer_betComponent } from './PageHTML/Special/soccer_bet/soccer_bet.component';
-import { Soccer_resaultComponent } from './PageHTML/Balls/soccer_resault/soccer_resault.component';
 import { Soccer_innerComponent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
 import { Basketball_innerComponent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
 import { HelpComponent } from './PageHTML/My/help/help.component';
@@ -39,8 +37,10 @@ import { MessageComponent } from './PageHTML/My/message/message.component';
 import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
-import { Soccer_teachComponent } from './PageHTML/Balls/soccer_teach/soccer_teach.component';
 import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.component';
+import { Basball_betComponent } from './PageHTML/Special/basball_bet/basball_bet.component';
+import { Basball_resultComponent } from './PageHTML/Balls/basball_result/basball_result.component';
+import { Basball_teachComponent } from './PageHTML/Balls/basball_teach/basball_teach.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -52,18 +52,17 @@ const routes: Routes = [
         children: [
           { path: 'indexright', component: IndexRight },
           { path: 'tableball', component: Table_ballComponent },
-          { path: 'basball', component: BasballComponent },
           {
-            path: 'soccer', component: SoccerComponent,
+            path: 'basball', component: BasballComponent,
             children: [
-              { path: '', redirectTo: '/index/indexcontent/soccer/soccercontent', pathMatch: 'full' },
-              { path: 'soccercontent', component: SoccerContent },
-              { path: 'soccerresault', component: Soccer_resaultComponent },
-              { path: 'soccerbet', component: Soccer_betComponent },
-              { path: 'soccerteach', component: Soccer_teachComponent },
-              { path: 'soteachbs', component: Soteach_bsComponent },
+              { path: '', redirectTo: '/index/indexcontent/basball/basballright', pathMatch: 'full' },
+              { path: 'basballbet', component: Basball_betComponent },
+              { path: 'basresult', component: Basball_resultComponent },
+              { path: 'basteach', component: Basball_teachComponent },
+              { path: 'basballright', component: BasballContent }
             ]
           },
+          { path: 'soccer', component: SoccerComponent },
           { path: 'basketball', component: BasketballComponent },
           { path: 'horse', component: Horse_raceComponent },
           { path: 'esp', component: EspComponent },

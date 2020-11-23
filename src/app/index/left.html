@@ -8,4 +8,4 @@
         </li>
     </ul>
 </div>
-<router-outlet></router-outlet>
+<router-outlet (activate)="emit($event)"></router-outlet>
