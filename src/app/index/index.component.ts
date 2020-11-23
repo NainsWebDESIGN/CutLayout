@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
-import { Router, NavigationEnd, NavigationStart } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-index',
@@ -202,7 +202,6 @@ export class IndexContent implements OnInit {
           event['url'] == url ? this.boolin = false : this.boolin = true;
           event['url'] == url1 ? this.popup = true : this.popup = false;
         }
-        console.log(event['url'])
       })
   }
   ngOnInit() {
