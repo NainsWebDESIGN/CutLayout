@@ -12,7 +12,7 @@ import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.comp
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
 import { StockComponent } from './pageHTML/Balls/stock/stock.component';
 import { LottinnerComponent } from './PageHTML/Balls/lottery_inner/lottinner.component';
-import { Ice_ballComponent } from './pageHTML/Balls/ice_ball/ice_ball.component';
+import { Ice_InnerComponent } from './pageHTML/Balls/iceball_inner/ice_inner.component';
 import { TennisComponent } from './pageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent } from './pageHTML/Balls/snooker/snooker.component';
 import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
@@ -38,6 +38,7 @@ import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
 import { LotteryComponent } from './PageHTML/Balls/lottery/lottery.component';
+import { IceballComponent } from './PageHTML/Balls/iceball/iceball.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -56,7 +57,7 @@ const routes: Routes = [
           { path: 'esp', component: EspComponent },
           { path: 'lottinner', component: LottinnerComponent },
           { path: 'stock', component: StockComponent },
-          { path: 'iceball', component: Ice_ballComponent },
+          { path: 'iceinner', component: Ice_InnerComponent },
           { path: 'tennis', component: TennisComponent },
           { path: 'snooker', component: SnookerComponent },
           { path: 'vball', component: V_ballComponent },
@@ -67,6 +68,7 @@ const routes: Routes = [
           { path: 'basketballinner', component: Basketball_innerComponent },
           { path: 'soccerinner', component: Soccer_innerComponent },
           { path: 'lottery', component: LotteryComponent },
+          { path: 'iceball', component: IceballComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },
