@@ -5,8 +5,8 @@ import { ErrorComponent } from './Error/Error.component';
 import { IndexComponent, IndexRight, IndexContent } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import { MemberComponent, MemberRight } from './pageHTML/My/Member/Member.component';
-import { SoccerComponent, SoccerContent } from './pageHTML/Balls/soccer/soccer.component';
-import { BasballComponent, BasballContent } from './pageHTML/Balls/basball/basball.component';
+import { SoccerComponent } from './pageHTML/Balls/soccer/soccer.component';
+import { BasballComponent } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent } from './pageHTML/Balls/horse_race/horse_race.component';
 import { EspComponent } from './pageHTML/Balls/esp/esp.component';
@@ -37,10 +37,6 @@ import { MessageComponent } from './PageHTML/My/message/message.component';
 import { SetComponent } from './PageHTML/My/set/set.component';
 import { AboutComponent } from './PageHTML/My/about/about.component';
 import { Join_usComponent } from './PageHTML/My/join_us/join_us.component';
-import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.component';
-import { Basball_betComponent } from './PageHTML/Special/basball_bet/basball_bet.component';
-import { Basball_resultComponent } from './PageHTML/Balls/basball_result/basball_result.component';
-import { Basball_teachComponent } from './PageHTML/Balls/basball_teach/basball_teach.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -52,16 +48,7 @@ const routes: Routes = [
         children: [
           { path: 'indexright', component: IndexRight },
           { path: 'tableball', component: Table_ballComponent },
-          {
-            path: 'basball', component: BasballComponent,
-            children: [
-              { path: '', redirectTo: '/index/indexcontent/basball/basballright', pathMatch: 'full' },
-              { path: 'basballbet', component: Basball_betComponent },
-              { path: 'basresult', component: Basball_resultComponent },
-              { path: 'basteach', component: Basball_teachComponent },
-              { path: 'basballright', component: BasballContent }
-            ]
-          },
+          { path: 'basball', component: BasballComponent },
           { path: 'soccer', component: SoccerComponent },
           { path: 'basketball', component: BasketballComponent },
           { path: 'horse', component: Horse_raceComponent },
