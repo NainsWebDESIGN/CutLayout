@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-snooker',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./snooker.component.css']
 })
 export class SnookerComponent implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  getPopup(PopupValue) {
+    this.popupEvent.emit(PopupValue);
+  }
   ngOnInit() {
   }
 
@@ -20,10 +22,28 @@ export class SnookerComponent implements OnInit {
   styleUrls: ['./snooker.component.css']
 })
 export class SnookerHeader implements OnInit {
-
+  @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  boolin: any = [];
+  pagetotal = 5;
   constructor() { }
-
+  changeboolin(x) {
+    if (x == 2) {
+      this.popupEvent.emit(true);
+    } else if (x !== 2) {
+      this.popupEvent.emit(false);
+    }
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      if (i == x) {
+        this.boolin[i] = true;
+      }
+    }
+  }
   ngOnInit() {
+    for (let i = 0; i < this.pagetotal; i++) {
+      this.boolin[i] = false;
+      this.boolin[0] = true;
+    }
   }
 
 }
@@ -48,6 +68,34 @@ export class SnookerContent implements OnInit {
   styleUrls: ['./snooker.component.css']
 })
 export class SnookerRight implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'snookerbet',
+  templateUrl: './snookerbet.html',
+  styleUrls: ['./snooker.component.css']
+})
+export class SnookerBet implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'snookerresult',
+  templateUrl: './snookerresult.html',
+  styleUrls: ['./snooker.component.css']
+})
+export class SnookerResult implements OnInit {
 
   constructor() { }
 
