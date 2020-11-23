@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
 import { Router, NavigationEnd } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-index',
@@ -189,7 +190,7 @@ export class IndexEnContainer implements OnInit {
 export class IndexContent implements OnInit {
   boolin = false;
   popup = false;
-  constructor(private router: Router) { }
+  constructor(private router: Router, private reload: Location) { }
   getChild(ChildValue) {
     this.boolin = ChildValue;
   }
@@ -203,6 +204,8 @@ export class IndexContent implements OnInit {
           event['url'] == url1 ? this.popup = true : this.popup = false;
         }
       })
+    this.reload.path() == url ? this.boolin = false : this.boolin = true;
+    this.reload.path() == url1 ? this.popup = true : this.popup = false;
   }
   ngOnInit() {
     this.listen();

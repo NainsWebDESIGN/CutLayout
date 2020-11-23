@@ -3,7 +3,7 @@
   <aside [ngClass]="{'active':popup}" class="fixed_size bet_double bottom_mode">
     <skewers_popup></skewers_popup>
   </aside>
-  <main [ngClass]="{'live_mode': boolin}">
+  <main (load)="listen()" [ngClass]="{'live_mode': boolin}">
     <index-left (childEvent)="getChild($event)"></index-left>
   </main>
   <index-searchbox></index-searchbox>
