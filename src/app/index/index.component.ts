@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
 import { Router, NavigationEnd } from '@angular/router';
@@ -25,10 +25,10 @@ export class IndexComponent implements OnInit {
 })
 export class IndexHeader implements OnInit {
   boolin: any = [];
-  total = 3;
-  constructor() { }
+  pagetotal = 3;
+  constructor(private location: Location, private router: Router) { }
   change(x) {
-    for (let i = 0; i < this.total; i++) {
+    for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
       if (i == x) {
         this.boolin[i] = true;
@@ -67,16 +67,39 @@ export class IndexHeader implements OnInit {
 export class IndexLeft implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
-
+  pagehistory: any = [];
   boolin = true;
   left: any = [];
-  constructor(private http: HttpClient, private Ajax: DataBassService) { }
+  total: any = [];
+  constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router) { }
   emit(ChildValue) {
     if (ChildValue.popupEvent) {
       ChildValue.popupEvent.subscribe(el => {
         this.popupEvent.emit(el);
       })
     }
+    if (ChildValue.pageEvent) {
+      ChildValue.pageEvent.subscribe(el => {
+        this.back(el);
+      })
+    }
+  }
+  start() {
+    this.router.events
+      .subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          this.total.push(event['url'])
+        }
+      })
+  }
+  back(x) {
+    for (let i = 0; i < this.total.length; i++) {
+      if (i == (this.total.length - 1)) {
+        this.router.navigate([this.total[i + x]]);
+      }
+    }
+    this.total = [];
+    this.total.push('/index/indexcontent/indexright');
   }
   change() {
     this.childEvent.emit(this.boolin);
@@ -86,8 +109,9 @@ export class IndexLeft implements OnInit {
     this.Ajax.getData('left').then(el => {
       this.left = el;
     })
+    this.total.push('/index/indexcontent/indexright');
+    this.start()
   }
-
 }
 
 @Component({

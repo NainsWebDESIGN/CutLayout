@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-mortor',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mortor.component.css']
 })
 export class MortorComponent implements OnInit {
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  backpage(x) {
+    this.pageEvent.emit(x);
+  }
   ngOnInit() {
   }
 
@@ -20,9 +23,11 @@ export class MortorComponent implements OnInit {
   styleUrls: ['./mortor.component.css']
 })
 export class MortorHeader implements OnInit {
-
-  constructor() { }
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
+  constructor(private location: Location) { }
+  back() {
+    this.pageEvent.emit(-1);
+  }
   ngOnInit() {
   }
 
