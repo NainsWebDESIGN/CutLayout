@@ -178,10 +178,55 @@ export class IndexBallBetting implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexRightLive implements OnInit {
-
+  clicklive: any = [];
+  startlive: any = [];
+  iconbox = false;
+  livebox: any = [];
+  boxtotal = 2;
+  ballbox: any = [];
   constructor() { }
-
-  ngOnInit() {
+  open(x) {
+    if (this.clicklive[x] == true) {
+      for (let i = 0; i < this.ballbox.length; i++) {
+        this.clicklive[i] = false;
+        this.startlive[i] = true;
+      }
+    } else if (this.clicklive[x] == false) {
+      for (let i = 0; i < this.ballbox.length; i++) {
+        this.startlive[i] = false;
+        this.startlive[x] = true;
+        this.clicklive[x] = true;
+      }
+    }
+  }
+  icon() {
+    this.iconbox = !this.iconbox;
+  }
+  changebox(x) {
+    for (let i = 0; i < this.boxtotal; i++) {
+      this.livebox[i] = false;
+      this.livebox[x] = true;
+    }
+  }
+  start() {
+    for (let i = 0; i < this.boxtotal; i++) {
+      this.livebox[i] = false;
+      this.livebox[0] = true;
+    }
+    let balltotal = document.getElementsByClassName('ball_wrap');
+    for (let i = 0; i < balltotal.length; i++) {
+      this.ballbox.push(balltotal[i]);
+    }
+    return this.ballbox;
+  }
+  async ngOnInit() {
+    let data = await this.start();
+    for (let i = 0; i < data.length; i++) {
+      this.clicklive[i] = false;
+      this.startlive[i] = false;
+      this.clicklive[0] = true;
+      this.startlive[0] = true;
+    }
   }
 
 }
@@ -220,6 +265,7 @@ export class IndexEnContainer implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexContent implements OnInit {
+  live = false;
   boolin = false;
   popup = false;
   constructor(private router: Router, private reload: Location) { }
@@ -235,9 +281,11 @@ export class IndexContent implements OnInit {
       .subscribe(event => {
         if (event instanceof NavigationEnd) {
           event['url'] == url ? this.boolin = false : this.boolin = true;
+          event['url'] == url ? this.live = false : this.live = true;
         }
       })
     this.reload.path() == url ? this.boolin = false : this.boolin = true;
+    this.reload.path() == url ? this.live = false : this.live = true;
   }
   ngOnInit() {
     this.listen();
