@@ -15,7 +15,7 @@ import { LottinnerComponent } from './PageHTML/Balls/lottery_inner/lottinner.com
 import { Ice_InnerComponent } from './pageHTML/Balls/iceball_inner/ice_inner.component';
 import { TennisinnerComponent } from './PageHTML/Balls/tennis_inner/tennisinner.component';
 import { SnookerinnerComponent } from './PageHTML/Balls/snooker_inner/snookerinner.component';
-import { V_ballComponent } from './pageHTML/Balls/v_ball/v_ball.component';
+import { Vball_innerComponent } from './PageHTML/Balls/vball_inner/vball_inner.component';
 import { MortorComponent } from './pageHTML/Balls/mortor/mortor.component';
 import { BadmintonComponent } from './pageHTML/Balls/badminton/badminton.component';
 import { FootballComponent } from './pageHTML/Balls/football/football.component';
@@ -41,6 +41,7 @@ import { LotteryComponent } from './PageHTML/Balls/lottery/lottery.component';
 import { IceballComponent } from './PageHTML/Balls/iceball/iceball.component';
 import { TennisComponent } from './PageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent } from './PageHTML/Balls/snooker/snooker.component';
+import { VballComponent } from './PageHTML/Balls/vball/vball.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -63,7 +64,7 @@ const routes: Routes = [
           { path: 'iceinner', component: Ice_InnerComponent },
           { path: 'tennisinner', component: TennisinnerComponent },
           { path: 'snookerinner', component: SnookerinnerComponent },
-          { path: 'vball', component: V_ballComponent },
+          { path: 'vballinner', component: Vball_innerComponent },
           { path: 'mortor', component: MortorComponent },
           { path: 'badminton', component: BadmintonComponent },
           { path: 'football', component: FootballComponent },
@@ -73,6 +74,7 @@ const routes: Routes = [
           { path: 'lottery', component: LotteryComponent },
           { path: 'iceball', component: IceballComponent },
           { path: 'snooker', component: SnookerComponent },
+          { path: 'vball', component: VballComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },
