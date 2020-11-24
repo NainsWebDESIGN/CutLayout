@@ -1,11 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-bso',
-  templateUrl: './bso.component.html',
-  styleUrls: ['./bso.component.css']
+  selector: 'app-tableball',
+  templateUrl: './tableball.component.html',
+  styleUrls: ['./tableball.component.css']
 })
-export class BsoComponent implements OnInit {
+export class TableballComponent implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
   getPopup(PopupValue) {
@@ -17,11 +17,11 @@ export class BsoComponent implements OnInit {
 }
 
 @Component({
-  selector: 'bso-header',
-  templateUrl: './bso-header.html',
-  styleUrls: ['./bso.component.css']
+  selector: 'tableball-header',
+  templateUrl: './tableball-header.html',
+  styleUrls: ['./tableball.component.css']
 })
-export class BsoHeader implements OnInit {
+export class TableballHeader implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
   boolin: any = [];
   pagetotal = 4;
@@ -49,11 +49,11 @@ export class BsoHeader implements OnInit {
 }
 
 @Component({
-  selector: 'bso-content',
-  templateUrl: './bso-content.html',
-  styleUrls: ['./bso.component.css']
+  selector: 'tableball-content',
+  templateUrl: './tableball-content.html',
+  styleUrls: ['./tableball.component.css']
 })
-export class BsoContent implements OnInit {
+export class TableballContent implements OnInit {
 
   constructor() { }
 
@@ -63,11 +63,11 @@ export class BsoContent implements OnInit {
 }
 
 @Component({
-  selector: 'bso-right',
-  templateUrl: './bso-right.html',
-  styleUrls: ['./bso.component.css']
+  selector: 'tableball-right',
+  templateUrl: './tableball-right.html',
+  styleUrls: ['./tableball.component.css']
 })
-export class BsoRight implements OnInit {
+export class TableballRight implements OnInit {
 
   constructor() { }
 
@@ -77,11 +77,11 @@ export class BsoRight implements OnInit {
 }
 
 @Component({
-  selector: 'bso-bet',
-  templateUrl: './bso-bet.html',
-  styleUrls: ['./bso.component.css']
+  selector: 'tableball-bet',
+  templateUrl: './tableball-bet.html',
+  styleUrls: ['./tableball.component.css']
 })
-export class BsoBet implements OnInit {
+export class TableballBet implements OnInit {
 
   constructor() { }
 
@@ -91,11 +91,11 @@ export class BsoBet implements OnInit {
 }
 
 @Component({
-  selector: 'bso-result',
-  templateUrl: './bso-result.html',
-  styleUrls: ['./bso.component.css']
+  selector: 'tableball-result',
+  templateUrl: './tableball-result.html',
+  styleUrls: ['./tableball.component.css']
 })
-export class BsoResult implements OnInit {
+export class TableballResult implements OnInit {
 
   constructor() { }
 

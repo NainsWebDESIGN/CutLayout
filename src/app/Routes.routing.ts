@@ -17,10 +17,10 @@ import { TennisinnerComponent } from './PageHTML/Balls/tennis_inner/tennisinner.
 import { SnookerinnerComponent } from './PageHTML/Balls/snooker_inner/snookerinner.component';
 import { Vball_innerComponent } from './PageHTML/Balls/vball_inner/vball_inner.component';
 import { MortorComponent } from './pageHTML/Balls/mortor/mortor.component';
-import { BadmintonComponent } from './pageHTML/Balls/badminton/badminton.component';
-import { FootballComponent } from './pageHTML/Balls/football/football.component';
-import { BsoComponent } from './pageHTML/Balls/bso/bso.component';
-import { Table_ballComponent } from './pageHTML/Balls/table_ball/table_ball.component';
+import { BadmintoninnerComponent } from './PageHTML/Balls/badminton_inner/badmintoninner.component';
+import { FootballinnerComponent } from './PageHTML/Balls/football_inner/footballinner.component';
+import { BsoinnerComponent } from './PageHTML/Balls/bso_inner/bsoinner.component';
+import { Tableball_innerComponent } from './PageHTML/Balls/tableball_inner/tableball_inner.component';
 import { Soccer_innerComponent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
 import { Basketball_innerComponent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
 import { HelpComponent } from './PageHTML/My/help/help.component';
@@ -42,6 +42,10 @@ import { IceballComponent } from './PageHTML/Balls/iceball/iceball.component';
 import { TennisComponent } from './PageHTML/Balls/tennis/tennis.component';
 import { SnookerComponent } from './PageHTML/Balls/snooker/snooker.component';
 import { VballComponent } from './PageHTML/Balls/vball/vball.component';
+import { BadmintonComponent } from './PageHTML/Balls/badminton/badminton.component';
+import { FootballComponent } from './PageHTML/Balls/football/football.component';
+import { BsoComponent } from './PageHTML/Balls/bso/bso.component';
+import { TableballComponent } from './PageHTML/Balls/tableball/tableball.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -52,7 +56,7 @@ const routes: Routes = [
         path: 'indexcontent', component: IndexContent,
         children: [
           { path: 'indexright', component: IndexRight },
-          { path: 'tableball', component: Table_ballComponent },
+          { path: 'tableballinner', component: Tableball_innerComponent },
           { path: 'tennis', component: TennisComponent },
           { path: 'basball', component: BasballComponent },
           { path: 'soccer', component: SoccerComponent },
@@ -66,15 +70,19 @@ const routes: Routes = [
           { path: 'snookerinner', component: SnookerinnerComponent },
           { path: 'vballinner', component: Vball_innerComponent },
           { path: 'mortor', component: MortorComponent },
-          { path: 'badminton', component: BadmintonComponent },
-          { path: 'football', component: FootballComponent },
-          { path: 'bso', component: BsoComponent },
+          { path: 'badmintoninner', component: BadmintoninnerComponent },
+          { path: 'footballinner', component: FootballinnerComponent },
+          { path: 'bsoinner', component: BsoinnerComponent },
           { path: 'basketballinner', component: Basketball_innerComponent },
           { path: 'soccerinner', component: Soccer_innerComponent },
           { path: 'lottery', component: LotteryComponent },
           { path: 'iceball', component: IceballComponent },
           { path: 'snooker', component: SnookerComponent },
           { path: 'vball', component: VballComponent },
+          { path: 'badminton', component: BadmintonComponent },
+          { path: 'football', component: FootballComponent },
+          { path: 'bso', component: BsoComponent },
+          { path: 'tableball', component: TableballComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },
