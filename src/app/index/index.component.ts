@@ -237,9 +237,7 @@ export class IndexRightLive implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexSideOptions implements OnInit {
-
-  constructor() { }
-
+  constructor(private router: Router) { }
   ngOnInit() {
   }
 
@@ -265,7 +263,6 @@ export class IndexEnContainer implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexContent implements OnInit {
-  live = false;
   boolin = false;
   popup = false;
   constructor(private router: Router, private reload: Location) { }
@@ -281,11 +278,9 @@ export class IndexContent implements OnInit {
       .subscribe(event => {
         if (event instanceof NavigationEnd) {
           event['url'] == url ? this.boolin = false : this.boolin = true;
-          event['url'] == url ? this.live = false : this.live = true;
         }
       })
     this.reload.path() == url ? this.boolin = false : this.boolin = true;
-    this.reload.path() == url ? this.live = false : this.live = true;
   }
   ngOnInit() {
     this.listen();

@@ -17,7 +17,7 @@ import {
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import {
   MemberComponent, MemberRight, MemberOption,
-  MemberLeft, GetCashPopup, AddCard
+  MemberLeft, GetCashPopup, AddCard, ChangePassword
 } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult } from './pageHTML/Balls/basball/basball.component';
@@ -91,7 +91,7 @@ import { TableballComponent, TableballBet, TableballContent, TableballHeader, Ta
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballRight, VballResult, VballBet, BadmintoninnerHeader,
     BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet, BsoinnerRight, BsoHeader,
     FootballResult, FootballBet, BsoComponent, TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult,
-    TableballRight
+    TableballRight, ChangePassword
   ],
   imports: [
     BrowserModule,

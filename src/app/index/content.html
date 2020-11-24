@@ -5,7 +5,7 @@
   </aside>
   <main (load)="listen()" [ngClass]="{'live_mode': boolin}">
     <index-left (childEvent)="getChild($event)" (popupEvent)="getPopup($event)"></index-left>
-    <div [ngClass]="{'active':live}" class="right_2">
+    <div [ngClass]="{'active':boolin}" class="right_2">
       <index-right_live></index-right_live>
     </div>
   </main>

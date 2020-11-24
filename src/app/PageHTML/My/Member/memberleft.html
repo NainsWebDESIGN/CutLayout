@@ -11,81 +11,81 @@
             <p class="day">加入第6天</p>
         </div>
         <div class="box_3">
-            <div class="box"><i class="cash i1"></i>
+            <div [ngClass]="{'active':boolin[0]}" (click)="start(0)" class="box"><i class="cash i1"></i>
                 <p>存款</p><a [routerLink]="['/index/member/mybillsave']"></a>
             </div>
-            <div class="box"><i class="cash i2"></i>
+            <div [ngClass]="{'active':boolin[1]}" (click)="start(1)" class="box"><i class="cash i2"></i>
                 <p>轉點</p>
                 <a [routerLink]="['/index/member/billtrans']"></a>
             </div>
-            <div class="box"><i class="cash i3"></i>
+            <div [ngClass]="{'active':boolin[2]}" (click)="start(2)" class="box"><i class="cash i3"></i>
                 <p>取款</p>
                 <a [routerLink]="['/index/member/getcash']" (click)="changecash()"></a>
             </div>
         </div>
-        <li class="active">
+        <li [ngClass]="{'active':boolin[3]}" (click)="start(3)">
             <i class="i1"></i>
             <p class="name">個人資料</p>
             <a [routerLink]="['/index/member/memberright']"></a>
         </li>
         <div class="blue_line"></div>
-        <li>
+        <li [ngClass]="{'active':boolin[4]}" (click)="start(4)">
             <i class="i3"></i>
             <p class="name">我的錢包</p>
             <a [routerLink]="['/index/member/moneybag']" (click)="changecash()"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[5]}" (click)="start(5)">
             <i class="i4"></i>
             <p class="name">交易紀錄</p>
             <p class="num active">6</p>
             <a [routerLink]="['/index/member/transrecord/recordbox']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[6]}" (click)="start(6)">
             <i class="i5"></i>
             <p class="name">即時注單</p>
             <p class="num active">2</p>
             <a [routerLink]="['/index/member/billnow']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[7]}" (click)="start(7)">
             <i class="i6"></i>
             <p class="name">投注紀錄</p>
             <p class="num active">3</p>
             <a [routerLink]="['/index/member/billrecord']"></a>
         </li>
         <div class="blue_line"></div>
-        <li>
+        <li [ngClass]="{'active':boolin[8]}" (click)="start(8)">
             <i class="i8"></i>
             <p class="name">幫助中心</p>
             <a [routerLink]="['/index/member/help']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[9]}" (click)="start(9)">
             <i class="i9"></i>
             <p class="name">聯繫我們</p>
             <a [routerLink]="['/index/member/contactus']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[10]}" (click)="start(10)">
             <i class="i10"></i>
             <p class="name">消息中心</p>
             <p class="num active">6</p>
             <a [routerLink]="['/index/member/message']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[11]}" (click)="start(11)">
             <i class="i11"></i>
             <p class="name">設定</p>
             <a [routerLink]="['/index/member/set']"></a>
         </li>
         <div class="blue_line"></div>
-        <li>
+        <li [ngClass]="{'active':boolin[12]}" (click)="start(12)">
             <i class="i12"></i>
             <p class="name">關於</p>
             <a [routerLink]="['/index/member/about']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[13]}" (click)="start(13)">
             <i class="i13"></i>
             <p class="name">加入我們</p>
             <a [routerLink]="['/index/member/joinus']"></a>
         </li>
-        <li>
+        <li [ngClass]="{'active':boolin[14]}" (click)="start(14)">
             <i class="i14"></i>
             <p class="name">下載APP</p>
             <a [routerLink]="['/index/member/download']"></a>
