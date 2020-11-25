@@ -1,9 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { DataBassService } from '../../../DataBass.service';
 
 @Component({
   selector: 'app-soccer',
   templateUrl: './soccer.component.html',
-  styleUrls: ['./soccer.component.css']
+  styleUrls: ['./soccer.component.css'],
+  providers: [DataBassService]
 })
 export class SoccerComponent implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter;
@@ -24,10 +26,11 @@ export class SoccerComponent implements OnInit {
 export class SoccerHeader implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
   boolin: any = [];
-  pagetotal = 5;
+  pagetotal = 6;
   league = false;
   leaguecheck: any = [];
-  constructor() { }
+  leaguebox: any = [];
+  constructor(private Ajax: DataBassService) { }
   leaguechoice() {
     this.league = !this.league;
   }
@@ -48,6 +51,7 @@ export class SoccerHeader implements OnInit {
         this.leaguecheck[0] = false;
       }
     }
+    console.log(this.leaguecheck)
   }
   changeboolin(x) {
     if (x == 2) {
@@ -57,18 +61,22 @@ export class SoccerHeader implements OnInit {
     }
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
-      if (i == x) {
-        this.boolin[i] = true;
-      }
     }
+    this.boolin[x] = true;
   }
-  ngOnInit() {
-    let checktotal = document.getElementsByClassName('check');
+  async getresult() {
+    await this.Ajax.getData('result').then(el => {
+      this.leaguebox = el;
+    })
+    return this.leaguebox;
+  }
+  async ngOnInit() {
+    let data = await this.getresult();
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
       this.boolin[0] = true;
     }
-    for (let i = 0; i < checktotal.length; i++) {
+    for (let i = 0; i < (data.length + 1); i++) {
       this.leaguecheck[i] = true;
     }
   }
@@ -77,24 +85,10 @@ export class SoccerHeader implements OnInit {
 
 @Component({
   selector: 'soccer-content',
-  templateUrl: './soccer-content.html',
+  templateUrl: './soccer-beginner.html',
   styleUrls: ['./soccer.component.css']
 })
 export class SoccerContent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
-  selector: 'soccer-right',
-  templateUrl: './soccer-right.html',
-  styleUrls: ['./soccer.component.css']
-})
-export class SoccerRight implements OnInit {
 
   constructor() { }
 
@@ -168,6 +162,20 @@ export class SoccerTeach_Bs implements OnInit {
   styleUrls: ['./soccer.component.css']
 })
 export class SoccerTeach implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'soccer-senior',
+  templateUrl: './soccer-senior.html',
+  styleUrls: ['./soccer.component.css']
+})
+export class SoccerSenior implements OnInit {
 
   constructor() { }
 

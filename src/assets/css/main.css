@@ -9236,13 +9236,18 @@ p.qa_title {
 .league_choice.active {
   display: block;
 }
-.balls_choice .row,
-.league_choice .row {
+.balls_choice .row {
   line-height: 2.3em;
   height: 2.3em;
   width: 100%;
   float: left;
   margin-top: 0.3em;
+}
+.league_choice .row {
+  width: 100%;
+  float: left;
+  /* margin-top: 0.3em; */
+  margin-top: 12px;
 }
 .balls_choice .row:first-child,
 .league_choice .row:first-child {
@@ -9303,6 +9308,16 @@ p.qa_title {
 .balls_choice .row .b33_3,
 .league_choice .row .b33_3 {
   width: 33.33%;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @keyframes marquee {
@@ -10269,6 +10284,23 @@ body {
   line-height: 1.786em;
 }
 .container main .right .search_bar .day_box .day_drow span:hover {
+  background: #3145b2;
+  color: #fff;
+}
+.container main .right .search_bar .wrap .search_bar .right_box .day_box span {
+  width: 100%;
+  padding: 0 0.5em;
+  line-height: 1.786em;
+}
+.container
+  main
+  .right
+  .search_bar
+  .wrap
+  .search_bar
+  .right_box
+  .day_box
+  span:hover {
   background: #3145b2;
   color: #fff;
 }
