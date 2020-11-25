@@ -1,6 +1,6 @@
-<div class="search_group">
+<div [ngClass]="{'active':boolin}" class="search_group">
     <div class="row">
-        <div class="s_box">
+        <div class="s_box" (click)="opensearch()">
             <i class="i1"></i>
             <p>搜尋</p>
         </div>
@@ -11,58 +11,58 @@
             </button>
         </div>
         <div class="ul_wrap">
-            <div class="gt">
-                <div class="title">
+            <div [ngClass]="{'active':lis[0]}" class="gt">
+                <div class="title" (click)="openli(0)">
                     <p>熱門賽事</p><span class="arrow"></span>
                 </div>
-                <ul>
-                    <li><span class="i1"></span> 義大利甲組聯賽<p class="num">(12)</p>
+                <ul [ngClass]="{'display':!lis[0]}">
+                    <li (click)="closeli(0)"><span class="i1"></span>義大利甲組聯賽<p class="num">(12)</p>
                     </li>
-                    <li><span class="i2"></span>法國甲組聯賽<p class="num">(12)</p>
+                    <li (click)="closeli(0)"><span class="i2"></span>法國甲組聯賽<p class="num">(12)</p>
                     </li>
-                    <li><span class="i3"></span>英國甲組聯賽<p class="num">(12)</p>
+                    <li (click)="closeli(0)"><span class="i3"></span>英國甲組聯賽<p class="num">(12)</p>
                     </li>
                 </ul>
             </div>
-            <div class="gt">
-                <div class="title">
+            <div [ngClass]="{'active':lis[1]}" class="gt">
+                <div (click)="openli(1)" class="title">
                     <p>埃及</p><span class="arrow"></span>
                 </div>
-                <ul>
-                    <li>埃及超級聯賽<p class="num">(12)</p>
+                <ul [ngClass]="{'display':!lis[1]}">
+                    <li (click)="closeli(1)">埃及超級聯賽<p class="num">(12)</p>
                     </li>
                 </ul>
             </div>
-            <div class="gt">
-                <div class="title">
+            <div [ngClass]="{'active':lis[2]}" class="gt">
+                <div (click)="openli(2)" class="title">
                     <p>阿爾及利亞</p><span class="arrow"></span>
                 </div>
-                <ul>
-                    <li>阿爾及利亞甲組聯賽<p class="num">(12)</p>
+                <ul [ngClass]="{'display':!lis[2]}">
+                    <li (click)="closeli(2)">阿爾及利亞甲組聯賽<p class="num">(12)</p>
                     </li>
                 </ul>
             </div>
-            <div class="gt">
-                <div class="title">
+            <div [ngClass]="{'active':lis[3]}" class="gt">
+                <div (click)="openli(3)" class="title">
                     <p>巴林</p><span class="arrow"></span>
                 </div>
-                <ul>
-                    <li>巴林超級聯賽<p class="num">(12)</p>
+                <ul [ngClass]="{'display':!lis[3]}">
+                    <li (click)="closeli(3)">巴林超級聯賽<p class="num">(12)</p>
                     </li>
                 </ul>
             </div>
-            <div class="gt">
-                <div class="title">
+            <div [ngClass]="{'active':lis[4]}" class="gt">
+                <div (click)="openli(4)" class="title">
                     <p>巴西</p><span class="arrow"></span>
                 </div>
-                <ul>
-                    <li>巴西杯<p class="num">(12)</p>
+                <ul [ngClass]="{'display':!lis[4]}">
+                    <li (click)="closeli(4)">巴西杯<p class="num">(12)</p>
                     </li>
-                    <li>巴西里約州甲組聯賽<p class="num">(12)</p>
+                    <li (click)="closeli(4)">巴西里約州甲組聯賽<p class="num">(12)</p>
                     </li>
-                    <li>巴西巴西利亞甲組聯賽<p class="num">(12)</p>
+                    <li (click)="closeli(4)">巴西巴西利亞甲組聯賽<p class="num">(12)</p>
                     </li>
-                    <li>巴西巴亞諾甲組聯賽<p class="num">(12)</p>
+                    <li (click)="closeli(4)">巴西巴亞諾甲組聯賽<p class="num">(12)</p>
                     </li>
                 </ul>
             </div>

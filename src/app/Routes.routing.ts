@@ -55,11 +55,12 @@ const routes: Routes = [
       {
         path: 'indexcontent', component: IndexContent,
         children: [
+          { path: 'soccer', component: SoccerComponent },
+          { path: 'soccerinner', component: Soccer_innerComponent },
           { path: 'indexright', component: IndexRight },
           { path: 'tableballinner', component: Tableball_innerComponent },
           { path: 'tennis', component: TennisComponent },
           { path: 'basball', component: BasballComponent },
-          { path: 'soccer', component: SoccerComponent },
           { path: 'basketball', component: BasketballComponent },
           { path: 'horse', component: Horse_raceComponent },
           { path: 'esp', component: EspComponent },
@@ -74,7 +75,6 @@ const routes: Routes = [
           { path: 'footballinner', component: FootballinnerComponent },
           { path: 'bsoinner', component: BsoinnerComponent },
           { path: 'basketballinner', component: Basketball_innerComponent },
-          { path: 'soccerinner', component: Soccer_innerComponent },
           { path: 'lottery', component: LotteryComponent },
           { path: 'iceball', component: IceballComponent },
           { path: 'snooker', component: SnookerComponent },

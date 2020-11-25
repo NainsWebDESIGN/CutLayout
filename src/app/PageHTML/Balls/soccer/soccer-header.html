@@ -13,7 +13,7 @@
         <div class="line"></div>
         <p [ngClass]="{'active':boolin[4]}" (click)="changeboolin(4)">盤口教程</p>
         <div class="right_box">
-            <p class="ball_cho">選擇聯盟</p>
+            <p [ngClass]="{'active':league}" (click)="leaguechoice()" class="ball_cho">選擇聯盟</p>
             <span class="arrow"></span>
             <div class="line"></div>
             <p>時間排序</p>
@@ -24,217 +24,217 @@
         </div>
     </div>
     <!--fixed 才是真的-->
-    <div class="league_choice">
-        <div class="row">
-            <span class="check active"></span>
+    <div [ngClass]="{'active':league}" class="league_choice">
+        <div class="row" (click)="checkactive(0)">
+            <span [ngClass]="{'active':leaguecheck[0]}" class="check"></span>
             <p>選取/取消所有聯盟</p>
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(1)">
+                <span [ngClass]="{'active':leaguecheck[1]}" class="check"></span>
                 <p>義大利甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(2)">
+                <span [ngClass]="{'active':leaguecheck[2]}" class="check"></span>
                 <p>法國甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(3)">
+                <span [ngClass]="{'active':leaguecheck[3]}" class="check"></span>
                 <p>英格蘭足總盃</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(4)">
+                <span [ngClass]="{'active':leaguecheck[4]}" class="check"></span>
                 <p>埃及超級聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(5)">
+                <span [ngClass]="{'active':leaguecheck[5]}" class="check"></span>
                 <p>阿爾及利亞甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(6)">
+                <span [ngClass]="{'active':leaguecheck[6]}" class="check"></span>
                 <p>巴林超級聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(7)">
+                <span [ngClass]="{'active':leaguecheck[7]}" class="check"></span>
                 <p>巴西盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(8)">
+                <span [ngClass]="{'active':leaguecheck[8]}" class="check"></span>
                 <p>巴西里約州甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(9)">
+                <span [ngClass]="{'active':leaguecheck[9]}" class="check"></span>
                 <p>巴西巴西利亞甲組聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(10)">
+                <span [ngClass]="{'active':leaguecheck[10]}" class="check"></span>
                 <p>巴西巴亞諾甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(11)">
+                <span [ngClass]="{'active':leaguecheck[11]}" class="check"></span>
                 <p>巴西伯南布哥甲組一聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(12)">
+                <span [ngClass]="{'active':leaguecheck[12]}" class="check"></span>
                 <p>比利時盃</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(13)">
+                <span [ngClass]="{'active':leaguecheck[13]}" class="check"></span>
                 <p>德國足協盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(14)">
+                <span [ngClass]="{'active':leaguecheck[14]}" class="check"></span>
                 <p>法國甲組聯賽-特別投注</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(15)">
+                <span [ngClass]="{'active':leaguecheck[15]}" class="check"></span>
                 <p>克羅地亞盃</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(16)">
+                <span [ngClass]="{'active':leaguecheck[16]}" class="check"></span>
                 <p>超級盃(在卡塔爾)</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(17)">
+                <span [ngClass]="{'active':leaguecheck[17]}" class="check"></span>
                 <p>卡塔爾埃米爾盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(18)">
+                <span [ngClass]="{'active':leaguecheck[18]}" class="check"></span>
                 <p>墨西哥超級聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(19)">
+                <span [ngClass]="{'active':leaguecheck[19]}" class="check"></span>
                 <p>摩洛哥甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(20)">
+                <span [ngClass]="{'active':leaguecheck[20]}" class="check"></span>
                 <p>南美洲球會盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(21)">
+                <span [ngClass]="{'active':leaguecheck[21]}" class="check"></span>
                 <p>南美自由盃</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(22)">
+                <span [ngClass]="{'active':leaguecheck[22]}" class="check"></span>
                 <p>南非盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(23)">
+                <span [ngClass]="{'active':leaguecheck[23]}" class="check"></span>
                 <p>奇幻賽事</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(24)">
+                <span [ngClass]="{'active':leaguecheck[24]}" class="check"></span>
                 <p>塞浦路斯盃</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(25)">
+                <span [ngClass]="{'active':leaguecheck[25]}" class="check"></span>
                 <p>塞浦路斯甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(26)">
+                <span [ngClass]="{'active':leaguecheck[26]}" class="check"></span>
                 <p>沙特超級聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(27)">
+                <span [ngClass]="{'active':leaguecheck[27]}" class="check"></span>
                 <p>英格蘭超級聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(28)">
+                <span [ngClass]="{'active':leaguecheck[28]}" class="check"></span>
                 <p>土耳其盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(29)">
+                <span [ngClass]="{'active':leaguecheck[29]}" class="check"></span>
                 <p>突尼斯甲組聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(30)">
+                <span [ngClass]="{'active':leaguecheck[30]}" class="check"></span>
                 <p>匈牙利甲組聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(31)">
+                <span [ngClass]="{'active':leaguecheck[31]}" class="check"></span>
                 <p>希臘盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(32)">
+                <span [ngClass]="{'active':leaguecheck[32]}" class="check"></span>
                 <p>西班牙盃</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(33)">
+                <span [ngClass]="{'active':leaguecheck[33]}" class="check"></span>
                 <p>亞洲足聯盃外圍賽-附加賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(34)">
+                <span [ngClass]="{'active':leaguecheck[34]}" class="check"></span>
                 <p>以色列超級聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(35)">
+                <span [ngClass]="{'active':leaguecheck[35]}" class="check"></span>
                 <p>以色列北部國家聯賽U19</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(36)">
+                <span [ngClass]="{'active':leaguecheck[36]}" class="check"></span>
                 <p>伊朗超級聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(37)">
+                <span [ngClass]="{'active':leaguecheck[37]}" class="check"></span>
                 <p>印度超級聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(38)">
+                <span [ngClass]="{'active':leaguecheck[38]}" class="check"></span>
                 <p>印度I聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(39)">
+                <span [ngClass]="{'active':leaguecheck[39]}" class="check"></span>
                 <p>印度果阿超級聯賽</p>
             </div>
 
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(40)">
+                <span [ngClass]="{'active':leaguecheck[40]}" class="check"></span>
                 <p>義大利青年盃U19</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(41)">
+                <span [ngClass]="{'active':leaguecheck[41]}" class="check"></span>
                 <p>英格蘭足球協會南部全國聯賽</p>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
+            <div class="b33_3" (click)="checkactive(42)">
+                <span [ngClass]="{'active':leaguecheck[42]}" class="check"></span>
                 <p>英格蘭伊斯米安超級聯賽</p>
             </div>
 

@@ -150,10 +150,23 @@ export class IndexLogin implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexSeachbox implements OnInit {
-
+  boolin = false;
+  lis: any = [];
+  searchtotal = 5;
   constructor() { }
-
+  opensearch() {
+    this.boolin = !this.boolin;
+  }
+  openli(x) {
+    this.lis[x] = !this.lis[x];
+  }
+  closeli(x) {
+    this.lis[x] = false;
+  }
   ngOnInit() {
+    for (let i = 0; i < this.searchtotal; i++) {
+      this.lis[i] = false;
+    }
   }
 
 }

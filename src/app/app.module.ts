@@ -19,7 +19,7 @@ import {
   MemberComponent, MemberRight, MemberOption,
   MemberLeft, GetCashPopup, AddCard, ChangePassword
 } from './pageHTML/My/Member/Member.component';
-import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult } from './pageHTML/Balls/soccer/soccer.component';
+import { SoccerComponent, SoccerRight, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult, SoccerTeach_Bs, SoccerTeach } from './pageHTML/Balls/soccer/soccer.component';
 import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult } from './pageHTML/Balls/basball/basball.component';
 import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight, BasketTeach, BasketResult, BasketBet } from './pageHTML/Balls/basketball/basketball.component';
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent, HorseResult, HorseBet } from './pageHTML/Balls/horse_race/horse_race.component';
@@ -51,7 +51,6 @@ import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, Message
 import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
-import { Soteach_bsComponent } from './PageHTML/Balls/soteach_bs/soteach_bs.component';
 import { LotteryComponent, LotteryHeader, LotteryContent, LotteryRight, LotteryResult, LotteryBet } from './PageHTML/Balls/lottery/lottery.component';
 import { IceContent, IceHeader, IceRight, IceballComponent, IceResult, IceBet } from './PageHTML/Balls/iceball/iceball.component';
 import { TennisComponent, TennisContent, TennisHeader, TennisRight, TennisResult, TennisBet } from './PageHTML/Balls/tennis/tennis.component';
@@ -83,7 +82,7 @@ import { TableballComponent, TableballBet, TableballContent, TableballHeader, Ta
     HorseContent, LottinnerRight, LottinnerHeader, LottinnerContent, MortorRight, MortorHeader, MortorContent, SoccerRight,
     SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent, SnookerinnerRight, SnookerinnerContent, SnookerinnerHeader,
     BasketRight, BasketHeader, BasketContent, SoinnerRight, StockHeader, StockRight, StockContent, SkewersPopup, Tableball_innerComponent,
-    Soteach_bsComponent, SoTeach, SoBet, TennisinnerContent, TennisinnerHeader, VballinnerHeader, VballinnerRight, BsoinnerContent,
+    SoccerTeach_Bs, SoTeach, SoBet, TennisinnerContent, TennisinnerHeader, VballinnerHeader, VballinnerRight, BsoinnerContent,
     BasketTeach, BasketResult, BasketBet, HorseResult, HorseBet, EspResult, EspBet, StResult, StBet, LotteryResult, LotteryBet,
     LotteryComponent, LotteryHeader, LotteryContent, LotteryRight, Ice_InnerComponent, IceContent, IceHeader, IceRight, BsoRight,
     IceballComponent, IceResult, IceBet, TennisinnerRight, TennisComponent, TennisContent, TennisHeader, TennisRight, FootballComponent,
@@ -91,7 +90,7 @@ import { TableballComponent, TableballBet, TableballContent, TableballHeader, Ta
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballRight, VballResult, VballBet, BadmintoninnerHeader,
     BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet, BsoinnerRight, BsoHeader,
     FootballResult, FootballBet, BsoComponent, TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult,
-    TableballRight, ChangePassword
+    TableballRight, ChangePassword, SoccerTeach
   ],
   imports: [
     BrowserModule,
