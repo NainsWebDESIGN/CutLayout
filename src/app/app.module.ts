@@ -21,7 +21,7 @@ import {
 } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult, SoccerTeach_Bs, SoccerTeach, SoccerSenior } from './pageHTML/Balls/soccer.component/soccer/soccer.component';
 import { BasballComponent, BasballHeader, BasballContent, BasTeach, BasBet, BasResult, BasballSenior, BasTeachBs, BasballTeach } from './PageHTML/Balls/basball.component/basball/basball.component';
-import { BasketballComponent, BasketballHeader, BasketballContent, BasketTeach, BasketResult, BasketBet } from './PageHTML/Balls/basketball.component/basketball/basketball.component';
+import { BasketballComponent, BasketballHeader, BasketballContent, BasketTeach, BasketResult, BasketBet, BasketSenior, BasketballTeachbs, BasketballTeach } from './PageHTML/Balls/basketball.component/basketball/basketball.component';
 import { Horse_raceComponent, HorseHeader, HorseContent, HorseResult, HorseBet } from './PageHTML/Balls/horse.component/horse_race/horse_race.component';
 import { EspComponent, EspHeader, EspContent, EspResult, EspBet } from './PageHTML/Balls/esp.component/esp/esp.component';
 import { StockComponent, StockHeader, StockContent, StResult, StBet } from './PageHTML/Balls/stock.component/stock/stock.component';
@@ -92,7 +92,8 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     IceballComponent, IceResult, IceBet, TennisComponent, TennisContent, TennisHeader, FootballComponent, FootballBet, BsoComponent,
     TennisResult, TennisBet, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, SnookerBet, BsoResult, FootballResult,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, VballBet, BadmintoninnerHeader, TableballBet,
-    BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonResult, BadmintonBet, BsoHeader, TableballComponent
+    BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonResult, BadmintonBet, BsoHeader, TableballComponent, BasketSenior,
+    BasketballTeachbs, BasketballTeach
   ],
   imports: [
     BrowserModule,

@@ -19,8 +19,14 @@
             <p>時間排序</p>
             <span class="arrow"></span>
             <div class="line"></div>
-            <p *ngIf="!boolin[5]" (click)="changeboolin(5)" class="beginner start">新手版</p>
-            <p *ngIf="boolin[5]" (click)="changeboolin(0)" class="beginner start">專業版</p>
+            <span *ngIf="skewers">
+                <p *ngIf="!boolin[5]" (click)="changeboolin(5)" class="beginner start">新手版</p>
+                <p *ngIf="boolin[5]" (click)="changeboolin(0)" class="beginner">專業版</p>
+            </span>
+            <span *ngIf="!skewers">
+                <p *ngIf="!boolin[6]" (click)="changeboolin(6)" class="beginner start">新手版</p>
+                <p *ngIf="boolin[6]" (click)="changeboolin(2)" class="beginner">專業版</p>
+            </span>
             <span class="arrow"></span>
         </div>
         <div *ngIf="boolin[3]" class="right_box">
@@ -64,7 +70,7 @@
     <basball-content (soloEvent)="getSolo($event)"></basball-content>
 </div>
 <div [ngClass]="{'active':boolin[2]}" class="sign_in_status">
-    <basbet></basbet>
+    <basball-content (soloEvent)="getSolo($event)"></basball-content>
 </div>
 <div [ngClass]="{'active':boolin[3]}" class="sign_in_status">
     <basresult></basresult>
@@ -73,5 +79,8 @@
     <basteach></basteach>
 </div>
 <div [ngClass]="{'active':boolin[5]}" class="sign_in_status">
+    <basball-senior (soloEvent)="getSolo($event)"></basball-senior>
+</div>
+<div [ngClass]="{'active':boolin[6]}" class="sign_in_status">
     <basball-senior (soloEvent)="getSolo($event)"></basball-senior>
 </div>

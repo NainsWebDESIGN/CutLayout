@@ -20,8 +20,14 @@
             <p>時間排序</p>
             <span class="arrow"></span>
             <div class="line"></div>
-            <p *ngIf="!boolin[5]" (click)="changeboolin(5)" class="beginner start">新手版</p>
-            <p *ngIf="boolin[5]" (click)="changeboolin(0)" class="beginner">專業版</p>
+            <span *ngIf="skewers">
+                <p *ngIf="!boolin[5]" (click)="changeboolin(5)" class="beginner start">新手版</p>
+                <p *ngIf="boolin[5]" (click)="changeboolin(0)" class="beginner">專業版</p>
+            </span>
+            <span *ngIf="!skewers">
+                <p *ngIf="!boolin[6]" (click)="changeboolin(6)" class="beginner start">新手版</p>
+                <p *ngIf="boolin[6]" (click)="changeboolin(2)" class="beginner">專業版</p>
+            </span>
             <span class="arrow"></span>
         </div>
         <div *ngIf="boolin[3]" class="right_box">
@@ -64,7 +70,7 @@
     <soccer-content (soloEvent)="getSolo($event)"></soccer-content>
 </div>
 <div [ngClass]="{'active':boolin[2]}" class="sign_in_status">
-    <sobet></sobet>
+    <soccer-content (soloEvent)="getSolo($event)"></soccer-content>
 </div>
 <div [ngClass]="{'active':boolin[3]}" class="sign_in_status">
     <soresult></soresult>
@@ -73,5 +79,8 @@
     <soteach></soteach>
 </div>
 <div [ngClass]="{'active':boolin[5]}" class="sign_in_status">
+    <soccer-senior (soloEvent)="getSolo($event)"></soccer-senior>
+</div>
+<div [ngClass]="{'active':boolin[6]}" class="sign_in_status">
     <soccer-senior (soloEvent)="getSolo($event)"></soccer-senior>
 </div>

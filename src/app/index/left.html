@@ -1,11 +1,13 @@
 <div class="left ">
     <ul class="index active">
-        <li *ngFor="let item of left">
-            <i [class]="item.iclass"></i>
-            <p>{{ item.title }}</p>
-            <p class="num">295</p>
-            <a [routerLink]="[item.router]" (click)="change()"></a>
-        </li>
+        <div *ngFor="let item of left">
+            <li [ngClass]="{'active':check[item.CHID]}">
+                <i [class]="item.iclass"></i>
+                <p>{{ item.title }}</p>
+                <p class="num">295</p>
+                <a [routerLink]="[item.router]" (click)="change(item.CHID)"></a>
+            </li>
+        </div>
     </ul>
 </div>
 <router-outlet (activate)="emit($event)"></router-outlet>

@@ -72,6 +72,7 @@ export class IndexLeft implements OnInit {
   boolin = true;
   left: any = [];
   total: any = [];
+  check: any = [];
   constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router) { }
   emit(ChildValue) {
     if (ChildValue.popupEvent) {
@@ -107,16 +108,28 @@ export class IndexLeft implements OnInit {
     this.total = [];
     this.total.push('/index/indexcontent/indexright');
   }
-  change() {
+  change(x) {
     this.childEvent.emit(this.boolin);
     this.popupEvent.emit(false);
+    for (let i = 0; i < this.check.length; i++) {
+      this.check[i] = false;
+    }
+    this.check[x] = true;
   }
-  ngOnInit() {
-    this.Ajax.getData('left').then(el => {
+  async getleft() {
+    await this.Ajax.getData('left').then(el => {
       this.left = el;
     })
+    return this.left;
+  }
+  async ngOnInit() {
+    let data = await this.getleft();
     this.total.push('/index/indexcontent/indexright');
     this.start()
+    for (let i = 0; i < (data.length + 1); i++) {
+      this.check[i] = false;
+    }
+    this.check[0] = true;
   }
 }
 

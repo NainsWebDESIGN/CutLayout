@@ -75,91 +75,109 @@
   ],
   "left": [
     {
+      "CHID": "0",
       "iclass": "i1",
       "title": "我的最愛",
       "router": "/index/indexcontent/soccer"
     },
     {
+      "CHID": "1",
       "iclass": "i2",
       "title": "熱門賽事",
       "router": "/index/indexcontent/soccer"
     },
     {
+      "CHID": "2",
       "iclass": "i3",
       "title": "足球",
       "router": "/index/indexcontent/soccer"
     },
     {
+      "CHID": "3",
       "iclass": "i4",
       "title": "棒球",
       "router": "/index/indexcontent/basball"
     },
     {
+      "CHID": "4",
       "iclass": "i5",
       "title": "籃球",
       "router": "/index/indexcontent/basketball"
     },
     {
+      "CHID": "5",
       "iclass": "i6",
       "title": "賽馬賽狗",
       "router": "/index/indexcontent/horse"
     },
     {
+      "CHID": "6",
       "iclass": "i7",
       "title": "電競",
       "router": "/index/indexcontent/esp"
     },
     {
+      "CHID": "7",
       "iclass": "i8",
       "title": "股票指數",
       "router": "/index/indexcontent/stock"
     },
     {
+      "CHID": "8",
       "iclass": "i9",
       "title": "彩球",
       "router": "/index/indexcontent/lottery"
     },
     {
+      "CHID": "9",
       "iclass": "i10",
       "title": "冰球",
       "router": "/index/indexcontent/iceball"
     },
     {
+      "CHID": "10",
       "iclass": "i11",
       "title": "網球",
       "router": "/index/indexcontent/tennis"
     },
     {
+      "CHID": "11",
       "iclass": "i12",
       "title": "斯諾克",
       "router": "/index/indexcontent/snooker"
     },
     {
+      "CHID": "12",
       "iclass": "i13",
       "title": "排球",
       "router": "/index/indexcontent/vball"
     },
     {
+      "CHID": "13",
       "iclass": "i14",
       "title": "賽車",
       "router": "/index/indexcontent/mortor"
     },
     {
+      "CHID": "14",
       "iclass": "i15",
       "title": "羽毛球",
       "router": "/index/indexcontent/badminton"
     },
     {
+      "CHID": "15",
       "iclass": "i16",
       "title": "沙灘足球",
       "router": "/index/indexcontent/football"
     },
     {
+      "CHID": "16",
       "iclass": "i17",
       "title": "美式足球",
       "router": "/index/indexcontent/bso"
     },
     {
+      "CHID": "17",
       "iclass": "i18",
       "title": "乒乓球",
       "router": "/index/indexcontent/tableball"

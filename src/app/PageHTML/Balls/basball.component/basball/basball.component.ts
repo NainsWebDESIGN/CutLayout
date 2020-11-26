@@ -11,11 +11,11 @@ export class BasballComponent implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
   @Output() soloEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-  getPopup(PopupValue) {
-    this.popupEvent.emit(PopupValue);
-  }
   getSolo(x) {
     this.soloEvent.emit(x);
+  }
+  getPopup(PopupValue) {
+    this.popupEvent.emit(PopupValue);
   }
   ngOnInit() {
   }
@@ -31,10 +31,11 @@ export class BasballHeader implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
   @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   boolin: any = [];
-  pagetotal = 6;
+  pagetotal = 7;
   league = false;
   leaguecheck: any = [];
   leaguebox: any = [];
+  skewers = true;
   constructor(private Ajax: DataBassService) { }
   getSolo(x) {
     this.soloEvent.emit(x);
@@ -62,11 +63,8 @@ export class BasballHeader implements OnInit {
     console.log(this.leaguecheck)
   }
   changeboolin(x) {
-    if (x == 2) {
-      this.popupEvent.emit(true);
-    } else if (x !== 2) {
-      this.popupEvent.emit(false);
-    }
+    x == 2 || x == 6 ? this.popupEvent.emit(true) : this.popupEvent.emit(false);
+    x == 2 || x == 6 ? this.skewers = false : this.skewers = true;
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
     }
