@@ -74,7 +74,7 @@ import {
 } from './PageHTML/Balls/tableball.component/tableball/tableball.component';
 import { Basball_innerComponent, BasinnerContent, BasinnerHeader } from './PageHTML/Balls/basball.component/basball_inner/basball_inner.component';
 import { Esp_innerComponent } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
-import { Horserace_innerComponent } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
+import { Horserace_innerComponent, HorseinnerContent, HorseinnerHeader } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
 import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
 
 
@@ -85,9 +85,9 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet,
     Horse_raceComponent, EspComponent, StockComponent, TransFor, IceinnerContent, TennisinnerComponent, SnookerinnerComponent,
     MortorComponent, My_bill_moneybagComponent, VballinnerContent, FootballinnerHeader, FootballContent, Horserace_innerComponent,
-    Soccer_innerComponent, Basketball_innerComponent, BasTeach, BasResult, SoResult, FootballHeader, BetsoloPopup,
+    Soccer_innerComponent, Basketball_innerComponent, BasTeach, BasResult, SoResult, FootballHeader, BetsoloPopup, BadmintonResult,
     HelpComponent, Contact_us_sevComponent, Download_appComponent, Bill_recordComponent, BsoinnerComponent, Esp_innerComponent,
-    Bill_transComponent, Bill_trans_recordComponent, IndexContent, MemberRight, MemberOption, MemberLeft, SoccerContent,
+    Bill_transComponent, Bill_trans_recordComponent, IndexContent, MemberRight, MemberOption, MemberLeft, SoccerContent, BadmintonContent,
     BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup, GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox,
     TakeOut, Bill_nowComponent, NowHeader, BillRecordHeader, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpRules, HelpSup,
     ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno, MessageEvents, MessageAnno, MessageMessage,
@@ -98,14 +98,13 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     HorseContent, LottinnerHeader, LottinnerContent, MortorHeader, MortorContent, SoccerTeach, BasballSenior, Stock_innerComponent,
     SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent, SnookerinnerContent, SnookerinnerHeader, ChangePassword,
     BasketHeader, BasketContent, StockHeader, StockContent, SkewersPopup, Tableball_innerComponent, SoccerSenior, Basball_innerComponent,
-    SoccerTeach_Bs, SoTeach, TennisinnerContent, TennisinnerHeader, VballinnerHeader, BsoinnerContent, TableballResult,
-    BasketTeach, BasketResult, HorseResult, EspResult, StResult, LotteryResult,
+    SoccerTeach_Bs, SoTeach, TennisinnerContent, TennisinnerHeader, VballinnerHeader, BsoinnerContent, TableballResult, BadmintonHeader,
+    BasketTeach, BasketResult, HorseResult, EspResult, StResult, LotteryResult, HorseinnerContent, HorseinnerHeader, BadmintonBet,
     LotteryComponent, LotteryHeader, LotteryContent, Ice_InnerComponent, IceContent, IceHeader, TableballContent, TableballHeader,
-    IceballComponent, IceResult, TennisComponent, TennisContent, TennisHeader, FootballComponent, BsoComponent,
-    TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult,
-    Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader,
-    BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonResult, BadmintonBet, BsoHeader, TableballComponent, BasketSenior,
-    BasketballTeachbs, BasketballTeach
+    IceballComponent, IceResult, TennisComponent, TennisContent, TennisHeader, FootballComponent, BsoComponent, TableballComponent,
+    TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
+    Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
+    BadmintonComponent,
   ],
   imports: [
     BrowserModule,

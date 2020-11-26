@@ -60,7 +60,6 @@ export class BasballHeader implements OnInit {
         this.leaguecheck[0] = false;
       }
     }
-    console.log(this.leaguecheck)
   }
   changeboolin(x) {
     x == 2 || x == 6 ? this.popupEvent.emit(true) : this.popupEvent.emit(false);
