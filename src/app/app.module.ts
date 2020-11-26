@@ -12,7 +12,7 @@ import {
   IndexRight, IndexLogin, IndexSeachbox,
   IndexBallBetting, IndexRightLive,
   IndexSideOptions, IndexEnContainer,
-  IndexContent, SkewersPopup
+  IndexContent, SkewersPopup, BetsoloPopup
 } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
 import {
@@ -95,7 +95,7 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet, BsoinnerRight, BsoHeader,
     FootballResult, FootballBet, BsoComponent, TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult,
     TableballRight, ChangePassword, SoccerSenior, Basball_innerComponent, Esp_innerComponent, Horserace_innerComponent,
-    Stock_innerComponent
+    Stock_innerComponent, BetsoloPopup
   ],
   imports: [
     BrowserModule,

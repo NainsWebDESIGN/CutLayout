@@ -9,9 +9,13 @@ import { DataBassService } from '../../../../DataBass.service';
 })
 export class SoccerComponent implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter;
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
   getPopup(PopupValue) {
     this.popupEvent.emit(PopupValue);
+  }
+  getSolo(x) {
+    this.soloEvent.emit(x);
   }
   ngOnInit() {
   }
@@ -25,12 +29,16 @@ export class SoccerComponent implements OnInit {
 })
 export class SoccerHeader implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   boolin: any = [];
   pagetotal = 6;
   league = false;
   leaguecheck: any = [];
   leaguebox: any = [];
   constructor(private Ajax: DataBassService) { }
+  getSolo(x) {
+    this.soloEvent.emit(x);
+  }
   leaguechoice() {
     this.league = !this.league;
   }
@@ -89,9 +97,11 @@ export class SoccerHeader implements OnInit {
   styleUrls: ['./soccer.component.css']
 })
 export class SoccerContent implements OnInit {
-
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-
+  getSolo() {
+    this.soloEvent.emit(true);
+  }
   ngOnInit() {
   }
 

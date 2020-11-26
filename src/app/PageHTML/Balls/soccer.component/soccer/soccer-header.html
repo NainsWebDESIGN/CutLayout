@@ -61,7 +61,7 @@
     </div>
 </div>
 <div [ngClass]="{'active':boolin[0]}" class="sign_in_status">
-    <soccer-content></soccer-content>
+    <soccer-content (soloEvent)="getSolo($event)"></soccer-content>
 </div>
 <div [ngClass]="{'active':boolin[2]}" class="sign_in_status">
     <sobet></sobet>

@@ -67,6 +67,7 @@ export class IndexHeader implements OnInit {
 export class IndexLeft implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   pagehistory: any = [];
   boolin = true;
   left: any = [];
@@ -81,6 +82,11 @@ export class IndexLeft implements OnInit {
     if (ChildValue.pageEvent) {
       ChildValue.pageEvent.subscribe(el => {
         this.back(el);
+      })
+    }
+    if (ChildValue.soloEvent) {
+      ChildValue.soloEvent.subscribe(el => {
+        this.soloEvent.emit(el);
       })
     }
   }
@@ -278,7 +284,14 @@ export class IndexEnContainer implements OnInit {
 export class IndexContent implements OnInit {
   boolin = false;
   popup = false;
+  betsolo = false;
   constructor(private router: Router, private reload: Location) { }
+  closeSolo(CloseValue) {
+    this.betsolo = CloseValue;
+  }
+  getSolo(SoloValue) {
+    this.betsolo = SoloValue;
+  }
   getPopup(PopupValue) {
     this.popup = PopupValue;
   }
@@ -311,6 +324,27 @@ export class SkewersPopup implements OnInit {
   constructor() { }
   change() {
     this.boolin = !this.boolin;
+  }
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'betsolo_popup',
+  templateUrl: './betsolo_popup.html',
+  styleUrls: ['../app.component.css']
+})
+export class BetsoloPopup implements OnInit {
+  @Output() closeEvent: EventEmitter<any> = new EventEmitter();
+  check = true;
+  constructor() { }
+  closebet() {
+    this.closeEvent.emit(false);
+    this.check = true;
+  }
+  checkpage() {
+    this.check = !this.check;
   }
   ngOnInit() {
   }
