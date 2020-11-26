@@ -63,20 +63,6 @@ export class HorseContent implements OnInit {
 }
 
 @Component({
-  selector: 'horse-right',
-  templateUrl: './horse-right.html',
-  styleUrls: ['./horse_race.component.css']
-})
-export class HorseRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'horsebet',
   templateUrl: './horsebet.html',
   styleUrls: ['./horse_race.component.css']

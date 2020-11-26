@@ -46,17 +46,3 @@ export class MortorContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'mortor-right',
-  templateUrl: './mortor-right.html',
-  styleUrls: ['./mortor.component.css']
-})
-export class MortorRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

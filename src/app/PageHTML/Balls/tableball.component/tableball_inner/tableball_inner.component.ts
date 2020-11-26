@@ -41,17 +41,3 @@ export class TableinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'tableinner-right',
-  templateUrl: './tableinner-right.html',
-  styleUrls: ['./tableball_inner.component.css']
-})
-export class TableinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

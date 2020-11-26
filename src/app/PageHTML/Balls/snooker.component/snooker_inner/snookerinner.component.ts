@@ -41,17 +41,3 @@ export class SnookerinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'snookerinner-right',
-  templateUrl: './snookerinner-right.html',
-  styleUrls: ['./snookerinner.component.css']
-})
-export class SnookerinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

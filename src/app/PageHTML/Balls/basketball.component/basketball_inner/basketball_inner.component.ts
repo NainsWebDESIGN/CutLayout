@@ -41,17 +41,3 @@ export class BasketContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'basket-right',
-  templateUrl: './basketballinner-right.html',
-  styleUrls: ['./basketball_inner.component.css']
-})
-export class BasketRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

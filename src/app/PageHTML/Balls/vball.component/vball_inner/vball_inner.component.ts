@@ -41,17 +41,3 @@ export class VballinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'vballinner-right',
-  templateUrl: './vballinner-right.html',
-  styleUrls: ['./vball_inner.component.css']
-})
-export class VballinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

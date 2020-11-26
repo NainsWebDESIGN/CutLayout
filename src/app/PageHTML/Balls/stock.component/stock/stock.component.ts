@@ -63,20 +63,6 @@ export class StockContent implements OnInit {
 }
 
 @Component({
-  selector: 'stock-right',
-  templateUrl: './stock-right.html',
-  styleUrls: ['./stock.component.css']
-})
-export class StockRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'stbet',
   templateUrl: './stbet.html',
   styleUrls: ['./stock.component.css']

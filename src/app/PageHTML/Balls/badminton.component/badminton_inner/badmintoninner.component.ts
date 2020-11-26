@@ -41,17 +41,3 @@ export class BadmintoninnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'badmintoninner-right',
-  templateUrl: './badmintoninner-right.html',
-  styleUrls: ['./badmintoninner.component.css']
-})
-export class BadmintoninnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

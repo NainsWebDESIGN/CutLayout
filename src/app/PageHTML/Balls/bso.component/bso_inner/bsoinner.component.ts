@@ -41,17 +41,3 @@ export class BsoinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'bsoinner-right',
-  templateUrl: './bsoinner-right.html',
-  styleUrls: ['./bsoinner.component.css']
-})
-export class BsoinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

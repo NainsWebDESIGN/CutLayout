@@ -63,20 +63,6 @@ export class VballContent implements OnInit {
 }
 
 @Component({
-  selector: 'vball-right',
-  templateUrl: './vball-right.html',
-  styleUrls: ['./vball.component.css']
-})
-export class VballRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'vballbet',
   templateUrl: './vballbet.html',
   styleUrls: ['./vball.component.css']

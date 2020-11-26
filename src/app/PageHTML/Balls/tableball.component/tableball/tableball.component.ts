@@ -63,20 +63,6 @@ export class TableballContent implements OnInit {
 }
 
 @Component({
-  selector: 'tableball-right',
-  templateUrl: './tableball-right.html',
-  styleUrls: ['./tableball.component.css']
-})
-export class TableballRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'tableball-bet',
   templateUrl: './tableball-bet.html',
   styleUrls: ['./tableball.component.css']

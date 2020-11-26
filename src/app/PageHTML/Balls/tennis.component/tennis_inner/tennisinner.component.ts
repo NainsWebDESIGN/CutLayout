@@ -41,17 +41,3 @@ export class TennisinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'tennisinner-right',
-  templateUrl: './tennisinner-right.html',
-  styleUrls: ['./tennisinner.component.css']
-})
-export class TennisinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

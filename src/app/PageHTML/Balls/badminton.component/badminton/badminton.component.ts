@@ -63,20 +63,6 @@ export class BadmintonContent implements OnInit {
 }
 
 @Component({
-  selector: 'badminton-right',
-  templateUrl: './badminton-right.html',
-  styleUrls: ['./badminton.component.css']
-})
-export class BadmintonRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'badmintonbet',
   templateUrl: './badmintonbet.html',
   styleUrls: ['./badminton.component.css']

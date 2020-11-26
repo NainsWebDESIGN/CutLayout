@@ -63,20 +63,6 @@ export class EspContent implements OnInit {
 }
 
 @Component({
-  selector: 'esp-right',
-  templateUrl: './esp-right.html',
-  styleUrls: ['./esp.component.css']
-})
-export class EspRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'espbet',
   templateUrl: './espbet.html',
   styleUrls: ['./esp.component.css']

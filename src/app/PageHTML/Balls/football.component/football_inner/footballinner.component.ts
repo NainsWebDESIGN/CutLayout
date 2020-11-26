@@ -41,17 +41,3 @@ export class FootballinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'footballinner-right',
-  templateUrl: './footballinner-right.html',
-  styleUrls: ['./footballinner.component.css']
-})
-export class FootballinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

@@ -63,20 +63,6 @@ export class LotteryContent implements OnInit {
 }
 
 @Component({
-  selector: 'lottery-right',
-  templateUrl: './lottery-right.html',
-  styleUrls: ['./lottery.component.css']
-})
-export class LotteryRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'lotterybet',
   templateUrl: './lotterybet.html',
   styleUrls: ['./lottery.component.css']

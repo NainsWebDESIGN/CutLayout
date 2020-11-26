@@ -41,17 +41,3 @@ export class LottinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'lottinner-right',
-  templateUrl: './lottinner-right.html',
-  styleUrls: ['./lottinner.component.css']
-})
-export class LottinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

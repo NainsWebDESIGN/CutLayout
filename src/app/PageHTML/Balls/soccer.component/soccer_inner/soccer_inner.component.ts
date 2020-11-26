@@ -46,17 +46,3 @@ export class SoinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'soinner-right',
-  templateUrl: './soccerinner-right.html',
-  styleUrls: ['./soccer_inner.component.css']
-})
-export class SoinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

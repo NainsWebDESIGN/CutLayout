@@ -63,20 +63,6 @@ export class BsoContent implements OnInit {
 }
 
 @Component({
-  selector: 'bso-right',
-  templateUrl: './bso-right.html',
-  styleUrls: ['./bso.component.css']
-})
-export class BsoRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'bso-bet',
   templateUrl: './bso-bet.html',
   styleUrls: ['./bso.component.css']

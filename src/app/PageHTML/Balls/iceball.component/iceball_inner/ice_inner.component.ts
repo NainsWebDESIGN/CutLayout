@@ -41,17 +41,3 @@ export class IceinnerContent implements OnInit {
   }
 
 }
-
-@Component({
-  selector: 'iceinner-right',
-  templateUrl: './iceinner-right.html',
-  styleUrls: ['./ice_inner.component.css']
-})
-export class IceinnerRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}

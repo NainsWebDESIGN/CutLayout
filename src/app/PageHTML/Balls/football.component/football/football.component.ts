@@ -63,20 +63,6 @@ export class FootballContent implements OnInit {
 }
 
 @Component({
-  selector: 'football-right',
-  templateUrl: './football-right.html',
-  styleUrls: ['./football.component.css']
-})
-export class FootballRight implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'footballbet',
   templateUrl: './footballbet.html',
   styleUrls: ['./football.component.css']
