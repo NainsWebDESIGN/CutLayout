@@ -60,6 +60,10 @@ import { BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, 
 import { FootballComponent, FootballHeader, FootballContent, FootballRight, FootballResult, FootballBet } from './PageHTML/Balls/football.component/football/football.component';
 import { BsoComponent, BsoBet, BsoContent, BsoHeader, BsoResult, BsoRight } from './PageHTML/Balls/bso.component/bso/bso.component';
 import { TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult, TableballRight } from './PageHTML/Balls/tableball.component/tableball/tableball.component';
+import { Basball_innerComponent } from './PageHTML/Balls/basball.component/basball_inner/basball_inner.component';
+import { Esp_innerComponent } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
+import { Horserace_innerComponent } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
+import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
 
 
 @NgModule({
@@ -90,7 +94,8 @@ import { TableballComponent, TableballBet, TableballContent, TableballHeader, Ta
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballRight, VballResult, VballBet, BadmintoninnerHeader,
     BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet, BsoinnerRight, BsoHeader,
     FootballResult, FootballBet, BsoComponent, TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult,
-    TableballRight, ChangePassword, SoccerSenior
+    TableballRight, ChangePassword, SoccerSenior, Basball_innerComponent, Esp_innerComponent, Horserace_innerComponent,
+    Stock_innerComponent
   ],
   imports: [
     BrowserModule,
