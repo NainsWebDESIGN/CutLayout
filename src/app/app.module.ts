@@ -10,7 +10,7 @@ import { ErrorComponent } from './Error/Error.component';
 import {
   IndexComponent, IndexHeader, IndexLeft,
   IndexRight, IndexLogin, IndexSeachbox,
-  IndexBallBetting, IndexRightLive,
+  IndexBallBetting, IndexRightLive, DoubleBet,
   IndexSideOptions, IndexEnContainer,
   IndexContent, SkewersPopup, BetsoloPopup
 } from './index/index.component';
@@ -20,7 +20,7 @@ import {
   MemberLeft, GetCashPopup, AddCard, ChangePassword
 } from './pageHTML/My/Member/Member.component';
 import { SoccerComponent, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult, SoccerTeach_Bs, SoccerTeach, SoccerSenior } from './pageHTML/Balls/soccer.component/soccer/soccer.component';
-import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult } from './PageHTML/Balls/basball.component/basball/basball.component';
+import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult, BasballSenior, BasTeachBs, BasballTeach } from './PageHTML/Balls/basball.component/basball/basball.component';
 import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight, BasketTeach, BasketResult, BasketBet } from './PageHTML/Balls/basketball.component/basketball/basketball.component';
 import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent, HorseResult, HorseBet } from './PageHTML/Balls/horse.component/horse_race/horse_race.component';
 import { EspComponent, EspRight, EspHeader, EspContent, EspResult, EspBet } from './PageHTML/Balls/esp.component/esp/esp.component';
@@ -94,8 +94,8 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballRight, VballResult, VballBet, BadmintoninnerHeader,
     BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet, BsoinnerRight, BsoHeader,
     FootballResult, FootballBet, BsoComponent, TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult,
-    TableballRight, ChangePassword, SoccerSenior, Basball_innerComponent, Esp_innerComponent, Horserace_innerComponent,
-    Stock_innerComponent, BetsoloPopup
+    TableballRight, ChangePassword, SoccerSenior, Basball_innerComponent, Esp_innerComponent, Horserace_innerComponent, BetsoloPopup,
+    Stock_innerComponent, BasballSenior, BasTeachBs, BasballTeach, DoubleBet
   ],
   imports: [
     BrowserModule,

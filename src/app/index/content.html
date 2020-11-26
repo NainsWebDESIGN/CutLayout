@@ -1,10 +1,13 @@
 <index-login (childEvent)="getChild($event)"></index-login>
 <div class="container cn">
   <aside [ngClass]="{'active':popup}" class="fixed_size bet_double bottom_mode">
-    <skewers_popup></skewers_popup>
+    <skewers_popup (DoubleCheck)="double($event)"></skewers_popup>
   </aside>
   <aside [ngClass]="{'active':betsolo}" class="bet_solo black_bg">
     <betsolo_popup (closeEvent)="closeSolo($event)"></betsolo_popup>
+  </aside>
+  <aside [ngClass]="{'active':doublebet}" class="bet_double black_bg">
+    <doublebet (closeEvent)="double($event)"></doublebet>
   </aside>
   <main [ngClass]="{'live_mode': boolin}">
     <index-left (childEvent)="getChild($event)" (popupEvent)="getPopup($event)" (soloEvent)="getSolo($event)">

@@ -283,9 +283,13 @@ export class IndexEnContainer implements OnInit {
 })
 export class IndexContent implements OnInit {
   boolin = false;
+  doublebet = false;
   popup = false;
   betsolo = false;
   constructor(private router: Router, private reload: Location) { }
+  double(x) {
+    this.doublebet = x;
+  }
   closeSolo(CloseValue) {
     this.betsolo = CloseValue;
   }
@@ -320,10 +324,17 @@ export class IndexContent implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class SkewersPopup implements OnInit {
+  @Output() DoubleCheck: EventEmitter<any> = new EventEmitter();
   boolin = false;
   constructor() { }
-  change() {
+  titleOpen() {
     this.boolin = !this.boolin;
+  }
+  double() {
+    this.DoubleCheck.emit(true);
+  }
+  close() {
+    this.boolin = false;
   }
   ngOnInit() {
   }
@@ -345,6 +356,21 @@ export class BetsoloPopup implements OnInit {
   }
   checkpage() {
     this.check = !this.check;
+  }
+  ngOnInit() {
+  }
+
+}
+@Component({
+  selector: 'doublebet',
+  templateUrl: './doublebet.html',
+  styleUrls: ['../app.component.css']
+})
+export class DoubleBet implements OnInit {
+  @Output() closeEvent: EventEmitter<any> = new EventEmitter();
+  constructor() { }
+  close() {
+    this.closeEvent.emit(false);
   }
   ngOnInit() {
   }
