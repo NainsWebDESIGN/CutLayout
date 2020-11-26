@@ -106,20 +106,6 @@ export class BasballContent implements OnInit {
 }
 
 @Component({
-  selector: 'basbet',
-  templateUrl: './basbet.html',
-  styleUrls: ['./basball.component.css']
-})
-export class BasBet implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'basresult',
   templateUrl: './basresult.html',
   styleUrls: ['./basball.component.css']

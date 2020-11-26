@@ -106,22 +106,6 @@ export class SoccerContent implements OnInit {
 }
 
 @Component({
-  selector: 'sobet',
-  templateUrl: './sobet.html',
-  styleUrls: ['./soccer.component.css']
-})
-export class SoBet implements OnInit {
-  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
-  constructor() { }
-  getSolo() {
-    this.soloEvent.emit(true);
-  }
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'soresult',
   templateUrl: './soresult.html',
   styleUrls: ['./soccer.component.css']

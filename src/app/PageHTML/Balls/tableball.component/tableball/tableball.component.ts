@@ -63,20 +63,6 @@ export class TableballContent implements OnInit {
 }
 
 @Component({
-  selector: 'tableball-bet',
-  templateUrl: './tableball-bet.html',
-  styleUrls: ['./tableball.component.css']
-})
-export class TableballBet implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'tableball-result',
   templateUrl: './tableball-result.html',
   styleUrls: ['./tableball.component.css']

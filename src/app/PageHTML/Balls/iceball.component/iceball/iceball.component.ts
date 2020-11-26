@@ -63,20 +63,6 @@ export class IceContent implements OnInit {
 }
 
 @Component({
-  selector: 'icebet',
-  templateUrl: './icebet.html',
-  styleUrls: ['./iceball.component.css']
-})
-export class IceBet implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'iceresult',
   templateUrl: './iceresult.html',
   styleUrls: ['./iceball.component.css']

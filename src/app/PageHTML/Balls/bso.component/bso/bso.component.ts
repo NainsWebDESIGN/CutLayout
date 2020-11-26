@@ -63,20 +63,6 @@ export class BsoContent implements OnInit {
 }
 
 @Component({
-  selector: 'bso-bet',
-  templateUrl: './bso-bet.html',
-  styleUrls: ['./bso.component.css']
-})
-export class BsoBet implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'bso-result',
   templateUrl: './bso-result.html',
   styleUrls: ['./bso.component.css']

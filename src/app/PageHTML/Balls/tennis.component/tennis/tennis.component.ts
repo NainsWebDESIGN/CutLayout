@@ -63,20 +63,6 @@ export class TennisContent implements OnInit {
 }
 
 @Component({
-  selector: 'tennisbet',
-  templateUrl: './tennisbet.html',
-  styleUrls: ['./tennis.component.css']
-})
-export class TennisBet implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'tennisresult',
   templateUrl: './tennisresult.html',
   styleUrls: ['./tennis.component.css']
