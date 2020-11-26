@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ViewChild } from '@angular/core';
+import { NgModule, ViewChild, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,24 +19,24 @@ import {
   MemberComponent, MemberRight, MemberOption,
   MemberLeft, GetCashPopup, AddCard, ChangePassword
 } from './pageHTML/My/Member/Member.component';
-import { SoccerComponent, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult, SoccerTeach_Bs, SoccerTeach, SoccerSenior } from './pageHTML/Balls/soccer/soccer.component';
-import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult } from './pageHTML/Balls/basball/basball.component';
-import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight, BasketTeach, BasketResult, BasketBet } from './pageHTML/Balls/basketball/basketball.component';
-import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent, HorseResult, HorseBet } from './pageHTML/Balls/horse_race/horse_race.component';
-import { EspComponent, EspRight, EspHeader, EspContent, EspResult, EspBet } from './pageHTML/Balls/esp/esp.component';
-import { StockComponent, StockHeader, StockRight, StockContent, StResult, StBet } from './pageHTML/Balls/stock/stock.component';
-import { LottinnerComponent, LottinnerRight, LottinnerHeader, LottinnerContent } from './PageHTML/Balls/lottery_inner/lottinner.component';
-import { Ice_InnerComponent, IceinnerContent, IceinnerHeader, IceinnerRight } from './pageHTML/Balls/iceball_inner/ice_inner.component';
-import { TennisinnerRight, TennisinnerComponent, TennisinnerContent, TennisinnerHeader } from './PageHTML/Balls/tennis_inner/tennisinner.component';
-import { SnookerinnerComponent, SnookerinnerContent, SnookerinnerHeader, SnookerinnerRight } from './PageHTML/Balls/snooker_inner/snookerinner.component';
-import { Vball_innerComponent, VballinnerContent, VballinnerHeader, VballinnerRight } from './PageHTML/Balls/vball_inner/vball_inner.component';
-import { MortorComponent, MortorRight, MortorHeader, MortorContent } from './pageHTML/Balls/mortor/mortor.component';
-import { BadmintoninnerComponent, BadmintoninnerContent, BadmintoninnerHeader, BadmintoninnerRight } from './PageHTML/Balls/badminton_inner/badmintoninner.component';
-import { FootballinnerComponent, FootballinnerContent, FootballinnerHeader, FootballinnerRight } from './PageHTML/Balls/football_inner/footballinner.component';
-import { BsoinnerComponent, BsoinnerContent, BsoinnerHeader, BsoinnerRight } from './PageHTML/Balls/bso_inner/bsoinner.component';
-import { Tableball_innerComponent, TableinnerContent, TableinnerHeader, TableinnerRight } from './PageHTML/Balls/tableball_inner/tableball_inner.component';
-import { Soccer_innerComponent, SoinnerRight, SoinnerHeader, SoinnerContent } from './PageHTML/Balls/soccer_inner/soccer_inner.component';
-import { Basketball_innerComponent, BasketRight, BasketHeader, BasketContent } from './PageHTML/Balls/basketball_inner/basketball_inner.component';
+import { SoccerComponent, SoccerHeader, SoccerContent, SoTeach, SoBet, SoResult, SoccerTeach_Bs, SoccerTeach, SoccerSenior } from './pageHTML/Balls/soccer.component/soccer/soccer.component';
+import { BasballComponent, BasballHeader, BasballContent, BasballRight, BasTeach, BasBet, BasResult } from './PageHTML/Balls/basball.component/basball/basball.component';
+import { BasketballComponent, BasketballHeader, BasketballContent, BasketballRight, BasketTeach, BasketResult, BasketBet } from './PageHTML/Balls/basketball.component/basketball/basketball.component';
+import { Horse_raceComponent, HorseRight, HorseHeader, HorseContent, HorseResult, HorseBet } from './PageHTML/Balls/horse.component/horse_race/horse_race.component';
+import { EspComponent, EspRight, EspHeader, EspContent, EspResult, EspBet } from './PageHTML/Balls/esp.component/esp/esp.component';
+import { StockComponent, StockHeader, StockRight, StockContent, StResult, StBet } from './PageHTML/Balls/stock.component/stock/stock.component';
+import { LottinnerComponent, LottinnerRight, LottinnerHeader, LottinnerContent } from './PageHTML/Balls/lottery.component/lottery_inner/lottinner.component';
+import { Ice_InnerComponent, IceinnerContent, IceinnerHeader, IceinnerRight } from './pageHTML/Balls/iceball.component/iceball_inner/ice_inner.component';
+import { TennisinnerRight, TennisinnerComponent, TennisinnerContent, TennisinnerHeader } from './PageHTML/Balls/tennis.component/tennis_inner/tennisinner.component';
+import { SnookerinnerComponent, SnookerinnerContent, SnookerinnerHeader, SnookerinnerRight } from './PageHTML/Balls/snooker.component/snooker_inner/snookerinner.component';
+import { Vball_innerComponent, VballinnerContent, VballinnerHeader, VballinnerRight } from './PageHTML/Balls/vball.component/vball_inner/vball_inner.component';
+import { MortorComponent, MortorRight, MortorHeader, MortorContent } from './PageHTML/Balls/mortor.component/mortor/mortor.component';
+import { BadmintoninnerComponent, BadmintoninnerContent, BadmintoninnerHeader, BadmintoninnerRight } from './PageHTML/Balls/badminton.component/badminton_inner/badmintoninner.component';
+import { FootballinnerComponent, FootballinnerContent, FootballinnerHeader, FootballinnerRight } from './PageHTML/Balls/football.component/football_inner/footballinner.component';
+import { BsoinnerComponent, BsoinnerContent, BsoinnerHeader, BsoinnerRight } from './PageHTML/Balls/bso.component/bso_inner/bsoinner.component';
+import { Tableball_innerComponent, TableinnerContent, TableinnerHeader, TableinnerRight } from './PageHTML/Balls/tableball.component/tableball_inner/tableball_inner.component';
+import { Soccer_innerComponent, SoinnerRight, SoinnerHeader, SoinnerContent } from './PageHTML/Balls/soccer.component/soccer_inner/soccer_inner.component';
+import { Basketball_innerComponent, BasketRight, BasketHeader, BasketContent } from './PageHTML/Balls/basketball.Component/basketball_inner/basketball_inner.component';
 import { HelpComponent, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpBet, HelpRules, HelpSup } from './PageHTML/My/help/help.component';
 import { Contact_us_sevComponent, ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno } from './PageHTML/My/Contact_us_sev/Contact_us_sev.component';
 import { Download_appComponent, DownloadHeader, DownloadContent } from './PageHTML/My/download_app/download_app.component';
@@ -51,15 +51,15 @@ import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, Message
 import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
-import { LotteryComponent, LotteryHeader, LotteryContent, LotteryRight, LotteryResult, LotteryBet } from './PageHTML/Balls/lottery/lottery.component';
-import { IceContent, IceHeader, IceRight, IceballComponent, IceResult, IceBet } from './PageHTML/Balls/iceball/iceball.component';
-import { TennisComponent, TennisContent, TennisHeader, TennisRight, TennisResult, TennisBet } from './PageHTML/Balls/tennis/tennis.component';
-import { SnookerComponent, SnookerHeader, SnookerContent, SnookerRight, SnookerResult, SnookerBet } from './PageHTML/Balls/snooker/snooker.component';
-import { VballComponent, VballContent, VballHeader, VballRight, VballResult, VballBet } from './PageHTML/Balls/vball/vball.component';
-import { BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet } from './PageHTML/Balls/badminton/badminton.component';
-import { FootballComponent, FootballHeader, FootballContent, FootballRight, FootballResult, FootballBet } from './PageHTML/Balls/football/football.component';
-import { BsoComponent, BsoBet, BsoContent, BsoHeader, BsoResult, BsoRight } from './PageHTML/Balls/bso/bso.component';
-import { TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult, TableballRight } from './PageHTML/Balls/tableball/tableball.component';
+import { LotteryComponent, LotteryHeader, LotteryContent, LotteryRight, LotteryResult, LotteryBet } from './PageHTML/Balls/lottery.component/lottery/lottery.component';
+import { IceContent, IceHeader, IceRight, IceballComponent, IceResult, IceBet } from './PageHTML/Balls/iceball.component/iceball/iceball.component';
+import { TennisComponent, TennisContent, TennisHeader, TennisRight, TennisResult, TennisBet } from './PageHTML/Balls/tennis.component/tennis/tennis.component';
+import { SnookerComponent, SnookerHeader, SnookerContent, SnookerRight, SnookerResult, SnookerBet } from './PageHTML/Balls/snooker.component/snooker/snooker.component';
+import { VballComponent, VballContent, VballHeader, VballRight, VballResult, VballBet } from './PageHTML/Balls/vball.component/vball/vball.component';
+import { BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonRight, BadmintonResult, BadmintonBet } from './PageHTML/Balls/badminton.component/badminton/badminton.component';
+import { FootballComponent, FootballHeader, FootballContent, FootballRight, FootballResult, FootballBet } from './PageHTML/Balls/football.component/football/football.component';
+import { BsoComponent, BsoBet, BsoContent, BsoHeader, BsoResult, BsoRight } from './PageHTML/Balls/bso.component/bso/bso.component';
+import { TableballComponent, TableballBet, TableballContent, TableballHeader, TableballResult, TableballRight } from './PageHTML/Balls/tableball.component/tableball/tableball.component';
 
 
 @NgModule({

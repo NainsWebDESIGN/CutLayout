@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { DataBassService } from '../../../DataBass.service';
+import { DataBassService } from '../../../../DataBass.service';
 
 @Component({
   selector: 'app-soccer',
