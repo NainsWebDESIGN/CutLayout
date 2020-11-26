@@ -73,5 +73,5 @@
     <soteach></soteach>
 </div>
 <div [ngClass]="{'active':boolin[5]}" class="sign_in_status">
-    <soccer-senior></soccer-senior>
+    <soccer-senior (soloEvent)="getSolo($event)"></soccer-senior>
 </div>

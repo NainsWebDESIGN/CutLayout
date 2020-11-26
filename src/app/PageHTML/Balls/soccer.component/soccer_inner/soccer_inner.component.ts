@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-soccer_inner',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./soccer_inner.component.css']
 })
 export class Soccer_innerComponent implements OnInit {
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  backpage(x) {
+    this.pageEvent.emit(x);
+  }
   ngOnInit() {
   }
 
@@ -20,9 +23,11 @@ export class Soccer_innerComponent implements OnInit {
   styleUrls: ['./soccer_inner.component.css']
 })
 export class SoinnerHeader implements OnInit {
-
-  constructor() { }
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
+  constructor(private location: Location) { }
+  back() {
+    this.pageEvent.emit(-1);
+  }
   ngOnInit() {
   }
 

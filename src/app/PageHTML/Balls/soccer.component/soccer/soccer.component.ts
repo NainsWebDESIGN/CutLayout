@@ -186,9 +186,11 @@ export class SoccerTeach implements OnInit {
   styleUrls: ['./soccer.component.css']
 })
 export class SoccerSenior implements OnInit {
-
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-
+  getSolo() {
+    this.soloEvent.emit(true);
+  }
   ngOnInit() {
   }
 
