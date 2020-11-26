@@ -81,7 +81,7 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno, MessageEvents, MessageAnno, MessageMessage,
     MessageComponent, MessageHeader, MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader, DownloadHeader,
     AboutAbout, AboutLink, Join_usComponent, JoinHeader, BadmintoninnerComponent, BadmintoninnerContent, TableinnerHeader,
-    DownloadContent, BasballHeader, BasballContent, BasketballHeader, FootballinnerComponent, FootballinnerContent, , DoubleBet,
+    DownloadContent, BasballHeader, BasballContent, BasketballHeader, FootballinnerComponent, FootballinnerContent, DoubleBet,
     EspHeader, EspContent, HorseHeader, IceinnerHeader, TableinnerContent, BasTeachBs, BasballTeach, BasinnerContent, BasinnerHeader,
     HorseContent, LottinnerHeader, LottinnerContent, MortorHeader, MortorContent, SoccerTeach, BasballSenior, Stock_innerComponent,
     SoccerHeader, My_bill_saveComponent, SoinnerHeader, SoinnerContent, SnookerinnerContent, SnookerinnerHeader, ChangePassword,
