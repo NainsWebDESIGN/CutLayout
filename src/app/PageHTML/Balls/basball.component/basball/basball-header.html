@@ -61,7 +61,7 @@
 </div>
 <!-- <router-outlet></router-outlet> -->
 <div [ngClass]="{'active':boolin[0]}" class="sign_in_status">
-    <basball-content></basball-content>
+    <basball-content (soloEvent)="getSolo($event)"></basball-content>
 </div>
 <div [ngClass]="{'active':boolin[2]}" class="sign_in_status">
     <basbet></basbet>
@@ -73,5 +73,5 @@
     <basteach></basteach>
 </div>
 <div [ngClass]="{'active':boolin[5]}" class="sign_in_status">
-    <basball-senior></basball-senior>
+    <basball-senior (soloEvent)="getSolo($event)"></basball-senior>
 </div>

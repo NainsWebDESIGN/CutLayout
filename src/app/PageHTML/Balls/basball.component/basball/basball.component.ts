@@ -9,9 +9,13 @@ import { DataBassService } from '../../../../DataBass.service';
 })
 export class BasballComponent implements OnInit {
   @Output() popupEvent: EventEmitter<any> = new EventEmitter();
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
   getPopup(PopupValue) {
     this.popupEvent.emit(PopupValue);
+  }
+  getSolo(x) {
+    this.soloEvent.emit(x);
   }
   ngOnInit() {
   }
@@ -93,9 +97,11 @@ export class BasballHeader implements OnInit {
   styleUrls: ['./basball.component.css']
 })
 export class BasballContent implements OnInit {
-
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-
+  getSolo() {
+    this.soloEvent.emit(true);
+  }
   ngOnInit() {
   }
 
@@ -166,9 +172,11 @@ export class BasTeach implements OnInit {
   styleUrls: ['./basball.component.css']
 })
 export class BasballSenior implements OnInit {
-
+  @Output() soloEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-
+  getSolo() {
+    this.soloEvent.emit(true);
+  }
   ngOnInit() {
   }
 
