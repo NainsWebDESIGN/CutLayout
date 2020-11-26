@@ -46,6 +46,10 @@ import { BadmintonComponent } from './PageHTML/Balls/badminton.component/badmint
 import { FootballComponent } from './PageHTML/Balls/football.component/football/football.component';
 import { BsoComponent } from './PageHTML/Balls/bso.component/bso/bso.component';
 import { TableballComponent } from './PageHTML/Balls/tableball.component/tableball/tableball.component';
+import { Basball_innerComponent } from './PageHTML/Balls/basball.component/basball_inner/basball_inner.component';
+import { Esp_innerComponent } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
+import { Horserace_innerComponent } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
+import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
@@ -55,34 +59,38 @@ const routes: Routes = [
       {
         path: 'indexcontent', component: IndexContent,
         children: [
+          { path: 'indexright', component: IndexRight },
+          { path: 'badminton', component: BadmintonComponent },
+          { path: 'badmintoninner', component: BadmintoninnerComponent },
+          { path: 'basball', component: BasballComponent },
+          { path: 'basballinner', component: Basball_innerComponent },
+          { path: 'basketball', component: BasketballComponent },
+          { path: 'basketballinner', component: Basketball_innerComponent },
+          { path: 'bso', component: BsoComponent },
+          { path: 'bsoinner', component: BsoinnerComponent },
+          { path: 'esp', component: EspComponent },
+          { path: 'espinner', component: Esp_innerComponent },
+          { path: 'football', component: FootballComponent },
+          { path: 'footballinner', component: FootballinnerComponent },
+          { path: 'horse', component: Horse_raceComponent },
+          { path: 'horseinner', component: Horserace_innerComponent },
+          { path: 'iceball', component: IceballComponent },
+          { path: 'iceballinner', component: Ice_InnerComponent },
+          { path: 'lottery', component: LotteryComponent },
+          { path: 'lotteryinner', component: LottinnerComponent },
+          { path: 'mortor', component: MortorComponent },
+          { path: 'snooker', component: SnookerComponent },
+          { path: 'snookerinner', component: SnookerinnerComponent },
           { path: 'soccer', component: SoccerComponent },
           { path: 'soccerinner', component: Soccer_innerComponent },
-          { path: 'indexright', component: IndexRight },
+          { path: 'stock', component: StockComponent },
+          { path: 'stockinner', component: Stock_innerComponent },
+          { path: 'tableball', component: TableballComponent },
           { path: 'tableballinner', component: Tableball_innerComponent },
           { path: 'tennis', component: TennisComponent },
-          { path: 'basball', component: BasballComponent },
-          { path: 'basketball', component: BasketballComponent },
-          { path: 'horse', component: Horse_raceComponent },
-          { path: 'esp', component: EspComponent },
-          { path: 'lottinner', component: LottinnerComponent },
-          { path: 'stock', component: StockComponent },
-          { path: 'iceinner', component: Ice_InnerComponent },
           { path: 'tennisinner', component: TennisinnerComponent },
-          { path: 'snookerinner', component: SnookerinnerComponent },
-          { path: 'vballinner', component: Vball_innerComponent },
-          { path: 'mortor', component: MortorComponent },
-          { path: 'badmintoninner', component: BadmintoninnerComponent },
-          { path: 'footballinner', component: FootballinnerComponent },
-          { path: 'bsoinner', component: BsoinnerComponent },
-          { path: 'basketballinner', component: Basketball_innerComponent },
-          { path: 'lottery', component: LotteryComponent },
-          { path: 'iceball', component: IceballComponent },
-          { path: 'snooker', component: SnookerComponent },
           { path: 'vball', component: VballComponent },
-          { path: 'badminton', component: BadmintonComponent },
-          { path: 'football', component: FootballComponent },
-          { path: 'bso', component: BsoComponent },
-          { path: 'tableball', component: TableballComponent },
+          { path: 'vballinner', component: Vball_innerComponent },
         ]
       },
       { path: 'discount', component: DiscountComponent },
@@ -118,7 +126,6 @@ const routes: Routes = [
     ]
   },
   { path: '404', component: ErrorComponent },
-  { path: 'billtrans', component: Bill_transComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' }
 ];
 
