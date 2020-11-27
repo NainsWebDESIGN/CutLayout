@@ -60,7 +60,7 @@ import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.comp
 import { LotteryComponent, LotteryHeader, LotteryContent, LotteryResult, LotterySenior } from './PageHTML/Balls/lottery.component/lottery/lottery.component';
 import { IceContent, IceHeader, IceballComponent, IceResult, IceSenior } from './PageHTML/Balls/iceball.component/iceball/iceball.component';
 import { TennisComponent, TennisContent, TennisHeader, TennisResult, TennisSenior } from './PageHTML/Balls/tennis.component/tennis/tennis.component';
-import { SnookerComponent, SnookerHeader, SnookerContent, SnookerResult } from './PageHTML/Balls/snooker.component/snooker/snooker.component';
+import { SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, SnookerSenior } from './PageHTML/Balls/snooker.component/snooker/snooker.component';
 import { VballComponent, VballContent, VballHeader, VballResult } from './PageHTML/Balls/vball.component/vball/vball.component';
 import {
   BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonResult, BadmintonBet
@@ -104,7 +104,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     IceballComponent, IceResult, TennisComponent, TennisContent, TennisHeader, FootballComponent, BsoComponent, TableballComponent,
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
-    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior
+    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior
   ],
   imports: [
     BrowserModule,

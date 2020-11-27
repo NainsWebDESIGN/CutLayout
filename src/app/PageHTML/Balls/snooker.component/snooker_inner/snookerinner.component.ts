@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-snookerinner',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./snookerinner.component.css']
 })
 export class SnookerinnerComponent implements OnInit {
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  backpage(x) {
+    this.pageEvent.emit(x);
+  }
   ngOnInit() {
   }
 
@@ -20,9 +23,11 @@ export class SnookerinnerComponent implements OnInit {
   styleUrls: ['./snookerinner.component.css']
 })
 export class SnookerinnerHeader implements OnInit {
-
-  constructor() { }
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
+  constructor(private location: Location) { }
+  back() {
+    this.pageEvent.emit(-1);
+  }
   ngOnInit() {
   }
 
