@@ -26,31 +26,27 @@ export class IndexComponent implements OnInit {
 export class IndexHeader implements OnInit {
   boolin: any = [];
   pagetotal = 3;
-  constructor(private location: Location, private router: Router) { }
+  constructor(private location: Location, private router: Router, private reload: Location) { }
   change(x) {
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
-      if (i == x) {
-        this.boolin[i] = true;
-      }
     }
+    this.boolin[x] = true;
   }
   listen() {
-    addEventListener("hashchange", () => {
-      if (location.hash = '/index/indexcontent/indexright') {
-        this.boolin[0] = true;
-        this.boolin[1] = false;
-        this.boolin[2] = false;
-      } else if (location.hash = '/index/discount') {
-        this.boolin[0] = false;
-        this.boolin[1] = true;
-        this.boolin[2] = false;
-      } else if (location.hash = '/index/member/memberright') {
-        this.boolin[0] = false;
-        this.boolin[1] = false;
-        this.boolin[2] = true;
-      }
-    })
+    this.router.events
+      .subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          let StrUrl = event['url'].toString().split('/');
+          StrUrl[2] == 'indexcontent' ? this.boolin[0] = true : this.boolin[0] = false;
+          StrUrl[2] == 'discount' ? this.boolin[1] = true : this.boolin[1] = false;
+          StrUrl[2] == 'member' ? this.boolin[2] = true : this.boolin[2] = false;
+        }
+      })
+    let StrUrl = this.reload.path().toString().split('/');
+    StrUrl[2] == 'indexcontent' ? this.boolin[0] = true : this.boolin[0] = false;
+    StrUrl[2] == 'discount' ? this.boolin[1] = true : this.boolin[1] = false;
+    StrUrl[2] == 'member' ? this.boolin[2] = true : this.boolin[2] = false;
   }
   ngOnInit() {
     this.change(0)
