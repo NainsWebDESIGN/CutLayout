@@ -61,6 +61,7 @@ export class HorseHeader implements OnInit {
     }
   }
   changeboolin(x) {
+    this.league = false;
     x == 2 || x == 6 ? this.popupEvent.emit(true) : this.popupEvent.emit(false);
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;

@@ -73,14 +73,14 @@ import {
   TableballComponent, TableballContent, TableballHeader, TableballResult
 } from './PageHTML/Balls/tableball.component/tableball/tableball.component';
 import { Basball_innerComponent, BasinnerContent, BasinnerHeader } from './PageHTML/Balls/basball.component/basball_inner/basball_inner.component';
-import { Esp_innerComponent } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
+import { Esp_innerComponent, EspinnerContent, EspinnerHeader } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
 import { Horserace_innerComponent, HorseinnerContent, HorseinnerHeader } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
-import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
+import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent,
+    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent, EspinnerHeader,
     IndexRight, IndexLogin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoinnerHeader, BsoContent,
     IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet,
     Horse_raceComponent, EspComponent, StockComponent, TransFor, IceinnerContent, TennisinnerComponent, SnookerinnerComponent,
@@ -104,7 +104,7 @@ import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inn
     IceballComponent, IceResult, TennisComponent, TennisContent, TennisHeader, FootballComponent, BsoComponent, TableballComponent,
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
-    BadmintonComponent,
+    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader
   ],
   imports: [
     BrowserModule,

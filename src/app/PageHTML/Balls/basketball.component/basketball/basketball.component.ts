@@ -62,6 +62,7 @@ export class BasketballHeader implements OnInit {
     }
   }
   changeboolin(x) {
+    this.league = false;
     x == 2 || x == 6 ? this.popupEvent.emit(true) : this.popupEvent.emit(false);
     x == 2 || x == 6 ? this.skewers = false : this.skewers = true;
     for (let i = 0; i < this.pagetotal; i++) {
