@@ -58,8 +58,8 @@ import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
 import { LotteryComponent, LotteryHeader, LotteryContent, LotteryResult, LotterySenior } from './PageHTML/Balls/lottery.component/lottery/lottery.component';
-import { IceContent, IceHeader, IceballComponent, IceResult } from './PageHTML/Balls/iceball.component/iceball/iceball.component';
-import { TennisComponent, TennisContent, TennisHeader, TennisResult } from './PageHTML/Balls/tennis.component/tennis/tennis.component';
+import { IceContent, IceHeader, IceballComponent, IceResult, IceSenior } from './PageHTML/Balls/iceball.component/iceball/iceball.component';
+import { TennisComponent, TennisContent, TennisHeader, TennisResult, TennisSenior } from './PageHTML/Balls/tennis.component/tennis/tennis.component';
 import { SnookerComponent, SnookerHeader, SnookerContent, SnookerResult } from './PageHTML/Balls/snooker.component/snooker/snooker.component';
 import { VballComponent, VballContent, VballHeader, VballResult } from './PageHTML/Balls/vball.component/vball/vball.component';
 import {
@@ -88,7 +88,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     Soccer_innerComponent, Basketball_innerComponent, BasTeach, BasResult, SoResult, FootballHeader, BetsoloPopup, BadmintonResult,
     HelpComponent, Contact_us_sevComponent, Download_appComponent, Bill_recordComponent, BsoinnerComponent, Esp_innerComponent,
     Bill_transComponent, Bill_trans_recordComponent, IndexContent, MemberRight, MemberOption, MemberLeft, SoccerContent, BadmintonContent,
-    BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup, GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox,
+    BillSaveHeader, TransHeader, Bill_getcashComponent, GetCashPopup, GetCashHeader, AddCard, MoneyBagHeader, Tr_RecordBox, IceSenior,
     TakeOut, Bill_nowComponent, NowHeader, BillRecordHeader, HelpHeader, HelpSave, HelpTrans, HelpCash, HelpRules, HelpSup,
     ContactHeader, ContactMessage, ContactEvents, ContactAnno, ContactGameAnno, MessageEvents, MessageAnno, MessageMessage,
     MessageComponent, MessageHeader, MessageGameAnno, SetComponent, SetHeader, AboutComponent, AboutHeader, DownloadHeader,
@@ -104,7 +104,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     IceballComponent, IceResult, TennisComponent, TennisContent, TennisHeader, FootballComponent, BsoComponent, TableballComponent,
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
-    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader
+    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior
   ],
   imports: [
     BrowserModule,
