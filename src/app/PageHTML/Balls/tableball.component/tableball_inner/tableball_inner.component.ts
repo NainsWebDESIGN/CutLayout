@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-tableball_inner',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tableball_inner.component.css']
 })
 export class Tableball_innerComponent implements OnInit {
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  backpage(x) {
+    this.pageEvent.emit(x);
+  }
   ngOnInit() {
   }
 
@@ -20,9 +23,11 @@ export class Tableball_innerComponent implements OnInit {
   styleUrls: ['./tableball_inner.component.css']
 })
 export class TableinnerHeader implements OnInit {
-
-  constructor() { }
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
+  constructor(private location: Location) { }
+  back() {
+    this.pageEvent.emit(-1);
+  }
   ngOnInit() {
   }
 

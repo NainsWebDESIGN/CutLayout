@@ -53,8 +53,10 @@
     <!--fixed 才是真的-->
     <div [ngClass]="{'active':league}" class="league_choice">
         <div class="row" (click)="checkactive(0)">
-            <span [ngClass]="{'active':leaguecheck[0]}" class="check"></span>
-            <p>選取/取消所有聯盟</p>
+            <div class="b33_3">
+                <span [ngClass]="{'active':leaguecheck[0]}" class="check"></span>
+                <p>選取/取消所有聯盟</p>
+            </div>
         </div>
         <div class="row">
             <div *ngFor="let item of leaguebox">

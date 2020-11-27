@@ -68,9 +68,9 @@ import {
 import {
   FootballComponent, FootballHeader, FootballContent, FootballResult, FootballSenior
 } from './PageHTML/Balls/football.component/football/football.component';
-import { BsoComponent, BsoContent, BsoHeader, BsoResult } from './PageHTML/Balls/bso.component/bso/bso.component';
+import { BsoComponent, BsoContent, BsoHeader, BsoResult, BsoSenior } from './PageHTML/Balls/bso.component/bso/bso.component';
 import {
-  TableballComponent, TableballContent, TableballHeader, TableballResult
+  TableballComponent, TableballContent, TableballHeader, TableballResult, TableballSenior
 } from './PageHTML/Balls/tableball.component/tableball/tableball.component';
 import { Basball_innerComponent, BasinnerContent, BasinnerHeader } from './PageHTML/Balls/basball.component/basball_inner/basball_inner.component';
 import { Esp_innerComponent, EspinnerContent, EspinnerHeader } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
@@ -105,7 +105,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
     BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior, VballSenior, BadmintonSenior,
-    FootballSenior
+    FootballSenior, BsoSenior, TableballSenior
   ],
   imports: [
     BrowserModule,

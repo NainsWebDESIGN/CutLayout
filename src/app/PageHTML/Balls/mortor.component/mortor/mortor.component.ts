@@ -26,6 +26,7 @@ export class MortorHeader implements OnInit {
   @Output() pageEvent: EventEmitter<any> = new EventEmitter;
   constructor(private location: Location) { }
   back() {
+    let url = this.location.path();
     this.pageEvent.emit(-1);
   }
   ngOnInit() {

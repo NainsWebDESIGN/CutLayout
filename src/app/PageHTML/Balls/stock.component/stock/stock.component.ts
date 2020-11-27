@@ -42,7 +42,7 @@ export class StockHeader implements OnInit {
   leaguechoice() {
     this.league = !this.league;
   }
-  checkactive(x) {
+  async checkactive(x) {
     if (x == 0 && this.leaguecheck[0] == true) {
       for (let i = 0; i < this.leaguecheck.length; i++) {
         this.leaguecheck[i] = false;
@@ -54,11 +54,12 @@ export class StockHeader implements OnInit {
     } else {
       this.leaguecheck[x] = !this.leaguecheck[x];
     }
-    for (let i = 0; i < this.leaguecheck.length; i++) {
-      if (this.leaguecheck[i] == false) {
-        this.leaguecheck[0] = false;
-      }
-    }
+    let a: any = [];
+    this.leaguecheck[0] = true;
+    await this.leaguecheck.forEach(boolean => {
+      boolean == false ? a.push(boolean) : '';
+    })
+    a.length > 0 ? this.leaguecheck[0] = false : this.leaguecheck[0] = true;
   }
   changeboolin(x) {
     this.league = false;
