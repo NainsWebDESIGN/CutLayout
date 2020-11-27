@@ -61,12 +61,12 @@ import { LotteryComponent, LotteryHeader, LotteryContent, LotteryResult, Lottery
 import { IceContent, IceHeader, IceballComponent, IceResult, IceSenior } from './PageHTML/Balls/iceball.component/iceball/iceball.component';
 import { TennisComponent, TennisContent, TennisHeader, TennisResult, TennisSenior } from './PageHTML/Balls/tennis.component/tennis/tennis.component';
 import { SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, SnookerSenior } from './PageHTML/Balls/snooker.component/snooker/snooker.component';
-import { VballComponent, VballContent, VballHeader, VballResult } from './PageHTML/Balls/vball.component/vball/vball.component';
+import { VballComponent, VballContent, VballHeader, VballResult, VballSenior } from './PageHTML/Balls/vball.component/vball/vball.component';
 import {
-  BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonResult, BadmintonBet
+  BadmintonComponent, BadmintonContent, BadmintonHeader, BadmintonResult, BadmintonBet, BadmintonSenior
 } from './PageHTML/Balls/badminton.component/badminton/badminton.component';
 import {
-  FootballComponent, FootballHeader, FootballContent, FootballResult
+  FootballComponent, FootballHeader, FootballContent, FootballResult, FootballSenior
 } from './PageHTML/Balls/football.component/football/football.component';
 import { BsoComponent, BsoContent, BsoHeader, BsoResult } from './PageHTML/Balls/bso.component/bso/bso.component';
 import {
@@ -104,7 +104,8 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     IceballComponent, IceResult, TennisComponent, TennisContent, TennisHeader, FootballComponent, BsoComponent, TableballComponent,
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
-    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior
+    BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior, VballSenior, BadmintonSenior,
+    FootballSenior
   ],
   imports: [
     BrowserModule,
