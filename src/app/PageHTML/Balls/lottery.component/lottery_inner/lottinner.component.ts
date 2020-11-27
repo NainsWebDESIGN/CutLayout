@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-lottinner',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lottinner.component.css']
 })
 export class LottinnerComponent implements OnInit {
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
   constructor() { }
-
+  backpage(x) {
+    this.pageEvent.emit(x);
+  }
   ngOnInit() {
   }
 
@@ -20,9 +23,11 @@ export class LottinnerComponent implements OnInit {
   styleUrls: ['./lottinner.component.css']
 })
 export class LottinnerHeader implements OnInit {
-
-  constructor() { }
-
+  @Output() pageEvent: EventEmitter<any> = new EventEmitter;
+  constructor(private location: Location) { }
+  back() {
+    this.pageEvent.emit(-1);
+  }
   ngOnInit() {
   }
 

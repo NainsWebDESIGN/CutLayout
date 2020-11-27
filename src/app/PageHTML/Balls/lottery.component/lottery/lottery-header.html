@@ -10,238 +10,71 @@
         <p [ngClass]="{'active':boolin[2]}" (click)="changeboolin(2)">串關投注</p>
         <div class="line"></div>
         <p [ngClass]="{'active':boolin[3]}" (click)="changeboolin(3)">比賽結果</p>
-        <div class="right_box">
-            <p class="ball_cho">選擇聯盟</p>
+        <div *ngIf="!boolin[3]" class="right_box">
+            <p [ngClass]="{'active':league}" (click)="leaguechoice()" class="ball_cho">選擇聯盟</p>
             <span class="arrow"></span>
             <div class="line"></div>
             <p>時間排序</p>
             <span class="arrow"></span>
             <div class="line"></div>
-            <p class="beginner start">新手版</p>
+            <span *ngIf="skewers">
+                <p *ngIf="!boolin[4]" (click)="changeboolin(4)" class="beginner start">新手版</p>
+                <p *ngIf="boolin[4]" (click)="changeboolin(0)" class="beginner">專業版</p>
+            </span>
+            <span *ngIf="!skewers">
+                <p *ngIf="!boolin[5]" (click)="changeboolin(5)" class="beginner start">新手版</p>
+                <p *ngIf="boolin[5]" (click)="changeboolin(2)" class="beginner">專業版</p>
+            </span>
             <span class="arrow"></span>
+        </div>
+        <div *ngIf="boolin[3]" class="right_box">
+            <p [ngClass]="{'active':league}" (click)="leaguechoice()" class="ball_cho">選擇聯盟</p>
+            <div class="arrow"></div>
+            <div class="line"></div>
+            <span class="date_icon"></span>
+            <div class="day_box">
+                <span>2020-05-25</span>
+                <span class="tri"></span>
+            </div>
+            <div class="row_line"></div>
+            <span class="date_icon"></span>
+            <div class="day_box">
+                <span>2020-05-31</span>
+                <span class="tri"></span>
+            </div>
+            <div class="tag_wrap">
+                <span class="tag"><span>查詢</span></span>
+            </div>
         </div>
     </div>
     <!--fixed 才是真的-->
-    <div class="league_choice">
-        <div class="row">
-            <span class="check active"></span>
+    <div [ngClass]="{'active':league}" class="league_choice">
+        <div class="row" (click)="checkactive(0)">
+            <span [ngClass]="{'active':leaguecheck[0]}" class="check"></span>
             <p>選取/取消所有聯盟</p>
         </div>
         <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>義大利甲組聯賽</p>
+            <div *ngFor="let item of leaguebox">
+                <div class="b33_3" (click)="checkactive(item.CHID)">
+                    <span [ngClass]="{'active':leaguecheck[item.CHID]}" class="check"></span>
+                    <p>{{ item.league }}</p>
+                </div>
             </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>法國甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭足總盃</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>埃及超級聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>阿爾及利亞甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴林超級聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西里約州甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西巴西利亞甲組聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西巴亞諾甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>巴西伯南布哥甲組一聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>比利時盃</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>德國足協盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>法國甲組聯賽-特別投注</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>克羅地亞盃</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>超級盃(在卡塔爾)</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>卡塔爾埃米爾盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>墨西哥超級聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>摩洛哥甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>南美洲球會盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>南美自由盃</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>南非盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>奇幻賽事</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>塞浦路斯盃</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>塞浦路斯甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>沙特超級聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭超級聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>土耳其盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>突尼斯甲組聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>匈牙利甲組聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>希臘盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>西班牙盃</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>亞洲足聯盃外圍賽-附加賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>以色列超級聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>以色列北部國家聯賽U19</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>伊朗超級聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>印度超級聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>印度I聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>印度果阿超級聯賽</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>義大利青年盃U19</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭足球協會南部全國聯賽</p>
-            </div>
-            <div class="b33_3">
-                <span class="check active"></span>
-                <p>英格蘭伊斯米安超級聯賽</p>
-            </div>
-
         </div>
     </div>
 </div>
 <div [ngClass]="{'active':boolin[0]}" class="sign_in_status">
-    <lottery-content></lottery-content>
+    <lottery-content (soloEvent)="getSolo($event)"></lottery-content>
+</div>
+<div [ngClass]="{'active':boolin[2]}" class="sign_in_status">
+    <lottery-content (soloEvent)="getSolo($event)"></lottery-content>
 </div>
 <div [ngClass]="{'active':boolin[3]}" class="sign_in_status">
     <lotteryresult></lotteryresult>
+</div>
+<div [ngClass]="{'active':boolin[4]}" class="sign_in_status">
+    <lottery-senior (soloEvent)="getSolo($event)"></lottery-senior>
+</div>
+<div [ngClass]="{'active':boolin[5]}" class="sign_in_status">
+    <lottery-senior (soloEvent)="getSolo($event)"></lottery-senior>
 </div>

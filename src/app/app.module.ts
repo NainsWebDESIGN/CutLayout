@@ -57,7 +57,7 @@ import { MessageComponent, MessageHeader, MessageMessage, MessageEvents, Message
 import { SetComponent, SetHeader } from './PageHTML/My/set/set.component';
 import { AboutComponent, AboutHeader, AboutAbout, AboutLink } from './PageHTML/My/about/about.component';
 import { Join_usComponent, JoinHeader } from './PageHTML/My/join_us/join_us.component';
-import { LotteryComponent, LotteryHeader, LotteryContent, LotteryResult } from './PageHTML/Balls/lottery.component/lottery/lottery.component';
+import { LotteryComponent, LotteryHeader, LotteryContent, LotteryResult, LotterySenior } from './PageHTML/Balls/lottery.component/lottery/lottery.component';
 import { IceContent, IceHeader, IceballComponent, IceResult } from './PageHTML/Balls/iceball.component/iceball/iceball.component';
 import { TennisComponent, TennisContent, TennisHeader, TennisResult } from './PageHTML/Balls/tennis.component/tennis/tennis.component';
 import { SnookerComponent, SnookerHeader, SnookerContent, SnookerResult } from './PageHTML/Balls/snooker.component/snooker/snooker.component';
@@ -82,7 +82,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
   declarations: [
     AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent, EspinnerHeader,
     IndexRight, IndexLogin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoinnerHeader, BsoContent,
-    IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet,
+    IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet, LotterySenior,
     Horse_raceComponent, EspComponent, StockComponent, TransFor, IceinnerContent, TennisinnerComponent, SnookerinnerComponent,
     MortorComponent, My_bill_moneybagComponent, VballinnerContent, FootballinnerHeader, FootballContent, Horserace_innerComponent,
     Soccer_innerComponent, Basketball_innerComponent, BasTeach, BasResult, SoResult, FootballHeader, BetsoloPopup, BadmintonResult,
