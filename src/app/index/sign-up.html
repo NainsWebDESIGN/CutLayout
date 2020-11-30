@@ -1,9 +1,9 @@
-<aside class="black_bg sign_up">
+<aside [ngClass]="{'active':SignUp}" class="black_bg sign_up">
     <div class="sign_box sign_up_size">
         <article class="title">
             <p class="basic_t">會員註冊</p>
             <div class="right_box">
-                <div class="sign_close"></div>
+                <div class="sign_close" (click)="close()"></div>
             </div>
         </article>
         <article class="content">
@@ -53,10 +53,10 @@
             <!--row-->
             <div class="btn_area">
                 <div class="btn_wrap">
-                    <button class="cancel sign_up_cancel">
+                    <button (click)="close()" class="cancel sign_up_cancel">
                         <p>取消</p>
                     </button>
-                    <button class="push sign_up_push">
+                    <button (click)="livemode()" (click)="SignOk()" class="push sign_up_push">
                         <p>送出</p>
                     </button>
                 </div>
@@ -65,12 +65,12 @@
         </article>
     </div>
 </aside>
-<aside class="black_bg sign_up_ok">
+<aside [ngClass]="{'active':SignUp_Ok}" class="black_bg sign_up_ok">
     <div class="sign_box sign_up_ok_size">
         <article class="title">
             <p class="basic_t">註冊成功</p>
             <div class="right_box">
-                <div class="sign_close"></div>
+                <div (click)="closeOk()" class="sign_close"></div>
             </div>
         </article>
         <article class="content">
@@ -82,64 +82,15 @@
             </div>
             <div class="btn_area">
                 <div class="btn_wrap">
-                    <button class="go_save">
+                    <button (click)="closeOk()" class="go_save">
                         <p>前去存款</p>
-                        <a [routerLink]="['index/billsave']"></a>
+                        <a [routerLink]="['/index/member/mybillsave']"></a>
                     </button>
-                    <button class="cancel">
+                    <button (click)="closeOk()" class="cancel">
                         <p>回首頁</p>
-                        <a [routerLink]="['/indexindexcontent/indexright']"></a>
+                        <a [routerLink]="['/index/indexcontent/indexright']"></a>
                     </button>
                 </div>
-
-            </div>
-        </article>
-    </div>
-</aside>
-<aside class="black_bg sign_in">
-    <div class="sign_box sign_in_size">
-        <article class="title">
-            <p class="basic_t">會員登入</p>
-            <div class="right_box">
-                <div class="sign_close"></div>
-            </div>
-        </article>
-        <article class="content">
-            <div class="row">
-
-                <p class="user_t">用戶帳號</p>
-                <div class="right_box">
-                    <input type="text" class="in_box">
-                </div>
-            </div>
-            <div class="row">
-                <p class="user_t">用戶密碼</p>
-                <div class="right_box">
-                    <input type="password" class="in_box">
-                </div>
-            </div>
-            <div class="row">
-                <div class="check_wrap">
-                    <input type="checkbox" id="c1">
-                    <label for="c1">
-                        <i class="cube"></i>
-                        <p class="user_t">記住密碼</p>
-                    </label>
-                </div>
-                <div class="right_box">
-                    <p class="user_t pw_forget">忘記密碼?</p>
-                </div>
-            </div>
-            <div class="btn_area">
-                <div class="btn_wrap sign_in_size">
-                    <button class="cancel sign_up_btn">
-                        <p>註冊</p>
-                    </button>
-                    <button class="push sign_in_btn">
-                        <p [routerLink]="['/index/indexcontent/soccer/soccercontent']" (click)="change()">登入</p>
-                    </button>
-                </div>
-
             </div>
         </article>
     </div>

@@ -1,18 +1,75 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
+import { UrlBassService } from '../UrlBass.service';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['../app.component.css'],
-  providers: [DataBassService]
+  providers: [DataBassService, UrlBassService]
 })
 export class IndexComponent implements OnInit {
+  SignIn = false;
+  SignUp = false;
+  LiveMode = false;
   constructor() { }
+  signin(x) {
+    this.SignIn = x;
+  }
+  signup(x) {
+    this.SignIn = false;
+    this.SignUp = x;
+  }
+  getLive(x) {
+    this.SignIn = false;
+    this.LiveMode = x;
+  }
   ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-content',
+  templateUrl: './content.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexContent implements OnInit {
+  boolin = false;
+  doublebet = false;
+  popup = false;
+  betsolo = false;
+  constructor(private router: Router, private reload: Location) { }
+  double(x) {
+    this.doublebet = x;
+  }
+  closeSolo(CloseValue) {
+    this.betsolo = CloseValue;
+  }
+  getSolo(SoloValue) {
+    this.betsolo = SoloValue;
+  }
+  getPopup(PopupValue) {
+    this.popup = PopupValue;
+  }
+  getChild(ChildValue) {
+    this.boolin = ChildValue;
+  }
+  listen() {
+    let url = '/index/indexcontent/indexright';
+    this.router.events
+      .subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          event['url'] == url ? this.boolin = false : this.boolin = true;
+        }
+      })
+    this.reload.path() == url ? this.boolin = false : this.boolin = true;
+  }
+  ngOnInit() {
+    this.listen();
   }
 
 }
@@ -24,9 +81,29 @@ export class IndexComponent implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexHeader implements OnInit {
+  LiveMode = false;
+  today: any = new Date();
   boolin: any = [];
   pagetotal = 3;
+  todayTimer = setInterval(() => { this.today = new Date(); }, 1000);
+  @Input()
+  set getLiveMode(boolean) {
+    this.LiveMode = boolean;
+  }
+  @Output() signinEvent: EventEmitter<any> = new EventEmitter();
+  @Output() signupEvent: EventEmitter<any> = new EventEmitter();
+  @Output() signoutEvent: EventEmitter<any> = new EventEmitter();
   constructor(private location: Location, private router: Router, private reload: Location) { }
+  SignIn() {
+    this.signinEvent.emit(true);
+  }
+  SignUp() {
+    this.signupEvent.emit(true);
+  }
+  SignOut() {
+    this.signoutEvent.emit(false);
+    this.LiveMode = false;
+  }
   change(x) {
     for (let i = 0; i < this.pagetotal; i++) {
       this.boolin[i] = false;
@@ -69,7 +146,7 @@ export class IndexLeft implements OnInit {
   left: any = [];
   total: any = [];
   check: any = [];
-  constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router, private location: Location) { }
+  constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router, private location: Location, private leftArray: UrlBassService) { }
   emit(ChildValue) {
     if (ChildValue.popupEvent) {
       ChildValue.popupEvent.subscribe(el => {
@@ -112,8 +189,25 @@ export class IndexLeft implements OnInit {
     }
     this.check[x] = true;
   }
+  async listen() {
+    let pagetotal = await this.getleft();
+    for (let i = 0; i <= pagetotal.length; i++) {
+      this.check[i] = false;
+    }
+    this.router.events
+      .subscribe(async event => {
+        if (event instanceof NavigationEnd) {
+          let data = await this.leftArray.changeurl(event['url']);
+          let NumberData = Number(data);
+          this.check[NumberData] = true;
+        }
+      })
+    let data = await this.leftArray.changeurl(this.location.path());
+    let NumberData = Number(data);
+    this.check[NumberData] = true;
+  }
   async getleft() {
-    await this.Ajax.getData('left').then(el => {
+    await this.Ajax.getData('Indexleft').then(el => {
       this.left = el;
     })
     return this.left;
@@ -122,10 +216,10 @@ export class IndexLeft implements OnInit {
     let data = await this.getleft();
     this.total.push(this.location.path());
     this.start()
-    for (let i = 0; i < (data.length + 1); i++) {
-      this.check[i] = false;
+    for (let i = 0; i <= data.length; i++) {
+      this.check[i] = [];
     }
-    this.check[0] = true;
+    this.listen();
   }
 }
 
@@ -144,15 +238,58 @@ export class IndexRight implements OnInit {
 }
 
 @Component({
-  selector: 'index-login',
-  templateUrl: './login.html',
+  selector: 'index-signin',
+  templateUrl: './sign-in.html',
   styleUrls: ['../app.component.css']
 })
-export class IndexLogin implements OnInit {
-  @Output() childEvent: EventEmitter<any> = new EventEmitter();
+export class IndexSignin implements OnInit {
+  @Output() closeEvent: EventEmitter<any> = new EventEmitter();
+  @Output() signupEvent: EventEmitter<any> = new EventEmitter();
+  @Output() signinEvent: EventEmitter<any> = new EventEmitter();
   constructor() { }
-  change() {
-    this.childEvent.emit(true);
+  SignIn() {
+    this.signinEvent.emit(true);
+  }
+  close() {
+    this.closeEvent.emit(false);
+  }
+  SignUp() {
+    this.signupEvent.emit(true);
+  }
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-signup',
+  templateUrl: './sign-up.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexSignup implements OnInit {
+  SignUp = false;
+  SignUp_Ok = false;
+  @Input()
+  set getSignUp(boolean) {
+    this.SignUp = boolean;
+  }
+  @Output() liveEvent: EventEmitter<any> = new EventEmitter();
+  @Output() closeupEvent: EventEmitter<any> = new EventEmitter();
+  constructor() { }
+  livemode() {
+    this.liveEvent.emit(true);
+  }
+  close() {
+    this.closeupEvent.emit(false);
+    this.SignUp = false;
+  }
+  SignOk() {
+    this.closeupEvent.emit(false);
+    this.SignUp = false;
+    this.SignUp_Ok = true;
+  }
+  closeOk() {
+    this.SignUp_Ok = false;
   }
   ngOnInit() {
   }
@@ -281,48 +418,6 @@ export class IndexEnContainer implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-}
-
-@Component({
-  selector: 'index-content',
-  templateUrl: './content.html',
-  styleUrls: ['../app.component.css']
-})
-export class IndexContent implements OnInit {
-  boolin = false;
-  doublebet = false;
-  popup = false;
-  betsolo = false;
-  constructor(private router: Router, private reload: Location) { }
-  double(x) {
-    this.doublebet = x;
-  }
-  closeSolo(CloseValue) {
-    this.betsolo = CloseValue;
-  }
-  getSolo(SoloValue) {
-    this.betsolo = SoloValue;
-  }
-  getPopup(PopupValue) {
-    this.popup = PopupValue;
-  }
-  getChild(ChildValue) {
-    this.boolin = ChildValue;
-  }
-  listen() {
-    let url = '/index/indexcontent/indexright';
-    this.router.events
-      .subscribe(event => {
-        if (event instanceof NavigationEnd) {
-          event['url'] == url ? this.boolin = false : this.boolin = true;
-        }
-      })
-    this.reload.path() == url ? this.boolin = false : this.boolin = true;
-  }
-  ngOnInit() {
-    this.listen();
   }
 
 }

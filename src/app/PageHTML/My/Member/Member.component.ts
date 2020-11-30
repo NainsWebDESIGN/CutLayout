@@ -1,12 +1,15 @@
+import { DataBassService } from './../../../DataBass.service';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
+import { UrlBassService } from './../../../UrlBass.service';
 
 
 @Component({
   selector: 'app-Member',
   templateUrl: './Member.component.html',
-  styleUrls: ['./Member.component.css']
+  styleUrls: ['./Member.component.css'],
+  providers: [UrlBassService, DataBassService]
 })
 export class MemberComponent implements OnInit {
   boolin = true;
@@ -67,12 +70,9 @@ export class MemberLeft implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
   @Output() cashEvent: EventEmitter<any> = new EventEmitter();
   @Output() cardEvent: EventEmitter<any> = new EventEmitter();
+  left: any = [];
   boolin: any = [];
-  pagetotal = 15;
-  constructor(private router: Router, private reload: Location) { }
-  changecash() {
-    this.cashEvent.emit(true);
-  }
+  constructor(private router: Router, private reload: Location, private Ajax: DataBassService, private leftArray: UrlBassService) { }
   getChild(ChildValue) {
     if (ChildValue.cardEvent) {
       ChildValue.cardEvent.subscribe(boolin => {
@@ -86,65 +86,52 @@ export class MemberLeft implements OnInit {
     }
     if (ChildValue.leftActive) {
       ChildValue.leftActive.subscribe(number => {
-        this.start(number);
+        this.start()
       })
     }
   }
-  listen() {
-    let optionsurl = '/index/member/';
+  async listen() {
+    let pagetotal = await this.getLeft();
+    for (let i = 0; i <= pagetotal.length; i++) {
+      this.boolin[i] = false;
+    }
     this.router.events
-      .subscribe(event => {
+      .subscribe(async event => {
         if (event instanceof NavigationEnd) {
-          for (let i = 0; i < this.pagetotal; i++) {
-            this.boolin[i] = false;
-          }
-          if (event['url'] == optionsurl + 'mybillsave') {
-            this.boolin[0] = true;
-          } else if (event['url'] == optionsurl + 'help') {
-            this.boolin[8] = true;
-          } else if (event['url'] == optionsurl + 'contactus') {
-            this.boolin[9] = true;
-          } else if (event['url'] == optionsurl + 'download') {
-            this.boolin[14] = true;
-          } else if (event['url'] == optionsurl + 'billtrans') {
-            this.boolin[1] = true;
-          } else if (event['url'] == optionsurl + 'transrecord/recordbox') {
-            this.boolin[5] = true;
-          } else if (event['url'] == optionsurl + 'billrecord') {
-            this.boolin[7] = true;
-          } else if (event['url'] == optionsurl + 'memberright') {
-            this.boolin[3] = true;
+          let data = await this.leftArray.changeurl(event['url']);
+          let NumberData = Number(data);
+          this.boolin[NumberData] = true;
+          if (NumberData == 2 || NumberData == 4) {
+            this.cashEvent.emit(true);
           }
         }
       })
-    for (let i = 0; i < this.pagetotal; i++) {
-      this.boolin[i] = false;
-    }
-    if (this.reload.path() == optionsurl + 'mybillsave') {
-      this.boolin[0] = true;
-    } else if (this.reload.path() == optionsurl + 'help') {
-      this.boolin[8] = true;
-    } else if (this.reload.path() == optionsurl + 'contactus') {
-      this.boolin[9] = true;
-    } else if (this.reload.path() == optionsurl + 'download') {
-      this.boolin[14] = true;
-    } else if (this.reload.path() == optionsurl + 'billtrans') {
-      this.boolin[1] = true;
-    } else if (this.reload.path() == optionsurl + 'transrecord/recordbox') {
-      this.boolin[5] = true;
-    } else if (this.reload.path() == optionsurl + 'billrecord') {
-      this.boolin[7] = true;
-    } else if (this.reload.path() == optionsurl + 'memberright') {
-      this.boolin[3] = true;
+    let data = await this.leftArray.changeurl(this.reload.path());
+    let NumberData = Number(data);
+    this.boolin[NumberData] = true;
+    if (NumberData == 2 || NumberData == 4) {
+      this.cashEvent.emit(true);
     }
   }
-  start(x) {
-    for (let i = 0; i < this.pagetotal; i++) {
-      this.boolin[i] = false;
-      this.boolin[x] = true;
+  async getLeft() {
+    let data: any = [];
+    await this.Ajax.getData('Memberleft').then(el => {
+      data = el;
+    })
+    return data;
+  }
+  async start() {
+    let data = await this.getLeft();
+    this.left[0] = data.slice(0, 3);
+    this.left[1] = data.slice(3);
+    this.left[2] = data;
+    for (let i = 0; i <= data.length; i++) {
+      this.boolin[i] = [];
     }
+    this.listen()
   }
   ngOnInit() {
+    this.start();
     this.listen();
   }
 

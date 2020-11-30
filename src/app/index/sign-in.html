@@ -1,0 +1,46 @@
+<div class="sign_box sign_in_size">
+    <article class="title">
+        <p class="basic_t">會員登入</p>
+        <div class="right_box">
+            <div class="sign_close" (click)="close()"></div>
+        </div>
+    </article>
+    <article class="content">
+        <div class="row">
+
+            <p class="user_t">用戶帳號</p>
+            <div class="right_box">
+                <input type="text" class="in_box">
+            </div>
+        </div>
+        <div class="row">
+            <p class="user_t">用戶密碼</p>
+            <div class="right_box">
+                <input type="password" class="in_box">
+            </div>
+        </div>
+        <div class="row">
+            <div class="check_wrap">
+                <input type="checkbox" id="c1">
+                <label for="c1">
+                    <i class="cube"></i>
+                    <p class="user_t">記住密碼</p>
+                </label>
+            </div>
+            <div class="right_box">
+                <p class="user_t pw_forget">忘記密碼?</p>
+            </div>
+        </div>
+        <div class="btn_area">
+            <div class="btn_wrap sign_in_size">
+                <button (click)="SignUp()" class="cancel sign_up_btn">
+                    <p>註冊</p>
+                </button>
+                <button (click)="SignIn()" class="push sign_in_btn">
+                    <p>登入</p>
+                </button>
+            </div>
+
+        </div>
+    </article>
+</div>

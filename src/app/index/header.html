@@ -2,12 +2,12 @@
     <div class="time_line">
         <div class="time_box">
             <div class="right_box">
-                <p>GMT+8　2020-05-07　10:13:44</p>
+                <p>{{today | date:'z &ensp; yyyy-MM-dd &ensp; HH:mm:ss'}}</p>
             </div>
         </div>
     </div>
     <div class="h_box">
-        <div class="h_wrap">
+        <div [ngClass]="{'live_mode':LiveMode}" class="h_wrap">
             <div class="logo">
                 <h1> <a [routerLink]="['/index/indexcontent/indexright']"></a></h1>
             </div>
@@ -27,13 +27,14 @@
                 </li>
             </ul>
             <div class="right">
-                <div class="sign_yet active">
+                <div [ngClass]="{'active':!LiveMode}" class="sign_yet">
                     <div class="wrap">
                         <i></i>
-                        <p><span class="in">登入</span> / <span class="up">註冊</span></p>
+                        <p><span (click)="SignIn()" class="in">登入</span> / <span (click)="SignUp()" class="up">註冊</span>
+                        </p>
                     </div>
                 </div>
-                <div class="sign_in">
+                <div [ngClass]="{'active':LiveMode}" class="sign_in">
                     <div class="wrap">
                         <div class="row">
                             <p class="gray">user545</p>
@@ -45,7 +46,7 @@
                         <div class="row bot">
                             <p class="blue my_money">NT$ <span>0.00</span></p>
                             <i class="q"></i>
-                            <button class="sign_out">
+                            <button (click)="SignOut()" class="sign_out">
                                 <p>登出</p>
                             </button>
                         </div>

@@ -13,10 +13,8 @@ export class Bill_trans_recordComponent implements OnInit {
   changeboolin(x) {
     for (let i = 0; i < this.total; i++) {
       this.boolin[i] = false;
-      if (i == x) {
-        this.boolin[x] = true;
-      }
     }
+    this.boolin[x] = true;
   }
   ngOnInit() {
     this.changeboolin(0);

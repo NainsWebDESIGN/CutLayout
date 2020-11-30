@@ -1,3 +1,4 @@
+import { DataBassService } from './DataBass.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ViewChild, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -8,7 +9,7 @@ import { AppComponent } from './app.component';
 import { RoutingModule } from './Routes.routing';
 import { ErrorComponent } from './Error/Error.component';
 import {
-  IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexLogin, IndexSeachbox, IndexBallBetting,
+  IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexSignin, IndexSeachbox, IndexBallBetting, IndexSignup,
   IndexRightLive, DoubleBet, IndexSideOptions, IndexEnContainer, IndexContent, SkewersPopup, BetsoloPopup
 } from './index/index.component';
 import { DiscountComponent } from './PageHTML/Event/Discount.component';
@@ -76,12 +77,13 @@ import { Basball_innerComponent, BasinnerContent, BasinnerHeader } from './PageH
 import { Esp_innerComponent, EspinnerContent, EspinnerHeader } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
 import { Horserace_innerComponent, HorseinnerContent, HorseinnerHeader } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
 import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
+import { UrlBassService } from './UrlBass.service';
 
 
 @NgModule({
   declarations: [
     AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent, EspinnerHeader,
-    IndexRight, IndexLogin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoinnerHeader, BsoContent,
+    IndexRight, IndexSignin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoinnerHeader, BsoContent,
     IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet, LotterySenior,
     Horse_raceComponent, EspComponent, StockComponent, TransFor, IceinnerContent, TennisinnerComponent, SnookerinnerComponent,
     MortorComponent, My_bill_moneybagComponent, VballinnerContent, FootballinnerHeader, FootballContent, Horserace_innerComponent,
@@ -105,7 +107,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
     BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior, VballSenior, BadmintonSenior,
-    FootballSenior, BsoSenior, TableballSenior
+    FootballSenior, BsoSenior, TableballSenior, IndexSignup
   ],
   imports: [
     BrowserModule,
@@ -113,7 +115,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     HttpClientModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [DataBassService, UrlBassService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -32,15 +32,12 @@
     </div>
     <div class="search_bar">
       <p [ngClass]="{'active':boolin[0]}" class="re_save_btn" (click)="changeboolin(0)">存款
-        <a [routerLink]="['/index/member/transrecord/recordbox']"></a>
       </p>
       <div class="line"></div>
       <p [ngClass]="{'active':boolin[1]}" class="re_trans_btn" (click)="changeboolin(1)">轉點
-        <a [routerLink]="['/index/member/transrecord/transfor']"></a>
       </p>
       <div class="line"></div>
       <p [ngClass]="{'active':boolin[2]}" class="re_cash_btn" (click)="changeboolin(2)">取款
-        <a [routerLink]="['/index/member/transrecord/takeout']"></a>
       </p>
       <div class="right_box">
         <span class="date_icon"></span>
@@ -76,6 +73,15 @@
       <div class="basic_b b15"><span>交易進度</span></div>
     </div>
   </div>
-  <router-outlet></router-outlet>
+  <!-- <router-outlet></router-outlet> -->
+  <div [ngClass]="{'display':!boolin[0]}" class="tr_record_box">
+    <tr_record-box></tr_record-box>
+  </div>
+  <div [ngClass]="{'display':!boolin[1]}" class="tr_record_box">
+    <record-transfor></record-transfor>
+  </div>
+  <div [ngClass]="{'display':!boolin[2]}" class="tr_record_box">
+    <record-takeout></record-takeout>
+  </div>
 
 </div>

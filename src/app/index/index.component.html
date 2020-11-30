@@ -1,2 +1,8 @@
-<index-header></index-header>
+<aside [ngClass]="{'active':SignIn}" class="black_bg sign_in">
+    <index-signin (closeEvent)="signin($event)" (signupEvent)="signup($event)" (signinEvent)="getLive($event)">
+    </index-signin>
+</aside>
+<index-signup [getSignUp]="SignUp" (liveEvent)="getLive($event)" (closeupEvent)="signup($event)"></index-signup>
+<index-header [getLiveMode]="LiveMode" (signinEvent)="signin($event)" (signupEvent)="signup($event)"
+    (signoutEvent)="getLive($event)"></index-header>
 <router-outlet></router-outlet>

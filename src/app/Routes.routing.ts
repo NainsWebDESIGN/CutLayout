@@ -103,15 +103,7 @@ const routes: Routes = [
           { path: 'moneybag', component: My_bill_moneybagComponent },
           { path: 'billtrans', component: Bill_transComponent },
           { path: 'getcash', component: Bill_getcashComponent },
-          {
-            path: 'transrecord', component: Bill_trans_recordComponent,
-            children: [
-              { path: '', redirectTo: '/index/member/transrecord/recordbox', pathMatch: 'full' },
-              { path: 'recordbox', component: Tr_RecordBox },
-              { path: 'transfor', component: TransFor },
-              { path: 'takeout', component: TakeOut },
-            ]
-          },
+          { path: 'transrecord', component: Bill_trans_recordComponent },
           { path: 'billnow', component: Bill_nowComponent },
           { path: 'billrecord', component: Bill_recordComponent },
           { path: 'help', component: HelpComponent },

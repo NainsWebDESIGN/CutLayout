@@ -73,7 +73,7 @@
       "title": "大額充值"
     }
   ],
-  "left": [
+  "Indexleft": [
     {
       "CHID": "0",
       "iclass": "i1",
@@ -351,6 +351,113 @@
     {
       "CHID": "42",
       "league": "英格蘭伊斯米安超級聯賽"
+    }
+  ],
+  "Memberleft": [
+    {
+      "CHID": "0",
+      "name": "存款",
+      "iclass": "cash i1",
+      "router": "/index/member/mybillsave",
+      "line": "display"
+    },
+    {
+      "CHID": "1",
+      "name": "轉點",
+      "iclass": "cash i2",
+      "router": "/index/member/billtrans",
+      "line": "display"
+    },
+    {
+      "CHID": "2",
+      "name": "取款",
+      "iclass": "cash i3",
+      "router": "/index/member/getcash",
+      "line": "display"
+    },
+    {
+      "CHID": "3",
+      "name": "個人資料",
+      "iclass": "i1",
+      "router": "/index/member/memberright",
+      "line": "blue_line"
+    },
+    {
+      "CHID": "4",
+      "name": "我的錢包",
+      "iclass": "i2",
+      "router": "/index/member/moneybag",
+      "line": "display"
+    },
+    {
+      "CHID": "5",
+      "name": "交易紀錄",
+      "iclass": "i3",
+      "router": "/index/member/transrecord",
+      "line": "display"
+    },
+    {
+      "CHID": "6",
+      "name": "即時注單",
+      "iclass": "i4",
+      "router": "/index/member/billnow",
+      "line": "display"
+    },
+    {
+      "CHID": "7",
+      "name": "投注紀錄",
+      "iclass": "i5",
+      "router": "/index/member/billrecord",
+      "line": "blue_line"
+    },
+    {
+      "CHID": "8",
+      "name": "幫助中心",
+      "iclass": "i6",
+      "router": "/index/member/help",
+      "line": "display"
+    },
+    {
+      "CHID": "9",
+      "name": "聯繫我們",
+      "iclass": "i7",
+      "router": "/index/member/contactus",
+      "line": "display"
+    },
+    {
+      "CHID": "10",
+      "name": "消息中心",
+      "iclass": "i8",
+      "router": "/index/member/message",
+      "line": "display"
+    },
+    {
+      "CHID": "11",
+      "name": "設定",
+      "iclass": "i9",
+      "router": "/index/member/set",
+      "line": "blue_line"
+    },
+    {
+      "CHID": "12",
+      "name": "關於",
+      "iclass": "i10",
+      "router": "/index/member/about",
+      "line": "display"
+    },
+    {
+      "CHID": "13",
+      "name": "加入我們",
+      "iclass": "i11",
+      "router": "/index/member/joinus",
+      "line": "display"
+    },
+    {
+      "CHID": "14",
+      "name": "下載APP",
+      "iclass": "i12",
+      "router": "/index/member/download",
+      "line": "display"
     }
   ]
 }

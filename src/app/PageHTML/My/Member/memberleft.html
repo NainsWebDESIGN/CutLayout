@@ -11,6 +11,13 @@
             <p class="day">加入第6天</p>
         </div>
         <div class="box_3">
+            <div *ngFor="let item of left[0]" [ngClass]="{'active':boolin[item.CHID]}" class="box" (click)="listen()">
+                <i [class]="item.iclass"></i>
+                <p>{{ item.name }}</p>
+                <a [routerLink]="[item.router]"></a>
+            </div>
+        </div>
+        <!-- <div class="box_3">
             <div [ngClass]="{'active':boolin[0]}" (click)="start(0)" class="box"><i class="cash i1"></i>
                 <p>存款</p><a [routerLink]="['/index/member/mybillsave']"></a>
             </div>
@@ -22,8 +29,16 @@
                 <p>取款</p>
                 <a [routerLink]="['/index/member/getcash']" (click)="changecash()"></a>
             </div>
-        </div>
-        <li [ngClass]="{'active':boolin[3]}" (click)="start(3)">
+        </div> -->
+        <ul *ngFor="let left of left[1]">
+            <li [ngClass]="{'active':boolin[left.CHID]}" (click)="listen()">
+                <i [class]="left.iclass"></i>
+                <p class="name">{{ left.name }}</p>
+                <a [routerLink]="[left.router]"></a>
+            </li>
+            <div [class]="left.line"></div>
+        </ul>
+        <!-- <li [ngClass]="{'active':boolin[3]}" (click)="start(3)">
             <i class="i1"></i>
             <p class="name">個人資料</p>
             <a [routerLink]="['/index/member/memberright']"></a>
@@ -38,7 +53,7 @@
             <i class="i4"></i>
             <p class="name">交易紀錄</p>
             <p class="num active">6</p>
-            <a [routerLink]="['/index/member/transrecord/recordbox']"></a>
+            <a [routerLink]="['/index/member/transrecord']"></a>
         </li>
         <li [ngClass]="{'active':boolin[6]}" (click)="start(6)">
             <i class="i5"></i>
@@ -89,7 +104,7 @@
             <i class="i14"></i>
             <p class="name">下載APP</p>
             <a [routerLink]="['/index/member/download']"></a>
-        </li>
+        </li> -->
     </ul>
 </div>
 <router-outlet (activate)="getChild($event)"></router-outlet>
