@@ -1,4 +1,3 @@
-import { IndexContent } from './index/index.component';
 import { DataBassService } from './DataBass.service';
 import { Injectable } from '@angular/core';
 
@@ -20,6 +19,13 @@ export class UrlBassService {
         })
         return data;
     }
+    async getDiscount() {
+        let data: any = [];
+        await this.HTTP.getData('Discountleft').then(el => {
+            data = el;
+        })
+        return data;
+    }
     async changeurl(x) {
         let StrUrl = String(x).split('/');
         let data: any;
@@ -28,6 +34,9 @@ export class UrlBassService {
         }
         if (StrUrl[2] == 'member') {
             data = await this.getMember();
+        }
+        if (StrUrl[2] == 'discount') {
+            data = await this.getDiscount();
         }
         let a = data.filter(el => {
             return el.router.indexOf(x) > -1;

@@ -1,0 +1,28 @@
+<div class="left ">
+    <ul *ngFor="let item of left" class="event_page_ul">
+        <li [ngClass]="{'active': boolin[item.CHID]}">
+            <i [class]="item.iclass"></i>
+            <p>{{ item.title }}</p>
+        </li>
+        <!-- <li [ngClass]="{'active': boolin[0]}">
+            <i class="li_icon"></i>
+            <p>全部優惠</p>
+        </li>
+        <li>
+            <i class="li_icon i2"></i>
+            <p>限時活動</p>
+        </li>
+        <li>
+            <i class="li_icon i3"></i>
+            <p>新人首存</p>
+        </li>
+        <li>
+            <i class="li_icon i4"></i>
+            <p>日常活動</p>
+        </li>
+        <li>
+            <i class="li_icon i5"></i>
+            <p>高額返水</p>
+        </li> -->
+    </ul>
+</div>

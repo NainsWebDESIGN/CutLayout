@@ -12,7 +12,7 @@ import {
   IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexSignin, IndexSeachbox, IndexBallBetting, IndexSignup,
   IndexRightLive, DoubleBet, IndexSideOptions, IndexEnContainer, IndexContent, SkewersPopup, BetsoloPopup
 } from './index/index.component';
-import { DiscountComponent } from './PageHTML/Event/Discount.component';
+import { DiscountComponent, DiscountContent, DiscountLeft, DiscountSearch } from './PageHTML/Event/Discount.component';
 import {
   MemberComponent, MemberRight, MemberOption, MemberLeft, GetCashPopup, AddCard, ChangePassword
 } from './pageHTML/My/Member/Member.component';
@@ -107,7 +107,7 @@ import { UrlBassService } from './UrlBass.service';
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
     BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior, VballSenior, BadmintonSenior,
-    FootballSenior, BsoSenior, TableballSenior, IndexSignup
+    FootballSenior, BsoSenior, TableballSenior, IndexSignup, DiscountContent, DiscountLeft, DiscountSearch
   ],
   imports: [
     BrowserModule,

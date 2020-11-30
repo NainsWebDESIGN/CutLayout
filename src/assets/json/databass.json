@@ -84,7 +84,7 @@
       "CHID": "1",
       "iclass": "i2",
       "title": "熱門賽事",
-      "router": "/index/indexcontent/soccer"
+      "router": "/index/indexcontent/indexright"
     },
     {
       "CHID": "2",
@@ -458,6 +458,38 @@
       "iclass": "i12",
       "router": "/index/member/download",
       "line": "display"
+    }
+  ],
+  "Discountleft": [
+    {
+      "CHID": "0",
+      "iclass": "li_icon",
+      "title": "全部優惠",
+      "router": "/index/discount"
+    },
+    {
+      "CHID": "1",
+      "iclass": "li_icon i2",
+      "title": "限時活動",
+      "router": "/index/discount"
+    },
+    {
+      "CHID": "2",
+      "iclass": "li_icon i3",
+      "title": "新人首存",
+      "router": "/index/discount"
+    },
+    {
+      "CHID": "3",
+      "iclass": "li_icon i4",
+      "title": "日常活動",
+      "router": "/index/discount"
+    },
+    {
+      "CHID": "4",
+      "iclass": "li_icon i5",
+      "title": "高額返水",
+      "router": "/index/discount"
     }
   ]
 }
