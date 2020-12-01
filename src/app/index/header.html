@@ -9,12 +9,12 @@
     <div class="h_box">
         <div [ngClass]="{'live_mode':LiveMode}" class="h_wrap">
             <div class="logo">
-                <h1> <a [routerLink]="['/index/indexcontent/indexright']"></a></h1>
+                <h1> <a [routerLink]="['/index/indexcontent/favorit']"></a></h1>
             </div>
             <ul class="m_yet">
                 <li [ngClass]="{'active': boolin[0]}" (click)="change(0)">
                     <p>市場列表</p>
-                    <a [routerLink]="['/index/indexcontent/indexright']"></a>
+                    <a [routerLink]="['/index/indexcontent/favorit']"></a>
                 </li>
                 <li [ngClass]="{'active': boolin[1]}" (click)="change(1)">
                     <i class="i1"></i>
@@ -48,6 +48,7 @@
                             <i class="q"></i>
                             <button (click)="SignOut()" class="sign_out">
                                 <p>登出</p>
+                                <a [routerLink]="['/index/indexcontent/favorit']"></a>
                             </button>
                         </div>
                     </div>

@@ -78,13 +78,13 @@
       "CHID": "0",
       "iclass": "i1",
       "title": "我的最愛",
-      "router": "/index/indexcontent/indexright"
+      "router": "/index/indexcontent/favorit"
     },
     {
       "CHID": "1",
       "iclass": "i2",
       "title": "熱門賽事",
-      "router": "/index/indexcontent/indexright"
+      "router": "/index/indexcontent/popular"
     },
     {
       "CHID": "2",

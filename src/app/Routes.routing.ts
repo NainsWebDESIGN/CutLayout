@@ -52,14 +52,15 @@ import { Horserace_innerComponent } from './PageHTML/Balls/horse.component/horse
 import { Stock_innerComponent } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/index/indexcontent/indexright', pathMatch: 'full' },
+  { path: '', redirectTo: '/index/indexcontent/favorit', pathMatch: 'full' },
   {
     path: 'index', component: IndexComponent,
     children: [
       {
         path: 'indexcontent', component: IndexContent,
         children: [
-          { path: 'indexright', component: IndexRight },
+          { path: 'favorit', component: IndexRight },
+          { path: 'popular', component: SoccerComponent },
           { path: 'badminton', component: BadmintonComponent },
           { path: 'badmintoninner', component: BadmintoninnerComponent },
           { path: 'basball', component: BasballComponent },

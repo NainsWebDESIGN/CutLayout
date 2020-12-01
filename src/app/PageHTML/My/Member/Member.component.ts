@@ -1,15 +1,14 @@
 import { DataBassService } from './../../../DataBass.service';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { UrlBassService } from './../../../UrlBass.service';
 
 
 @Component({
   selector: 'app-Member',
   templateUrl: './Member.component.html',
   styleUrls: ['./Member.component.css'],
-  providers: [UrlBassService, DataBassService]
+  providers: [DataBassService]
 })
 export class MemberComponent implements OnInit {
   boolin = true;
@@ -72,7 +71,7 @@ export class MemberLeft implements OnInit {
   @Output() cardEvent: EventEmitter<any> = new EventEmitter();
   left: any = [];
   boolin: any = [];
-  constructor(private router: Router, private reload: Location, private Ajax: DataBassService, private leftArray: UrlBassService) { }
+  constructor(private router: Router, private reload: Location, private Ajax: DataBassService) { }
   getChild(ChildValue) {
     if (ChildValue.cardEvent) {
       ChildValue.cardEvent.subscribe(boolin => {
@@ -95,23 +94,17 @@ export class MemberLeft implements OnInit {
     for (let i = 0; i <= pagetotal.length; i++) {
       this.boolin[i] = false;
     }
-    this.router.events
-      .subscribe(async event => {
-        if (event instanceof NavigationEnd) {
-          let data = await this.leftArray.changeurl(event['url']);
-          let NumberData = Number(data);
-          this.boolin[NumberData] = true;
-          if (NumberData == 2 || NumberData == 4) {
-            this.cashEvent.emit(true);
-          }
-        }
-      })
-    let data = await this.leftArray.changeurl(this.reload.path());
-    let NumberData = Number(data);
+    let a: any = [];
+    a = await pagetotal.filter(el => {
+      return el.router.indexOf(this.reload.path()) > -1;
+    })
+    let NumberData = Number(a[0].CHID);
     this.boolin[NumberData] = true;
     if (NumberData == 2 || NumberData == 4) {
       this.cashEvent.emit(true);
     }
+    console.log(a)
+    console.log(NumberData)
   }
   async getLeft() {
     let data: any = [];

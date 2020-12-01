@@ -3,13 +3,12 @@ import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
-import { UrlBassService } from '../UrlBass.service';
 
 @Component({
   selector: 'app-index',
   templateUrl: './index.component.html',
   styleUrls: ['../app.component.css'],
-  providers: [DataBassService, UrlBassService]
+  providers: [DataBassService]
 })
 export class IndexComponent implements OnInit {
   SignIn = false;
@@ -59,7 +58,7 @@ export class IndexContent implements OnInit {
     this.boolin = ChildValue;
   }
   listen() {
-    let url = '/index/indexcontent/indexright';
+    let url = '/index/indexcontent/favorit';
     this.router.events
       .subscribe(event => {
         if (event instanceof NavigationEnd) {
@@ -111,15 +110,6 @@ export class IndexHeader implements OnInit {
     this.boolin[x] = true;
   }
   listen() {
-    this.router.events
-      .subscribe(event => {
-        if (event instanceof NavigationEnd) {
-          let StrUrl = event['url'].toString().split('/');
-          StrUrl[2] == 'indexcontent' ? this.boolin[0] = true : this.boolin[0] = false;
-          StrUrl[2] == 'discount' ? this.boolin[1] = true : this.boolin[1] = false;
-          StrUrl[2] == 'member' ? this.boolin[2] = true : this.boolin[2] = false;
-        }
-      })
     let StrUrl = this.reload.path().toString().split('/');
     StrUrl[2] == 'indexcontent' ? this.boolin[0] = true : this.boolin[0] = false;
     StrUrl[2] == 'discount' ? this.boolin[1] = true : this.boolin[1] = false;
@@ -146,7 +136,7 @@ export class IndexLeft implements OnInit {
   left: any = [];
   total: any = [];
   check: any = [];
-  constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router, private location: Location, private leftArray: UrlBassService) { }
+  constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router, private location: Location) { }
   emit(ChildValue) {
     if (ChildValue.popupEvent) {
       ChildValue.popupEvent.subscribe(el => {
@@ -194,16 +184,11 @@ export class IndexLeft implements OnInit {
     for (let i = 0; i <= pagetotal.length; i++) {
       this.check[i] = false;
     }
-    this.router.events
-      .subscribe(async event => {
-        if (event instanceof NavigationEnd) {
-          let data = await this.leftArray.changeurl(event['url']);
-          let NumberData = Number(data);
-          this.check[NumberData] = true;
-        }
-      })
-    let data = await this.leftArray.changeurl(this.location.path());
-    let NumberData = Number(data);
+    let a: any = [];
+    a = await pagetotal.filter(el => {
+      return el.router.indexOf(this.location.path()) > -1;
+    })
+    let NumberData = Number(a[0].CHID);
     this.check[NumberData] = true;
   }
   async getleft() {

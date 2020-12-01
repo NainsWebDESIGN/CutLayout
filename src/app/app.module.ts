@@ -77,7 +77,6 @@ import { Basball_innerComponent, BasinnerContent, BasinnerHeader } from './PageH
 import { Esp_innerComponent, EspinnerContent, EspinnerHeader } from './PageHTML/Balls/esp.component/esp_inner/esp_inner.component';
 import { Horserace_innerComponent, HorseinnerContent, HorseinnerHeader } from './PageHTML/Balls/horse.component/horserace_inner/horserace_inner.component';
 import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './PageHTML/Balls/stock.component/stock_inner/stock_inner.component';
-import { UrlBassService } from './UrlBass.service';
 
 
 @NgModule({
@@ -115,7 +114,7 @@ import { UrlBassService } from './UrlBass.service';
     HttpClientModule,
     RoutingModule
   ],
-  providers: [DataBassService, UrlBassService],
+  providers: [DataBassService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
