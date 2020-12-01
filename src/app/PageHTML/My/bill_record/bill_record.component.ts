@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bill_record.component.css']
 })
 export class Bill_recordComponent implements OnInit {
+  basic: any = [false, false];
   boolin = false;
   constructor() { }
+  openbasic(x) {
+    this.basic[x] = !this.basic[x];
+  }
   changeboolin() {
     this.boolin = !this.boolin;
   }
