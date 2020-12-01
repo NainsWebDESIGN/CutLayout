@@ -6,10 +6,11 @@
 <index-header [ngClass]="{'display': language}" [getLiveMode]="LiveMode" (signinEvent)="signin($event)"
     (signupEvent)="signup($event)" (signoutEvent)="getLive($event)"></index-header>
 <header class="en" [ngClass]="{'display': !language}">
-    <index-enheader></index-enheader>
+    <index-enheader [getLiveMode]="LiveMode" (signinEvent)="signin($event)" (signupEvent)="signup($event)"
+        (signoutEvent)="getLive($event)"></index-enheader>
 </header>
 <index-language (LanguageEvent)="ChangeLanguage($event)"></index-language>
 <router-outlet [ngClass]="{'display': language}"></router-outlet>
 <div class="container en" [ngClass]="{'display': !language}">
-    <index-encontainer></index-encontainer>
+    <index-encontainer [getLive]="EnLive"></index-encontainer>
 </div>

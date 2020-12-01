@@ -1,7 +1,7 @@
 <div class="time_line">
     <div class="time_box">
         <div class="right_box">
-            <p>GMT+8　2020-05-07　10:13:44</p>
+            <p>{{today | date:'z &ensp; yyyy-MM-dd &ensp; HH:mm:ss'}}</p>
         </div>
     </div>
 </div>
@@ -27,14 +27,15 @@
             </li>
         </ul>
         <div class="right">
-            <div class="sign_yet active">
+            <div [ngClass]="{'active':!LiveMode}" class="sign_yet">
                 <div class="wrap">
                     <i></i>
-                    <p><span class="in">Log&ensp;in</span> <span class="m">/</span> <span class="up">Sign&ensp;up</span>
+                    <p><span (click)="SignIn()" class="in">Log&ensp;in</span> <span class="m">/</span> <span
+                            (click)="SignUp()" class="up">Sign&ensp;up</span>
                     </p>
                 </div>
             </div>
-            <div class="sign_in">
+            <div [ngClass]="{'active':LiveMode}" class="sign_in">
                 <div class="wrap">
                     <div class="row">
                         <p class="gray">user545</p>
@@ -44,6 +45,11 @@
                     </div>
                     <div class="row bot">
                         <p class="blue">NT$ <span>0.00</span></p>
+                        <i class="q"></i>
+                        <button (click)="SignOut()" class="sign_out">
+                            <p>Out</p>
+                            <a [routerLink]="['/index/indexcontent/favorit']"></a>
+                        </button>
                     </div>
                 </div>
             </div>

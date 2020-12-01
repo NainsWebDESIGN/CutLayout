@@ -15,6 +15,7 @@ export class IndexComponent implements OnInit {
   SignIn = false;
   SignUp = false;
   LiveMode = false;
+  EnLive = false;
   constructor() { }
   signin(x) {
     this.SignIn = x;
@@ -26,6 +27,7 @@ export class IndexComponent implements OnInit {
   getLive(x) {
     this.SignIn = false;
     this.LiveMode = x;
+    this.EnLive = x;
   }
   ChangeLanguage(x) {
     this.language = x;
@@ -411,20 +413,6 @@ export class IndexSideOptions implements OnInit {
 }
 
 @Component({
-  selector: 'index-encontainer',
-  templateUrl: './encontainer.html',
-  styleUrls: ['../app.component.css']
-})
-export class IndexEnContainer implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
-
-@Component({
   selector: 'skewers_popup',
   templateUrl: './skewers_popup.html',
   styleUrls: ['../app.component.css']
@@ -490,8 +478,60 @@ export class DoubleBet implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexEnHeader implements OnInit {
+  @Output() signinEvent: EventEmitter<any> = new EventEmitter();
+  @Output() signupEvent: EventEmitter<any> = new EventEmitter();
+  @Output() signoutEvent: EventEmitter<any> = new EventEmitter();
+  LiveMode = false;
+  today: any = new Date();
+  todayTimer = setInterval(() => { this.today = new Date(); }, 1000);
+  @Input()
+  set getLiveMode(boolean) {
+    this.LiveMode = boolean;
+  }
   constructor() { }
+  SignIn() {
+    this.signinEvent.emit(true);
+  }
+  SignUp() {
+    this.signupEvent.emit(true);
+  }
+  SignOut() {
+    this.signoutEvent.emit(false);
+    this.LiveMode = false;
+  }
   ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-encontainer',
+  templateUrl: './encontainer.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexEnContainer implements OnInit {
+  boolin = false;
+  LiveMode = false;
+  lis: any = [];
+  searchtotal = 5;
+  @Input()
+  set getLive(x) {
+    this.LiveMode = x;
+  }
+  constructor() { }
+  opensearch() {
+    this.boolin = !this.boolin;
+  }
+  openli(x) {
+    this.lis[x] = !this.lis[x];
+  }
+  closeli(x) {
+    this.lis[x] = false;
+  }
+  ngOnInit() {
+    for (let i = 0; i < this.searchtotal; i++) {
+      this.lis[i] = false;
+    }
   }
 
 }
