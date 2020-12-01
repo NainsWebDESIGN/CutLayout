@@ -11,6 +11,7 @@ import { Location } from '@angular/common';
   providers: [DataBassService]
 })
 export class IndexComponent implements OnInit {
+  language = false;
   SignIn = false;
   SignUp = false;
   LiveMode = false;
@@ -25,6 +26,9 @@ export class IndexComponent implements OnInit {
   getLive(x) {
     this.SignIn = false;
     this.LiveMode = x;
+  }
+  ChangeLanguage(x) {
+    this.language = x;
   }
   ngOnInit() {
   }
@@ -309,14 +313,18 @@ export class IndexSeachbox implements OnInit {
 }
 
 @Component({
-  selector: 'index-ballbetting',
-  templateUrl: './ballbetting.html',
+  selector: 'index-language',
+  templateUrl: './language.html',
   styleUrls: ['../app.component.css']
 })
-export class IndexBallBetting implements OnInit {
-
+export class IndexBallLanguage implements OnInit {
+  @Output() LanguageEvent: EventEmitter<any> = new EventEmitter();
+  language = false;
   constructor() { }
-
+  change(x) {
+    x == 'en' ? this.language = true : this.language = false;
+    x == 'en' ? this.LanguageEvent.emit(true) : this.LanguageEvent.emit(false);
+  }
   ngOnInit() {
   }
 
@@ -450,6 +458,7 @@ export class BetsoloPopup implements OnInit {
   }
 
 }
+
 @Component({
   selector: 'doublebet',
   templateUrl: './doublebet.html',
@@ -461,6 +470,18 @@ export class DoubleBet implements OnInit {
   close() {
     this.closeEvent.emit(false);
   }
+  ngOnInit() {
+  }
+
+}
+
+@Component({
+  selector: 'index-enheader',
+  templateUrl: './Enheader.html',
+  styleUrls: ['../app.component.css']
+})
+export class IndexEnHeader implements OnInit {
+  constructor() { }
   ngOnInit() {
   }
 

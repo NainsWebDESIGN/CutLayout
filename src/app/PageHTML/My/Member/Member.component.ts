@@ -103,8 +103,6 @@ export class MemberLeft implements OnInit {
     if (NumberData == 2 || NumberData == 4) {
       this.cashEvent.emit(true);
     }
-    console.log(a)
-    console.log(NumberData)
   }
   async getLeft() {
     let data: any = [];

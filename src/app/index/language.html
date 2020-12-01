@@ -1,0 +1,6 @@
+<div class="test_box">
+    <div class="en_cn">
+        <li [ngClass]="{'active': language}" class="en" (click)="change('en')">英文</li>
+        <li [ngClass]="{'active': !language}" class="cn" (click)="change('cn')">中文</li>
+    </div>
+</div>

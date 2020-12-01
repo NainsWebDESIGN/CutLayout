@@ -9,8 +9,8 @@ import { AppComponent } from './app.component';
 import { RoutingModule } from './Routes.routing';
 import { ErrorComponent } from './Error/Error.component';
 import {
-  IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexSignin, IndexSeachbox, IndexBallBetting, IndexSignup,
-  IndexRightLive, DoubleBet, IndexSideOptions, IndexEnContainer, IndexContent, SkewersPopup, BetsoloPopup
+  IndexComponent, IndexHeader, IndexLeft, IndexRight, IndexSignin, IndexSeachbox, IndexBallLanguage, IndexSignup,
+  IndexRightLive, DoubleBet, IndexSideOptions, IndexEnContainer, IndexContent, SkewersPopup, BetsoloPopup, IndexEnHeader
 } from './index/index.component';
 import { DiscountComponent, DiscountContent, DiscountLeft, DiscountSearch } from './PageHTML/Event/Discount.component';
 import {
@@ -81,7 +81,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
 
 @NgModule({
   declarations: [
-    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallBetting, BasketballContent, EspinnerHeader,
+    AppComponent, ErrorComponent, IndexComponent, IndexHeader, IndexLeft, IndexBallLanguage, BasketballContent, EspinnerHeader,
     IndexRight, IndexSignin, IndexSeachbox, IndexEnContainer, DiscountComponent, BasketballComponent, BsoinnerHeader, BsoContent,
     IndexRightLive, IndexSideOptions, MemberComponent, SoccerComponent, BasballComponent, LottinnerComponent, HelpBet, LotterySenior,
     Horse_raceComponent, EspComponent, StockComponent, TransFor, IceinnerContent, TennisinnerComponent, SnookerinnerComponent,
@@ -106,7 +106,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
     BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior, VballSenior, BadmintonSenior,
-    FootballSenior, BsoSenior, TableballSenior, IndexSignup, DiscountContent, DiscountLeft, DiscountSearch
+    FootballSenior, BsoSenior, TableballSenior, IndexSignup, DiscountContent, DiscountLeft, DiscountSearch, IndexEnHeader
   ],
   imports: [
     BrowserModule,

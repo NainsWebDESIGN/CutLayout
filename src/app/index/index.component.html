@@ -3,6 +3,13 @@
     </index-signin>
 </aside>
 <index-signup [getSignUp]="SignUp" (liveEvent)="getLive($event)" (closeupEvent)="signup($event)"></index-signup>
-<index-header [getLiveMode]="LiveMode" (signinEvent)="signin($event)" (signupEvent)="signup($event)"
-    (signoutEvent)="getLive($event)"></index-header>
-<router-outlet></router-outlet>
+<index-header [ngClass]="{'display': language}" [getLiveMode]="LiveMode" (signinEvent)="signin($event)"
+    (signupEvent)="signup($event)" (signoutEvent)="getLive($event)"></index-header>
+<header class="en" [ngClass]="{'display': !language}">
+    <index-enheader></index-enheader>
+</header>
+<index-language (LanguageEvent)="ChangeLanguage($event)"></index-language>
+<router-outlet [ngClass]="{'display': language}"></router-outlet>
+<div class="container en" [ngClass]="{'display': !language}">
+    <index-encontainer></index-encontainer>
+</div>
