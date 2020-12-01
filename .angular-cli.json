@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "CutLayout"
+    "name": "new_ball3_website"
   },
   "apps": [
     {
       "root": "src",
-      "outDir": "CutLayout",
+      "outDir": "new_ball3_website",
       "assets": ["assets", "favicon.ico"],
       "index": "index.html",
       "main": "main.ts",
