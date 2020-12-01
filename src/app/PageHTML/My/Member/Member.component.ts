@@ -1,6 +1,6 @@
 import { DataBassService } from './../../../DataBass.service';
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
 
 
@@ -11,12 +11,16 @@ import { Location } from '@angular/common';
   providers: [DataBassService]
 })
 export class MemberComponent implements OnInit {
+  LeftValue: number;
   boolin = true;
   cashboolin = false;
   cardboolin = false;
   constructor() { }
   getcash(cashEvent) {
     this.cashboolin = cashEvent;
+  }
+  leftValue(x) {
+    this.LeftValue = x;
   }
   getcard(cardEvent) {
     this.cardboolin = cardEvent;
@@ -54,8 +58,26 @@ export class MemberRight implements OnInit {
   styleUrls: ['./Member.component.css']
 })
 export class MemberOption implements OnInit {
-  constructor() { }
+  @Output() leftEvent: EventEmitter<any> = new EventEmitter();
+  constructor(private reload: Location, private Ajax: DataBassService) { }
+  async listen() {
+    let pagetotal = await this.getLeft();
+    let a: any = [];
+    a = await pagetotal.filter(el => {
+      return el.router.indexOf(this.reload.path()) > -1;
+    })
+    let NumberData = Number(a[0].CHID);
+    this.leftEvent.emit(NumberData);
+  }
+  async getLeft() {
+    let data: any = [];
+    await this.Ajax.getData('Memberleft').then(el => {
+      data = el;
+    })
+    return data;
+  }
   ngOnInit() {
+    this.listen();
   }
 
 }
@@ -69,9 +91,16 @@ export class MemberLeft implements OnInit {
   @Output() childEvent: EventEmitter<any> = new EventEmitter();
   @Output() cashEvent: EventEmitter<any> = new EventEmitter();
   @Output() cardEvent: EventEmitter<any> = new EventEmitter();
+  @Input()
+  set GetOptionValue(x) {
+    for (let i = 0; i < this.boolin.length; i++) {
+      this.boolin[i] = false;
+    }
+    this.boolin[x] = true;
+  }
   left: any = [];
   boolin: any = [];
-  constructor(private router: Router, private reload: Location, private Ajax: DataBassService) { }
+  constructor(private reload: Location, private Ajax: DataBassService) { }
   getChild(ChildValue) {
     if (ChildValue.cardEvent) {
       ChildValue.cardEvent.subscribe(boolin => {
