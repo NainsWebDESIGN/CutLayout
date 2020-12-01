@@ -114,6 +114,15 @@ export class IndexHeader implements OnInit {
     this.boolin[x] = true;
   }
   listen() {
+    this.router.events
+      .subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          let StrUrl = event['url'].toString().split('/');
+          StrUrl[2] == 'indexcontent' ? this.boolin[0] = true : this.boolin[0] = false;
+          StrUrl[2] == 'discount' ? this.boolin[1] = true : this.boolin[1] = false;
+          StrUrl[2] == 'member' ? this.boolin[2] = true : this.boolin[2] = false;
+        }
+      })
     let StrUrl = this.reload.path().toString().split('/');
     StrUrl[2] == 'indexcontent' ? this.boolin[0] = true : this.boolin[0] = false;
     StrUrl[2] == 'discount' ? this.boolin[1] = true : this.boolin[1] = false;
