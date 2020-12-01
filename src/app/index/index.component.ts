@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { DataBassService } from '../DataBass.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
@@ -151,7 +150,7 @@ export class IndexLeft implements OnInit {
   left: any = [];
   total: any = [];
   check: any = [];
-  constructor(private http: HttpClient, private Ajax: DataBassService, private router: Router, private location: Location) { }
+  constructor(private Ajax: DataBassService, private router: Router, private location: Location) { }
   emit(ChildValue) {
     if (ChildValue.popupEvent) {
       ChildValue.popupEvent.subscribe(el => {
