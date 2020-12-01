@@ -7,14 +7,8 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   // @ViewChild('testID') test: HTMLElement;
-  // testID = '';
   constructor() { }
-  // testbtn(x) {
-  //   this.testID = x;
-  //   console.log(this.testID['nativeElement']);
-  // }
   ngOnInit() {
-    // this.testbtn(this.test);
-    // console.log(this.test);
+    // console.log(this.test['nativeElement']);
   }
 }
