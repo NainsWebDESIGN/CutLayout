@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,8 +9,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private backpage: Location) { }
+  back() {
+    this.backpage.back();
+  }
   ngOnInit() {
   }
 

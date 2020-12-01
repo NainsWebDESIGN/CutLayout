@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +23,7 @@ body {
 
 .box {
   position: relative;
+  cursor: pointer;
 }
 
 .box h2 {
