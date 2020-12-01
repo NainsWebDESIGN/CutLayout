@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,7 @@ import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  // @ViewChild('testID') test: HTMLElement;
   constructor() { }
   ngOnInit() {
-    // console.log(this.test['nativeElement']);
   }
 }
