@@ -106,7 +106,7 @@ import { Stock_innerComponent, StockinnerContent, StockinnerHeader } from './Pag
     TennisResult, SnookerComponent, SnookerHeader, SnookerContent, SnookerResult, BsoResult, FootballResult, BasketSenior, BsoHeader,
     Vball_innerComponent, VballComponent, VballContent, VballHeader, VballResult, BadmintoninnerHeader, BasketballTeachbs, BasketballTeach,
     BadmintonComponent, EspinnerContent, StockinnerContent, StockinnerHeader, TennisSenior, SnookerSenior, VballSenior, BadmintonSenior,
-    FootballSenior, BsoSenior, TableballSenior, IndexSignup, DiscountContent, DiscountLeft, DiscountSearch, IndexEnHeader,
+    FootballSenior, BsoSenior, TableballSenior, IndexSignup, DiscountContent, DiscountLeft, DiscountSearch, IndexEnHeader
   ],
   imports: [
     BrowserModule,
