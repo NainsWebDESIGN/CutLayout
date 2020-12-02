@@ -1,6 +1,5 @@
 import { Location } from '@angular/common';
 import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
-declare var anime: any;
 
 @Component({
   selector: 'app-Error',
