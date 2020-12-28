@@ -405,7 +405,7 @@ export class IndexRightLive implements OnInit {
   styleUrls: ['../app.component.css']
 })
 export class IndexSideOptions implements OnInit {
-  constructor(private router: Router) { }
+  constructor() { }
   ngOnInit() {
   }
 
